@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ProductViewModel>
+
+@foreach (ProductViewModel p in @Model)
+{
+    <a asp-route-id="@p.Id" asp-action="Details" asp-controller="Product" class="col-md-2">
+        <div class="product p-1 chushka-bg-color rounded-top rounded-bottom">
+            <h5 class="text-center mt-3">@p.Name</h5>
+            <hr class="hr-1 bg-white"/>
+            <p class="text-white text-center">
+                @p.Description
+            </p>
+            <hr class="hr-1 bg-white"/>
+            <h6 class="text-center text-white mb-3">$@p.Price</h6>
+        </div>
+    </a>
+}

@@ -1,0 +1,51 @@
+﻿@model EventWebApp.Models.Events.EventViewModel
+
+<h1 class="text-center">Edit Product</h1>
+<hr class="bg-secondary hr-2" />
+<form class="mx-auto half-width" method="post" asp-controller="Events" asp-action="Edit">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="form-group col">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" type="text" class="form-control" placeholder="Iron Maiden -Hills of Rock ..." name="name" value="@Model.Name">
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div class="form-group col">
+            <label asp-for="Place"></label>
+            <input asp-for="Place" type="text" class="form-control" placeholder="Plovdiv,Bulgaria..." name="Place" value="@Model.Place">
+            <span asp-validation-for="Place"></span>
+        </div>
+    </div>
+    <hr class="bg-secondary hr-2" />
+    <div class="row">
+        <div class="form-group col">
+            <label asp-for="Start"></label>
+            <input asp-for="Start" type="datetime" class="form-control" placeholder="20-Jul-2018 22:00" name="Start" value="@Model.Start">
+            <span asp-validation-for="Start"></span>
+        </div>
+        <div class="form-group col">
+            <label asp-for="End"></label>
+            <input asp-for="End" type="datetime" class="form-control" placeholder="20-Avg-2018 4:00" name="End" value="@Model.End">
+            <span asp-validation-for="End"></span>
+        </div>
+    </div>
+    <hr class="bg-secondary hr-2" />
+    <div class="row">
+        <div class="form-group">
+            <label asp-for="TotalTickets"></label>
+            <input asp-for="TotalTickets" type="number" step="any" class="form-control" placeholder="1000" name="TotalTickets" value="@Model.TotalTickets">
+            <span asp-validation-for="TotalTickets"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PricePerTicket"></label>
+            <input asp-for="PricePerTicket" type="number" step="any" class="form-control" placeholder="150" name="PricePerTicket" value="@Model.PricePerTicket">
+            <span asp-validation-for="PricePerTicket"></span>
+        </div>
+    </div>
+    <hr class="bg-secondary hr-2 half-width" />
+    <div class="button-holder d-flex justify-content-center">
+        <button type="submit" class="btn chushka-bg-color mr-5">Edit</button>
+        <button onclick="window.history.back()" class="btn chushka-bg-color ml-5">Cancel</button>
+    </div>
+</form>

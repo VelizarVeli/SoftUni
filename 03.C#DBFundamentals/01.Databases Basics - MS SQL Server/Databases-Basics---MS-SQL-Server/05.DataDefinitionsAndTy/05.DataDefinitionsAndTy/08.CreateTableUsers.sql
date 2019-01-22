@@ -1,0 +1,16 @@
+CREATE TABLE Users(
+Id BIGINT IDENTITY NOT NULL,
+Username VARCHAR(30) UNIQUE NOT NULL,
+Password VARCHAR(26) NOT NULL,
+ProfilePicture VARBINARY(MAX),
+LastLoginTime DATETIME,
+IsDeleted BIT,
+CONSTRAINT PK_Users PRIMARY KEY (Id)
+)
+
+INSERT INTO Users
+VALUES ('Stavri', '123345', NULL, NULL, 0),
+ ('Gosho', '123345', NULL, NULL, 0),
+ ('Pesho', '123345', NULL, NULL, 0),
+ ('Vlado', '123345', NULL, NULL, 0),
+ ('Stamat', '123345', NULL, NULL, 0)

@@ -1,0 +1,9 @@
+﻿1>------ Build started: Project: BookShop.Models, Configuration: Debug Any CPU ------
+1>BookShop.Models -> C:\Users\Google\Documents\Proj\03.C#DBFundamentals\02.DB-EF\16.AdvancedQuering\03.NotReleasedIn\BookShop.Models\bin\Debug\netcoreapp2.0\BookShop.Models.dll
+2>------ Build started: Project: BookShop.Data, Configuration: Debug Any CPU ------
+2>BookShop.Data -> C:\Users\Google\Documents\Proj\03.C#DBFundamentals\02.DB-EF\16.AdvancedQuering\03.NotReleasedIn\BookShop.Data\bin\Debug\netcoreapp2.0\BookShop.Data.dll
+3>------ Build started: Project: BookShop.Initializer, Configuration: Debug Any CPU ------
+3>BookShop.Initializer -> C:\Users\Google\Documents\Proj\03.C#DBFundamentals\02.DB-EF\16.AdvancedQuering\03.NotReleasedIn\BookShop.Initializer\bin\Debug\netcoreapp2.0\BookShop.Initializer.dll
+4>------ Build started: Project: BookShop, Configuration: Debug Any CPU ------
+4>BookShop -> C:\Users\Google\Documents\Proj\03.C#DBFundamentals\02.DB-EF\16.AdvancedQuering\03.NotReleasedIn\BookShop\bin\Debug\netcoreapp2.0\BookShop.dll
+========== Build: 4 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

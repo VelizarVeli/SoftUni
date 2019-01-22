@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.App", "SIS.App\SIS.App.csproj", "{D400E021-C583-4961-8CDB-3EBB015E92D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{B2338E0C-D3A4-4D0C-8267-5CF8E0D9D3DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.WebServer", "SIS.WebServer\SIS.WebServer.csproj", "{45BB71BF-8721-4CA7-84F9-26E49BC6F85C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D400E021-C583-4961-8CDB-3EBB015E92D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D400E021-C583-4961-8CDB-3EBB015E92D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D400E021-C583-4961-8CDB-3EBB015E92D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D400E021-C583-4961-8CDB-3EBB015E92D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2338E0C-D3A4-4D0C-8267-5CF8E0D9D3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2338E0C-D3A4-4D0C-8267-5CF8E0D9D3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2338E0C-D3A4-4D0C-8267-5CF8E0D9D3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2338E0C-D3A4-4D0C-8267-5CF8E0D9D3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45BB71BF-8721-4CA7-84F9-26E49BC6F85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BB71BF-8721-4CA7-84F9-26E49BC6F85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BB71BF-8721-4CA7-84F9-26E49BC6F85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BB71BF-8721-4CA7-84F9-26E49BC6F85C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E26E5954-1CE9-4A8A-B960-F8EDFF37BF27}
+	EndGlobalSection
+EndGlobal

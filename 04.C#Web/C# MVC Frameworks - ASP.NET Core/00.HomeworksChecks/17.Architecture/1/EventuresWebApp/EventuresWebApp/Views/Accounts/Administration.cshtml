@@ -1,0 +1,38 @@
+﻿@model EventuresWebApp.Web.ViewModels.Accounts.AdministrationViewModel
+
+@{
+    ViewData["Title"] = "Administration";
+}
+
+<h1 class="text-center">Administration</h1>
+<hr class="w-75 eventures-bg-color" />
+<table class="table w-50 mx-auto">
+    <thead>
+    <tr class="row font-weight-bold">
+        <th class="col-md-4">Username</th>
+        <th class="col-md-4">Role</th>
+        <th class="col-md-4">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model.Users)
+    {
+        <tr class="row">
+            <td class="col-md-4">@user.Username</td>
+            <td class="col-md-4">@(user.IsAdmin ? "Admin" : "User")</td>
+            <td class="col-md-4 row text-dark">
+                @if (user.IsAdmin)
+                {
+                    <span col="4"><a asp-controller="Accounts" asp-action="Demote" asp-route-id="@user.Id" class="btn eventures-bg-color text-dark">Demote</a></span>
+                }
+                else
+                {
+                    <span col="4"><a asp-controller="Accounts" asp-action="Promote" asp-route-id="@user.Id" class="btn eventures-bg-color text-dark">Promote</a></span>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<hr class="w-75 eventures-bg-color" />
+

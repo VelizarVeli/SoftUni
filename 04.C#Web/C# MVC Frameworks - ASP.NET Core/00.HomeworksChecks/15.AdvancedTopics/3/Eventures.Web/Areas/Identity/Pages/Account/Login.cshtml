@@ -1,0 +1,56 @@
+﻿@page
+@model LoginModel
+
+<h1 class="text-center">Login</h1>
+<hr class="hr-2 eventures-bg-color half-width" />
+
+<form class="mx-auto half-width" method="post">
+    <div class="form-group text-center">
+        <label asp-for="Input.Username" class="font-weight-bold">Username</label>
+        <input asp-for="Input.Username" class="form-control" placeholder="Username...">
+        <span asp-validation-for="Input.Username" class="text-danger"></span>
+    </div>
+    <div class="form-group text-center">
+        <label asp-for="Input.Password" class="font-weight-bold">Password</label>
+        <input asp-for="Input.Password" type="password" class="form-control" placeholder="Password...">
+        <span asp-validation-for="Input.Password" class="text-danger"></span>
+    </div>
+
+    <hr class="hr-2 eventures-bg-color" />
+    <div class="form-group text-center">
+        <input asp-for="Input.RememberMe" type="checkbox" /> Remember me?
+    </div>
+    <hr class="hr-2 eventures-bg-color" />
+
+    <div class="button-holder d-flex justify-content-center">
+        <button type="submit" class="btn eventures-bg-color">Login</button>
+    </div>
+
+    <div class="form-group text-center active mt-3">
+        <a href="" class="btn-link">Forgot yout password?</a>
+    </div>
+    <div class="form-group text-center active">
+        <a asp-area="Identity" asp-page="Account/Register" class="btn-link">Register as a new user</a>
+    </div>
+</form>
+
+<hr class="hr-2 eventures-bg-color half-width" />
+
+<form asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="mx-auto half-width">
+    <div>
+        <p>
+            @foreach (var provider in Model.ExternalLogins)
+            {
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn eventures-bg-color" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                </div>
+            }
+        </p>
+    </div>
+</form>
+
+<hr class="hr-2 eventures-bg-color half-width" />
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

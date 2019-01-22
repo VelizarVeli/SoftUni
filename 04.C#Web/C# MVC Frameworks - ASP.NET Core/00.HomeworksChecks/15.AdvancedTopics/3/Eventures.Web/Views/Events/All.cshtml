@@ -1,0 +1,40 @@
+﻿@using System.Globalization
+@model IList<EventViewModel>
+
+<h1 class="text-center font-weight-bold">All Events</h1>
+<hr class="hr-2 eventures-bg-color">
+
+<table class="table">
+    <thead>
+    <tr class="font-weight-bold">
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Start</th>
+        <th scope="col">End</th>
+        <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for (int index = 0; index < @Model.Count; index++)
+    {
+        <tr>
+            <th scope="row">@(index + 1)</th>
+            <td>@Model[index].Name</td>
+            <td>@Model[index].Start</td>
+            <td>@Model[index].End</td>
+            <td>
+                <form asp-controller="Events" asp-action="Order" asp-route-eventId="@Model[index].EventId" method="post" class="form-inline">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group mx-sm-2 mb-2">
+                        <label for="OrderedTickets" class="font-weight-bold mx-sm-2">Tickets</label>
+                        <input type="number" class="form-control" name="Tickets" id="OrderedTickets" placeholder="e.g. 1">
+                    </div>
+                    <button type="submit" class="btn eventures-bg-color mb-2">Order</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<hr class="hr-2 eventures-bg-color">

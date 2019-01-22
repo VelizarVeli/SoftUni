@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Cat>
+<div class="text-center m-4">
+    <h1>Fluffy Duffy Munchkin Cats</h1>
+    <div class="container-fluid">
+        <div class="row p-1">
+            <div class="col font-weight-bold">Name</div>
+        </div>
+        <ul>
+            @foreach (Cat r in Model)
+            {
+                <li><a asp-action="Details" asp-controller="Home" asp-route-id="@r.Id">@r.Name</a></li>
+            }
+        </ul>
+    </div>
+    <a class="btn btn-primary" asp-action="AddCat">Add Cat</a>
+</div>

@@ -1,0 +1,69 @@
+﻿@model Eventures.WebApp.ViewModels.EventInputModel
+
+@{
+    ViewData["Title"] = "Create Event";
+}
+
+<div class="container d-flex justify-content-between">
+
+    <div class="col-md-8">
+
+        <h2 class="d-flex justify-content-center">@ViewData["Title"] </h2>
+        <hr class="h2 chushka-bg-color" />
+        <form role="form" class="justify-content-around" method="post" asp-controller="Events" asp-action="Create">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Name" class="d-flex justify-content-center "></label>
+                        <input asp-for="Name" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Place" class="d-flex justify-content-center "></label>
+                        <input asp-for="Place" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <hr class="h2 chushka-bg-color" />
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Start" class="d-flex justify-content-center "></label>
+                        <input asp-for="Start" type="datetime-local" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="End" class="d-flex justify-content-center "></label>
+                        <input asp-for="End" type="datetime-local" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <hr class="h2 chushka-bg-color" />
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="TotalTickets" class="d-flex justify-content-center "></label>
+                        <input asp-for="TotalTickets" type="number" min="0.00"step="0.01" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="PricePerTicket" class="d-flex justify-content-center "></label>
+                        <input asp-for="PricePerTicket" type="number" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <hr class="h2 chushka-bg-color" />
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-info">Create Event</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-controller="Home">Back</a>
+</div>

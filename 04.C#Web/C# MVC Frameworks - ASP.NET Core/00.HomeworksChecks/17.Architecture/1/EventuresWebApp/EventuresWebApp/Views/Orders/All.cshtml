@@ -1,0 +1,33 @@
+﻿@model EventuresWebApp.Web.ViewModels.Orders.AllOrdersViewModel
+
+@{
+    ViewData["Title"] = "All";
+}
+
+<h1 class="text-center">All Orders</h1>
+<hr class="eventures-bg-color hr-3 mt-3" />
+<table class="table">
+    <thead>
+    <tr>
+        <th class="font-weight-bold" scope="col">#</th>
+        <th class="font-weight-bold" scope="col">Event</th>
+        <th class="font-weight-bold" scope="col">Customer</th>
+        <th class="font-weight-bold" scope="col">Ordered On</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for (int i = 0; i < Model.Orders.Count(); i++)
+    {
+        var orderViewModel = Model.Orders.ToList()[i];
+        <tr>
+            <th scope="row">@(i + 1)</th>
+            <td>@orderViewModel.EventName</td>
+            <td>@orderViewModel.Customer</td>
+            <td>@orderViewModel.OrderedOn</td>
+        </tr>
+    }
+    </tbody>
+</table>
+<hr class="eventures-bg-color hr-3 mt-3" />
+
+

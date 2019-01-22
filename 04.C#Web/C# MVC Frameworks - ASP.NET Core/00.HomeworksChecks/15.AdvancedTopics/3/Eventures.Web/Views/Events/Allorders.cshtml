@@ -1,0 +1,28 @@
+﻿@model IList<AllOrdersViewModel>
+
+<h1 class="text-center font-weight-bold">All Orders</h1>
+<hr class="hr-2 eventures-bg-color">
+
+<table class="table">
+    <thead>
+    <tr class="font-weight-bold">
+        <th scope="col">#</th>
+        <th scope="col">Event</th>
+        <th scope="col">Customer</th>
+        <th scope="col">Ordered On</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for (int index = 0; index < @Model.Count; index++)
+    {
+        <tr>
+            <td>@(index + 1)</td>
+            <td>@Model[index].EventName</td>
+            <td>@Model[index].Customer</td>
+            <td>@Model[index].OrderedOn</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<hr class="hr-2 eventures-bg-color">

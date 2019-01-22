@@ -1,0 +1,31 @@
+﻿div {
+    border-style: solid;
+    padding: 4px;
+    text-align: center;
+    font-size: 35px
+}
+
+    div.c1 {
+        padding: 23px;
+        border-style: dotted;
+        border-radius: 16px;
+        border-color: blue;
+        border-width: 5px
+    }
+
+    div.c2 {
+        padding: 33px;
+        border-style: dashed;
+        border-color: red;
+        border-radius: 13px;
+        border-width: 3px
+    }
+
+    div.c3 {
+        padding-top: 30px;
+        padding-bottom: 25px;
+        border-style: solid;
+        border-radius: 4px;
+        border-color: green;
+        border-width: 3px
+    }

@@ -1,0 +1,12 @@
+@inject SignInManager<ApplicationUser> SignInManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+        <ul class="navbar-nav left-side">
+            <li class="nav-item">
+                <button type="submit" class="btn btn-link nav-link nav-link-dark active font-weight-bold">Logout</button>
+            </li>
+        </ul>
+    </form>
+}

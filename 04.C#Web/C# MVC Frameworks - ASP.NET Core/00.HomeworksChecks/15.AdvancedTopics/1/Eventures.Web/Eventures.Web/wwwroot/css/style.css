@@ -1,0 +1,116 @@
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #5786bA;
+}
+
+.app-sizing{
+    width: 86%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.third-width {
+    width: 30%;
+}
+
+textarea {
+    resize: none;
+}
+
+.eventures-bg-color {
+    background-color: #AFEEEE;
+    color: #000000;
+}
+
+.nav-link-dark {
+    color: #000000;
+    font-weight: bold;
+}
+
+.text-color-grey {
+    color: lightslategrey;
+}
+
+.bg-color-grey {
+    background-color: lightslategrey;
+}
+
+.hr-3 {
+    height: 3px;
+    border: 0;
+}
+
+.hr-2 {
+    height: 2px;
+    border: 0;
+}
+
+.hr-1 {
+    height: 1px;
+    border: 0;
+}
+
+tr.row{
+    margin-left:0;
+    margin-right:0
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: lightslategrey;
+    color: whitesmoke;
+}
+
+footer, .jumbotron {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.navbar {
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    text-align:left;
+}
+
+.navbar-brand {
+    display: block;
+    height: auto;
+    padding-left: 12px;
+    padding-right: 0;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.navbar-collapse {
+    padding-left: 0;
+    padding-right: 24px;
+    border: 0;
+    margin-left: 8px;
+}
+
+.nav-link{
+    margin-left: 8px;
+    padding-left: 0;
+}
+
+.checkbox label {
+    padding-left: 0;
+}
+
+label {
+    font-weight:bold;
+}
+
+/*.product {*/
+	/*word-wrap: break-word;*/
+/*}*/

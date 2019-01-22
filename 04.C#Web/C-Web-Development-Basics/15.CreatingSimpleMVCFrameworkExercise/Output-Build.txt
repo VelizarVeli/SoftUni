@@ -1,0 +1,9 @@
+﻿1>------ Rebuild All started: Project: SIS.HTTP, Configuration: Debug Any CPU ------
+1>SIS.HTTP -> C:\Users\john\Desktop\runes\runes\IRunes\SIS\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+2>------ Rebuild All started: Project: SIS.WebServer, Configuration: Debug Any CPU ------
+2>SIS.WebServer -> C:\Users\john\Desktop\runes\runes\IRunes\SIS\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.WebServer.dll
+3>------ Rebuild All started: Project: SIS.Demo, Configuration: Debug Any CPU ------
+3>SIS.Demo -> C:\Users\john\Desktop\runes\runes\IRunes\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.Demo.dll
+4>------ Rebuild All started: Project: SIS.IRunesApp, Configuration: Debug Any CPU ------
+4>SIS.IRunesApp -> C:\Users\john\Desktop\runes\runes\IRunes\SIS\SIS.IRunesApp\bin\Debug\netcoreapp2.1\SIS.IRunesApp.dll
+========== Rebuild All: 4 succeeded, 0 failed, 0 skipped ==========

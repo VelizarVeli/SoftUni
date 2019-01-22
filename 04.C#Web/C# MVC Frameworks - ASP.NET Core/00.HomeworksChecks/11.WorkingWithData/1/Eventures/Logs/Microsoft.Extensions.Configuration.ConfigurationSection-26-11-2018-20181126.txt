@@ -1,0 +1,680 @@
+2018-11-26T10:37:03.0997958+02:00 0HLIJF9BFRU1S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/   (ca22a1cb)
+2018-11-26T10:37:03.7368464+02:00 0HLIJF9BFRU1S:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "Eventures.Controllers.HomeController.Index (Eventures)" (a44c0341)
+2018-11-26T10:37:03.7543310+02:00 0HLIJF9BFRU1S:00000001 [INF] Executing action method "Eventures.Controllers.HomeController.Index (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:37:03.7599516+02:00 0HLIJF9BFRU1S:00000001 [INF] Executed action method "Eventures.Controllers.HomeController.Index (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6988ms. (50a9e262)
+2018-11-26T10:37:05.7073484+02:00 0HLIJF9BFRU1S:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-11-26T10:37:06.2753407+02:00 0HLIJF9BFRU1S:00000001 [INF] Executed ViewResult - view "Index" executed in 2503.6339ms. (f66409e9)
+2018-11-26T10:37:06.2757677+02:00 0HLIJF9BFRU1S:00000001 [INF] Executed action "Eventures.Controllers.HomeController.Index (Eventures)" in 2537.9024ms (afa2e885)
+2018-11-26T10:37:06.2853767+02:00 0HLIJF9BFRU1S:00000001 [INF] Request finished in 3190.5204ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:37:06.3088265+02:00 0HLIJF9BFRU1S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/reset-css.css   (ca22a1cb)
+2018-11-26T10:37:06.3088494+02:00 0HLIJF9BFRU1T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/bootstrap.min.css   (ca22a1cb)
+2018-11-26T10:37:06.3255229+02:00 0HLIJF9BFRU1S:00000002 [INF] Sending file. Request path: '"/css/reset-css.css"'. Physical path: '"C:\Users\Google\Documents\Proj\04.C#Web\C# MVC Frameworks - ASP.NET Core\00.HomeworksChecks\11.ExerciseWorkingWithData\1\Eventures\wwwroot\css\reset-css.css"' (27b0a520)
+2018-11-26T10:37:06.3258315+02:00 0HLIJF9BFRU1S:00000002 [INF] Request finished in 17.1911ms 200 text/css (791a596a)
+2018-11-26T10:37:06.3433421+02:00 0HLIJF9BFRU1T:00000001 [INF] Sending file. Request path: '"/css/bootstrap.min.css"'. Physical path: '"C:\Users\Google\Documents\Proj\04.C#Web\C# MVC Frameworks - ASP.NET Core\00.HomeworksChecks\11.ExerciseWorkingWithData\1\Eventures\wwwroot\css\bootstrap.min.css"' (27b0a520)
+2018-11-26T10:37:06.3513034+02:00 0HLIJF9BFRU1T:00000001 [INF] Request finished in 42.7018ms 200 text/css (791a596a)
+2018-11-26T10:37:06.5120441+02:00 0HLIJF9BFRU1S:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/style.css   (ca22a1cb)
+2018-11-26T10:37:06.5137568+02:00 0HLIJF9BFRU1S:00000003 [INF] Sending file. Request path: '"/css/style.css"'. Physical path: '"C:\Users\Google\Documents\Proj\04.C#Web\C# MVC Frameworks - ASP.NET Core\00.HomeworksChecks\11.ExerciseWorkingWithData\1\Eventures\wwwroot\css\style.css"' (27b0a520)
+2018-11-26T10:37:06.5139468+02:00 0HLIJF9BFRU1S:00000003 [INF] Request finished in 1.9832ms 200 text/css (791a596a)
+2018-11-26T10:37:08.1071799+02:00 0HLIJF9BFRU1T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/favicon.ico   (ca22a1cb)
+2018-11-26T10:37:08.1107038+02:00 0HLIJF9BFRU1T:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\Google\Documents\Proj\04.C#Web\C# MVC Frameworks - ASP.NET Core\00.HomeworksChecks\11.ExerciseWorkingWithData\1\Eventures\wwwroot\favicon.ico"' (27b0a520)
+2018-11-26T10:37:08.1109338+02:00 0HLIJF9BFRU1T:00000002 [INF] Request finished in 3.774ms 200 image/x-icon (791a596a)
+2018-11-26T10:45:14.4991434+02:00 0HLIJF9BFRU1U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T10:45:14.5062288+02:00 0HLIJF9BFRU1U:00000001 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T10:45:14.5103738+02:00 0HLIJF9BFRU1U:00000001 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:45:14.5108372+02:00 0HLIJF9BFRU1U:00000001 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2319ms. (50a9e262)
+2018-11-26T10:45:14.9604026+02:00 0HLIJF9BFRU1U:00000001 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T10:45:15.0293002+02:00 0HLIJF9BFRU1U:00000001 [INF] Executed ViewResult - view "Register" executed in 518.0387ms. (f66409e9)
+2018-11-26T10:45:15.0295127+02:00 0HLIJF9BFRU1U:00000001 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 523.1764ms (afa2e885)
+2018-11-26T10:45:15.0297936+02:00 0HLIJF9BFRU1U:00000001 [INF] Request finished in 530.8319ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:45:47.3302087+02:00 0HLIJF9BFRU1U:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 322 (ca22a1cb)
+2018-11-26T10:45:47.3626583+02:00 0HLIJF9BFRU1U:00000002 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T10:45:47.4295901+02:00 0HLIJF9BFRU1U:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T10:45:47.4419073+02:00 0HLIJF9BFRU1U:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T10:45:47.5113212+02:00 0HLIJF9BFRU1U:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T10:45:47.5323985+02:00 0HLIJF9BFRU1U:00000002 [WRN] User "(null)" validation failed: "DuplicateUserName". (5dc28e15)
+2018-11-26T10:45:47.5332412+02:00 0HLIJF9BFRU1U:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 103.5274ms. (50a9e262)
+2018-11-26T10:45:47.5334537+02:00 0HLIJF9BFRU1U:00000002 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T10:45:47.5372581+02:00 0HLIJF9BFRU1U:00000002 [INF] Executed ViewResult - view "Register" executed in 3.868ms. (f66409e9)
+2018-11-26T10:45:47.5374110+02:00 0HLIJF9BFRU1U:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 174.6665ms (afa2e885)
+2018-11-26T10:45:47.5375900+02:00 0HLIJF9BFRU1U:00000002 [INF] Request finished in 207.4859ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:45:52.6847370+02:00 0HLIJF9BFRU1U:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Login   (ca22a1cb)
+2018-11-26T10:45:52.6866333+02:00 0HLIJF9BFRU1U:00000003 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T10:45:52.6869209+02:00 0HLIJF9BFRU1U:00000003 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:45:52.6872508+02:00 0HLIJF9BFRU1U:00000003 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2093ms. (50a9e262)
+2018-11-26T10:45:52.8803624+02:00 0HLIJF9BFRU1U:00000003 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T10:45:52.9215574+02:00 0HLIJF9BFRU1U:00000003 [INF] Executed ViewResult - view "Login" executed in 234.1992ms. (f66409e9)
+2018-11-26T10:45:52.9216692+02:00 0HLIJF9BFRU1U:00000003 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 234.9458ms (afa2e885)
+2018-11-26T10:45:52.9217834+02:00 0HLIJF9BFRU1U:00000003 [INF] Request finished in 237.0673ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:45:59.3244823+02:00 0HLIJF9BFRU1U:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/bootstrap.min.css.map   (ca22a1cb)
+2018-11-26T10:45:59.3285341+02:00 0HLIJF9BFRU1U:00000004 [INF] Request finished in 3.7139ms 404  (791a596a)
+2018-11-26T10:46:20.3497367+02:00 0HLIJF9BFRU1U:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T10:46:20.3502763+02:00 0HLIJF9BFRU1U:00000005 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T10:46:20.3505726+02:00 0HLIJF9BFRU1U:00000005 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:46:20.3506488+02:00 0HLIJF9BFRU1U:00000005 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0098ms. (50a9e262)
+2018-11-26T10:46:20.3507733+02:00 0HLIJF9BFRU1U:00000005 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T10:46:20.3538117+02:00 0HLIJF9BFRU1U:00000005 [INF] Executed ViewResult - view "Register" executed in 3.0352ms. (f66409e9)
+2018-11-26T10:46:20.3539319+02:00 0HLIJF9BFRU1U:00000005 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 3.5851ms (afa2e885)
+2018-11-26T10:46:20.3540346+02:00 0HLIJF9BFRU1U:00000005 [INF] Request finished in 4.3342ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:46:39.1656305+02:00 0HLIJF9BFRU1U:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 321 (ca22a1cb)
+2018-11-26T10:46:39.1659323+02:00 0HLIJF9BFRU1U:00000006 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T10:46:39.1676247+02:00 0HLIJF9BFRU1U:00000006 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T10:46:39.1781472+02:00 0HLIJF9BFRU1U:00000006 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T10:46:39.1834166+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T10:46:39.1900511+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 4000), @p17='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UniqueCitizenNumber], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);" (0723d8ff)
+2018-11-26T10:46:39.2273884+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2018-11-26T10:46:39.2335723+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-26T10:46:39.2417054+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-11-26T10:46:39.2429017+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-26T10:46:39.2440063+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T10:46:39.2474975+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-11-26T10:46:39.2531638+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed DbCommand ("5"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UniqueCitizenNumber] = @p15, [UserName] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-26T10:46:39.2546967+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 86.9834ms. (50a9e262)
+2018-11-26T10:46:39.2552423+02:00 0HLIJF9BFRU1U:00000006 [INF] Executing RedirectResult, redirecting to "/Users/Login". (d98d540e)
+2018-11-26T10:46:39.2557408+02:00 0HLIJF9BFRU1U:00000006 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 89.7386ms (afa2e885)
+2018-11-26T10:46:39.2559103+02:00 0HLIJF9BFRU1U:00000006 [INF] Request finished in 90.3268ms 302  (791a596a)
+2018-11-26T10:46:39.2646419+02:00 0HLIJF9BFRU1U:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Login   (ca22a1cb)
+2018-11-26T10:46:39.2649691+02:00 0HLIJF9BFRU1U:00000007 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T10:46:39.2652868+02:00 0HLIJF9BFRU1U:00000007 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:46:39.2653555+02:00 0HLIJF9BFRU1U:00000007 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0063ms. (50a9e262)
+2018-11-26T10:46:39.2654329+02:00 0HLIJF9BFRU1U:00000007 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T10:46:39.2673454+02:00 0HLIJF9BFRU1U:00000007 [INF] Executed ViewResult - view "Login" executed in 1.8974ms. (f66409e9)
+2018-11-26T10:46:39.2674303+02:00 0HLIJF9BFRU1U:00000007 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 2.3549ms (afa2e885)
+2018-11-26T10:46:39.2675145+02:00 0HLIJF9BFRU1U:00000007 [INF] Request finished in 2.9076ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:48:52.6542339+02:00 0HLIJFFUUTR1U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/   (ca22a1cb)
+2018-11-26T10:48:52.7782066+02:00 0HLIJFFUUTR1U:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "Eventures.Controllers.HomeController.Index (Eventures)" (a44c0341)
+2018-11-26T10:48:52.7904906+02:00 0HLIJFFUUTR1U:00000001 [INF] Executing action method "Eventures.Controllers.HomeController.Index (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:48:52.7943437+02:00 0HLIJFFUUTR1U:00000001 [INF] Executed action method "Eventures.Controllers.HomeController.Index (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3579ms. (50a9e262)
+2018-11-26T10:48:54.2575411+02:00 0HLIJFFUUTR1U:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-11-26T10:48:54.7465934+02:00 0HLIJFFUUTR1U:00000001 [INF] Executed ViewResult - view "Index" executed in 1944.5503ms. (f66409e9)
+2018-11-26T10:48:54.7468968+02:00 0HLIJFFUUTR1U:00000001 [INF] Executed action "Eventures.Controllers.HomeController.Index (Eventures)" in 1968.3006ms (afa2e885)
+2018-11-26T10:48:54.7564640+02:00 0HLIJFFUUTR1U:00000001 [INF] Request finished in 2108.5668ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:48:54.7681981+02:00 0HLIJFFUUTR1V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/reset-css.css   (ca22a1cb)
+2018-11-26T10:48:54.7689681+02:00 0HLIJFFUUTR20:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/style.css   (ca22a1cb)
+2018-11-26T10:48:54.7690771+02:00 0HLIJFFUUTR1U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/bootstrap.min.css   (ca22a1cb)
+2018-11-26T10:48:54.7780415+02:00 0HLIJFFUUTR20:00000001 [INF] The file "/css/style.css" was not modified (f1f8d725)
+2018-11-26T10:48:54.7780498+02:00 0HLIJFFUUTR1V:00000001 [INF] The file "/css/reset-css.css" was not modified (f1f8d725)
+2018-11-26T10:48:54.7780411+02:00 0HLIJFFUUTR1U:00000002 [INF] The file "/css/bootstrap.min.css" was not modified (f1f8d725)
+2018-11-26T10:48:54.7834238+02:00 0HLIJFFUUTR20:00000001 [INF] Request finished in 15.0471ms 304 text/css (791a596a)
+2018-11-26T10:48:54.7834238+02:00 0HLIJFFUUTR1U:00000002 [INF] Request finished in 14.2925ms 304 text/css (791a596a)
+2018-11-26T10:48:54.7834238+02:00 0HLIJFFUUTR1V:00000001 [INF] Request finished in 15.2869ms 304 text/css (791a596a)
+2018-11-26T10:49:25.2229558+02:00 0HLIJFFUUTR1V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Login   (ca22a1cb)
+2018-11-26T10:49:25.2322362+02:00 0HLIJFFUUTR1V:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T10:49:25.2355860+02:00 0HLIJFFUUTR1V:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:49:25.2360008+02:00 0HLIJFFUUTR1V:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2267ms. (50a9e262)
+2018-11-26T10:49:25.4927789+02:00 0HLIJFFUUTR1V:00000002 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T10:49:25.5459309+02:00 0HLIJFFUUTR1V:00000002 [INF] Executed ViewResult - view "Login" executed in 309.637ms. (f66409e9)
+2018-11-26T10:49:25.5460893+02:00 0HLIJFFUUTR1V:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 313.7867ms (afa2e885)
+2018-11-26T10:49:25.5463556+02:00 0HLIJFFUUTR1V:00000002 [INF] Request finished in 323.4491ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:49:36.9828726+02:00 0HLIJFFUUTR1U:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Login application/x-www-form-urlencoded 230 (ca22a1cb)
+2018-11-26T10:49:37.0046579+02:00 0HLIJFFUUTR1U:00000003 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T10:49:37.0537791+02:00 0HLIJFFUUTR1U:00000003 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" with arguments (["Eventures.ViewModels.Users.LoginUserViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T10:49:37.0598618+02:00 0HLIJFFUUTR1U:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T10:49:37.0670582+02:00 0HLIJFFUUTR1U:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T10:49:37.1496159+02:00 0HLIJFFUUTR1U:00000003 [WRN] Invalid password for user "0e303de3-a60b-4fd2-b3f4-c79424455d1a". (c2dce6c7)
+2018-11-26T10:49:37.1499742+02:00 0HLIJFFUUTR1U:00000003 [WRN] User "0e303de3-a60b-4fd2-b3f4-c79424455d1a" failed to provide the correct password. (ec8d2479)
+2018-11-26T10:49:37.1507615+02:00 0HLIJFFUUTR1U:00000003 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 96.8477ms. (50a9e262)
+2018-11-26T10:49:37.1509567+02:00 0HLIJFFUUTR1U:00000003 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T10:49:37.1541484+02:00 0HLIJFFUUTR1U:00000003 [INF] Executed ViewResult - view "Login" executed in 3.2809ms. (f66409e9)
+2018-11-26T10:49:37.1542958+02:00 0HLIJFFUUTR1U:00000003 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 149.5774ms (afa2e885)
+2018-11-26T10:49:37.1545079+02:00 0HLIJFFUUTR1U:00000003 [INF] Request finished in 171.7127ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:49:40.9359559+02:00 0HLIJFFUUTR20:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Login application/x-www-form-urlencoded 230 (ca22a1cb)
+2018-11-26T10:49:40.9363328+02:00 0HLIJFFUUTR20:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T10:49:40.9381489+02:00 0HLIJFFUUTR20:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" with arguments (["Eventures.ViewModels.Users.LoginUserViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T10:49:40.9386890+02:00 0HLIJFFUUTR20:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T10:49:40.9398473+02:00 0HLIJFFUUTR20:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T10:49:40.9514356+02:00 0HLIJFFUUTR20:00000002 [WRN] Invalid password for user "0e303de3-a60b-4fd2-b3f4-c79424455d1a". (c2dce6c7)
+2018-11-26T10:49:40.9516446+02:00 0HLIJFFUUTR20:00000002 [WRN] User "0e303de3-a60b-4fd2-b3f4-c79424455d1a" failed to provide the correct password. (ec8d2479)
+2018-11-26T10:49:40.9519294+02:00 0HLIJFFUUTR20:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 13.6169ms. (50a9e262)
+2018-11-26T10:49:40.9522616+02:00 0HLIJFFUUTR20:00000002 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T10:49:40.9540437+02:00 0HLIJFFUUTR20:00000002 [INF] Executed ViewResult - view "Login" executed in 1.95ms. (f66409e9)
+2018-11-26T10:49:40.9541426+02:00 0HLIJFFUUTR20:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 17.6592ms (afa2e885)
+2018-11-26T10:49:40.9542461+02:00 0HLIJFFUUTR20:00000002 [INF] Request finished in 18.3332ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:49:43.0103843+02:00 0HLIJFFUUTR1V:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Login application/x-www-form-urlencoded 229 (ca22a1cb)
+2018-11-26T10:49:43.0107339+02:00 0HLIJFFUUTR1V:00000003 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T10:49:43.0112637+02:00 0HLIJFFUUTR1V:00000003 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" with arguments (["Eventures.ViewModels.Users.LoginUserViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T10:49:43.0115632+02:00 0HLIJFFUUTR1V:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T10:49:43.0126784+02:00 0HLIJFFUUTR1V:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T10:49:43.0224732+02:00 0HLIJFFUUTR1V:00000003 [WRN] Invalid password for user "0e303de3-a60b-4fd2-b3f4-c79424455d1a". (c2dce6c7)
+2018-11-26T10:49:43.0225795+02:00 0HLIJFFUUTR1V:00000003 [WRN] User "0e303de3-a60b-4fd2-b3f4-c79424455d1a" failed to provide the correct password. (ec8d2479)
+2018-11-26T10:49:43.0226794+02:00 0HLIJFFUUTR1V:00000003 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 11.3386ms. (50a9e262)
+2018-11-26T10:49:43.0227857+02:00 0HLIJFFUUTR1V:00000003 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T10:49:43.0242553+02:00 0HLIJFFUUTR1V:00000003 [INF] Executed ViewResult - view "Login" executed in 1.4656ms. (f66409e9)
+2018-11-26T10:49:43.0243343+02:00 0HLIJFFUUTR1V:00000003 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 13.5328ms (afa2e885)
+2018-11-26T10:49:43.0244433+02:00 0HLIJFFUUTR1V:00000003 [INF] Request finished in 14.1815ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:49:53.8631235+02:00 0HLIJFFUUTR1U:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Login application/x-www-form-urlencoded 230 (ca22a1cb)
+2018-11-26T10:49:53.8634309+02:00 0HLIJFFUUTR1U:00000004 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T10:49:53.8638896+02:00 0HLIJFFUUTR1U:00000004 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" with arguments (["Eventures.ViewModels.Users.LoginUserViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T10:49:53.8641708+02:00 0HLIJFFUUTR1U:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T10:49:53.8653441+02:00 0HLIJFFUUTR1U:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T10:49:53.8763782+02:00 0HLIJFFUUTR1U:00000004 [WRN] Invalid password for user "0e303de3-a60b-4fd2-b3f4-c79424455d1a". (c2dce6c7)
+2018-11-26T10:49:53.8765232+02:00 0HLIJFFUUTR1U:00000004 [WRN] User "0e303de3-a60b-4fd2-b3f4-c79424455d1a" failed to provide the correct password. (ec8d2479)
+2018-11-26T10:49:53.8766508+02:00 0HLIJFFUUTR1U:00000004 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 12.6739ms. (50a9e262)
+2018-11-26T10:49:53.8767650+02:00 0HLIJFFUUTR1U:00000004 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T10:49:53.8783721+02:00 0HLIJFFUUTR1U:00000004 [INF] Executed ViewResult - view "Login" executed in 1.5845ms. (f66409e9)
+2018-11-26T10:49:53.8784539+02:00 0HLIJFFUUTR1U:00000004 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 14.97ms (afa2e885)
+2018-11-26T10:49:53.8785369+02:00 0HLIJFFUUTR1U:00000004 [INF] Request finished in 15.471ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:50:39.0013556+02:00 0HLIJFFUUTR20:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Login   (ca22a1cb)
+2018-11-26T10:50:39.0018012+02:00 0HLIJFFUUTR20:00000003 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T10:50:39.0020596+02:00 0HLIJFFUUTR20:00000003 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:50:39.0021607+02:00 0HLIJFFUUTR20:00000003 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0165ms. (50a9e262)
+2018-11-26T10:50:39.0022508+02:00 0HLIJFFUUTR20:00000003 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T10:50:39.0038914+02:00 0HLIJFFUUTR20:00000003 [INF] Executed ViewResult - view "Login" executed in 1.6541ms. (f66409e9)
+2018-11-26T10:50:39.0039637+02:00 0HLIJFFUUTR20:00000003 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 2.1044ms (afa2e885)
+2018-11-26T10:50:39.0040329+02:00 0HLIJFFUUTR20:00000003 [INF] Request finished in 2.8005ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:50:39.7513665+02:00 0HLIJFFUUTR1V:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T10:50:39.7532308+02:00 0HLIJFFUUTR1V:00000004 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T10:50:39.7534413+02:00 0HLIJFFUUTR1V:00000004 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:50:39.7536223+02:00 0HLIJFFUUTR1V:00000004 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1331ms. (50a9e262)
+2018-11-26T10:50:39.9699312+02:00 0HLIJFFUUTR1V:00000004 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T10:50:40.0054788+02:00 0HLIJFFUUTR1V:00000004 [INF] Executed ViewResult - view "Register" executed in 251.7845ms. (f66409e9)
+2018-11-26T10:50:40.0055977+02:00 0HLIJFFUUTR1V:00000004 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 252.2799ms (afa2e885)
+2018-11-26T10:50:40.0057371+02:00 0HLIJFFUUTR1V:00000004 [INF] Request finished in 254.4014ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:50:55.1822393+02:00 0HLIJFFUUTR20:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 324 (ca22a1cb)
+2018-11-26T10:50:55.1848932+02:00 0HLIJFFUUTR20:00000004 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T10:50:55.1885290+02:00 0HLIJFFUUTR20:00000004 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T10:50:55.2026438+02:00 0HLIJFFUUTR20:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T10:50:55.2059224+02:00 0HLIJFFUUTR20:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T10:50:55.2084532+02:00 0HLIJFFUUTR20:00000004 [WRN] User "(null)" validation failed: "DuplicateUserName". (5dc28e15)
+2018-11-26T10:50:55.2087668+02:00 0HLIJFFUUTR20:00000004 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 20.09ms. (50a9e262)
+2018-11-26T10:50:55.2088932+02:00 0HLIJFFUUTR20:00000004 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T10:50:55.2139082+02:00 0HLIJFFUUTR20:00000004 [INF] Executed ViewResult - view "Register" executed in 5.0081ms. (f66409e9)
+2018-11-26T10:50:55.2140591+02:00 0HLIJFFUUTR20:00000004 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 29.0852ms (afa2e885)
+2018-11-26T10:50:55.2141721+02:00 0HLIJFFUUTR20:00000004 [INF] Request finished in 32.026ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:51:16.7911311+02:00 0HLIJFFUUTR1V:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44314/   (ca22a1cb)
+2018-11-26T10:51:16.7916940+02:00 0HLIJFFUUTR1V:00000005 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "Eventures.Controllers.HomeController.Index (Eventures)" (a44c0341)
+2018-11-26T10:51:16.7921945+02:00 0HLIJFFUUTR1V:00000005 [INF] Executing action method "Eventures.Controllers.HomeController.Index (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:51:16.7923142+02:00 0HLIJFFUUTR1V:00000005 [INF] Executed action method "Eventures.Controllers.HomeController.Index (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0304ms. (50a9e262)
+2018-11-26T10:51:16.7924363+02:00 0HLIJFFUUTR1V:00000005 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-11-26T10:51:16.7934422+02:00 0HLIJFFUUTR1V:00000005 [INF] Executed ViewResult - view "Index" executed in 1.016ms. (f66409e9)
+2018-11-26T10:51:16.7936555+02:00 0HLIJFFUUTR1V:00000005 [INF] Executed action "Eventures.Controllers.HomeController.Index (Eventures)" in 1.8749ms (afa2e885)
+2018-11-26T10:51:16.7937401+02:00 0HLIJFFUUTR1V:00000005 [INF] Request finished in 2.7591ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T10:51:20.0246156+02:00 0HLIJFFUUTR20:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T10:51:20.0250059+02:00 0HLIJFFUUTR20:00000005 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T10:51:20.0252355+02:00 0HLIJFFUUTR20:00000005 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T10:51:20.0253394+02:00 0HLIJFFUUTR20:00000005 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0075ms. (50a9e262)
+2018-11-26T10:51:20.0254192+02:00 0HLIJFFUUTR20:00000005 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T10:51:20.0272610+02:00 0HLIJFFUUTR20:00000005 [INF] Executed ViewResult - view "Register" executed in 1.8342ms. (f66409e9)
+2018-11-26T10:51:20.0273388+02:00 0HLIJFFUUTR20:00000005 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 2.2885ms (afa2e885)
+2018-11-26T10:51:20.0274139+02:00 0HLIJFFUUTR20:00000005 [INF] Request finished in 2.878ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:00:11.1210415+02:00 0HLIJFFUUTR21:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 325 (ca22a1cb)
+2018-11-26T11:00:11.1215834+02:00 0HLIJFFUUTR21:00000001 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:00:11.1231558+02:00 0HLIJFFUUTR21:00000001 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T11:00:11.1331600+02:00 0HLIJFFUUTR21:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T11:00:11.1488968+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:00:11.1535163+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 4000), @p17='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UniqueCitizenNumber], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);" (0723d8ff)
+2018-11-26T11:00:11.2046139+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2018-11-26T11:00:11.2112166+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-26T11:00:11.2250236+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-11-26T11:00:11.2259441+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-26T11:00:11.2270203+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:00:11.2303909+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-11-26T11:00:11.2359072+02:00 0HLIJFFUUTR21:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UniqueCitizenNumber] = @p15, [UserName] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-26T11:00:11.2369355+02:00 0HLIJFFUUTR21:00000001 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 113.6248ms. (50a9e262)
+2018-11-26T11:00:11.2380381+02:00 0HLIJFFUUTR21:00000001 [INF] Executing RedirectResult, redirecting to "/Users/Login". (d98d540e)
+2018-11-26T11:00:11.2383495+02:00 0HLIJFFUUTR21:00000001 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 116.662ms (afa2e885)
+2018-11-26T11:00:11.2385711+02:00 0HLIJFFUUTR21:00000001 [INF] Request finished in 117.6406ms 302  (791a596a)
+2018-11-26T11:00:11.2453223+02:00 0HLIJFFUUTR21:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Login   (ca22a1cb)
+2018-11-26T11:00:11.2456209+02:00 0HLIJFFUUTR21:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T11:00:11.2458674+02:00 0HLIJFFUUTR21:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:00:11.2459476+02:00 0HLIJFFUUTR21:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0082ms. (50a9e262)
+2018-11-26T11:00:11.2460685+02:00 0HLIJFFUUTR21:00000002 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T11:00:11.2477918+02:00 0HLIJFFUUTR21:00000002 [INF] Executed ViewResult - view "Login" executed in 1.7517ms. (f66409e9)
+2018-11-26T11:00:11.2478606+02:00 0HLIJFFUUTR21:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 2.189ms (afa2e885)
+2018-11-26T11:00:11.2479297+02:00 0HLIJFFUUTR21:00000002 [INF] Request finished in 2.6797ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:00:11.2714820+02:00 0HLIJFFUUTR21:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/reset-css.css   (ca22a1cb)
+2018-11-26T11:00:11.2716365+02:00 0HLIJFFUUTR22:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/bootstrap.min.css   (ca22a1cb)
+2018-11-26T11:00:11.2722082+02:00 0HLIJFFUUTR21:00000003 [INF] The file "/css/reset-css.css" was not modified (f1f8d725)
+2018-11-26T11:00:11.2722047+02:00 0HLIJFFUUTR22:00000001 [INF] The file "/css/bootstrap.min.css" was not modified (f1f8d725)
+2018-11-26T11:00:11.2723169+02:00 0HLIJFFUUTR21:00000003 [INF] Request finished in 1.0994ms 304 text/css (791a596a)
+2018-11-26T11:00:11.2723228+02:00 0HLIJFFUUTR22:00000001 [INF] Request finished in 0.7446ms 304 text/css (791a596a)
+2018-11-26T11:00:11.2776537+02:00 0HLIJFFUUTR22:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/style.css   (ca22a1cb)
+2018-11-26T11:00:11.2780452+02:00 0HLIJFFUUTR22:00000002 [INF] The file "/css/style.css" was not modified (f1f8d725)
+2018-11-26T11:00:11.2781906+02:00 0HLIJFFUUTR22:00000002 [INF] Request finished in 0.7158ms 304 text/css (791a596a)
+2018-11-26T11:00:36.3568477+02:00 0HLIJFFUUTR21:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Login application/x-www-form-urlencoded 229 (ca22a1cb)
+2018-11-26T11:00:36.3571365+02:00 0HLIJFFUUTR21:00000004 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T11:00:36.3577098+02:00 0HLIJFFUUTR21:00000004 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" with arguments (["Eventures.ViewModels.Users.LoginUserViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T11:00:36.3581005+02:00 0HLIJFFUUTR21:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T11:00:36.3616908+02:00 0HLIJFFUUTR21:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:00:36.5690152+02:00 0HLIJFFUUTR21:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-26T11:00:36.6339889+02:00 0HLIJFFUUTR21:00000004 [INF] Executed DbCommand ("8"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-26T11:00:36.6422138+02:00 0HLIJFFUUTR21:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-26T11:00:36.6637391+02:00 0HLIJFFUUTR21:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-26T11:00:36.6828284+02:00 0HLIJFFUUTR21:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-26T11:00:36.6863343+02:00 0HLIJFFUUTR21:00000004 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.RedirectResult" in 328.4482ms. (50a9e262)
+2018-11-26T11:00:36.6871212+02:00 0HLIJFFUUTR21:00000004 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-11-26T11:00:36.6872227+02:00 0HLIJFFUUTR21:00000004 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 330.0245ms (afa2e885)
+2018-11-26T11:00:36.6873389+02:00 0HLIJFFUUTR21:00000004 [INF] Request finished in 330.5168ms 302  (791a596a)
+2018-11-26T11:00:36.6952658+02:00 0HLIJFFUUTR22:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44314/   (ca22a1cb)
+2018-11-26T11:00:36.7028841+02:00 0HLIJFFUUTR22:00000003 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "Eventures.Controllers.HomeController.Index (Eventures)" (a44c0341)
+2018-11-26T11:00:36.7030224+02:00 0HLIJFFUUTR22:00000003 [INF] Executing action method "Eventures.Controllers.HomeController.Index (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:00:36.7031010+02:00 0HLIJFFUUTR22:00000003 [INF] Executed action method "Eventures.Controllers.HomeController.Index (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0138ms. (50a9e262)
+2018-11-26T11:00:36.7032748+02:00 0HLIJFFUUTR22:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-11-26T11:00:36.8489743+02:00 0HLIJFFUUTR22:00000003 [INF] Executed ViewResult - view "Index" executed in 145.6975ms. (f66409e9)
+2018-11-26T11:00:36.8490581+02:00 0HLIJFFUUTR22:00000003 [INF] Executed action "Eventures.Controllers.HomeController.Index (Eventures)" in 146.102ms (afa2e885)
+2018-11-26T11:00:36.8491652+02:00 0HLIJFFUUTR22:00000003 [INF] Request finished in 154.0514ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:15:23.2352546+02:00 0HLIJFFUUTR23:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Logout   (ca22a1cb)
+2018-11-26T11:15:23.2384388+02:00 0HLIJFFUUTR23:00000001 [INF] Route matched with "{action = \"Logout\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Logout (Eventures)" (a44c0341)
+2018-11-26T11:15:23.2386406+02:00 0HLIJFFUUTR23:00000001 [INF] Executing action method "Eventures.Controllers.UsersController.Logout (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:15:23.2522860+02:00 0HLIJFFUUTR23:00000001 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-11-26T11:15:23.2534254+02:00 0HLIJFFUUTR23:00000001 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-11-26T11:15:23.2544632+02:00 0HLIJFFUUTR23:00000001 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-11-26T11:15:23.2545643+02:00 0HLIJFFUUTR23:00000001 [INF] Executed action method "Eventures.Controllers.UsersController.Logout (Eventures)", returned result "Microsoft.AspNetCore.Mvc.RedirectResult" in 15.8265ms. (50a9e262)
+2018-11-26T11:15:23.2547315+02:00 0HLIJFFUUTR23:00000001 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-11-26T11:15:23.2548053+02:00 0HLIJFFUUTR23:00000001 [INF] Executed action "Eventures.Controllers.UsersController.Logout (Eventures)" in 16.2686ms (afa2e885)
+2018-11-26T11:15:23.2548982+02:00 0HLIJFFUUTR23:00000001 [INF] Request finished in 19.7625ms 302  (791a596a)
+2018-11-26T11:15:23.2622621+02:00 0HLIJFFUUTR23:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/   (ca22a1cb)
+2018-11-26T11:15:23.2627240+02:00 0HLIJFFUUTR23:00000002 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "Eventures.Controllers.HomeController.Index (Eventures)" (a44c0341)
+2018-11-26T11:15:23.2628444+02:00 0HLIJFFUUTR23:00000002 [INF] Executing action method "Eventures.Controllers.HomeController.Index (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:15:23.2629136+02:00 0HLIJFFUUTR23:00000002 [INF] Executed action method "Eventures.Controllers.HomeController.Index (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0134ms. (50a9e262)
+2018-11-26T11:15:23.2630752+02:00 0HLIJFFUUTR23:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-11-26T11:15:23.2649707+02:00 0HLIJFFUUTR23:00000002 [INF] Executed ViewResult - view "Index" executed in 1.8627ms. (f66409e9)
+2018-11-26T11:15:23.2653191+02:00 0HLIJFFUUTR23:00000002 [INF] Executed action "Eventures.Controllers.HomeController.Index (Eventures)" in 2.4786ms (afa2e885)
+2018-11-26T11:15:23.2655312+02:00 0HLIJFFUUTR23:00000002 [INF] Request finished in 3.275ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:15:23.2892895+02:00 0HLIJFFUUTR23:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/bootstrap.min.css   (ca22a1cb)
+2018-11-26T11:15:23.2899401+02:00 0HLIJFFUUTR23:00000003 [INF] The file "/css/bootstrap.min.css" was not modified (f1f8d725)
+2018-11-26T11:15:23.2901060+02:00 0HLIJFFUUTR24:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/reset-css.css   (ca22a1cb)
+2018-11-26T11:15:23.2901566+02:00 0HLIJFFUUTR23:00000003 [INF] Request finished in 1.4008ms 304 text/css (791a596a)
+2018-11-26T11:15:23.2903592+02:00 0HLIJFFUUTR24:00000001 [INF] The file "/css/reset-css.css" was not modified (f1f8d725)
+2018-11-26T11:15:23.2904236+02:00 0HLIJFFUUTR24:00000001 [INF] Request finished in 0.3772ms 304 text/css (791a596a)
+2018-11-26T11:15:23.2930386+02:00 0HLIJFFUUTR25:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/style.css   (ca22a1cb)
+2018-11-26T11:15:23.2936285+02:00 0HLIJFFUUTR25:00000001 [INF] The file "/css/style.css" was not modified (f1f8d725)
+2018-11-26T11:15:23.2937671+02:00 0HLIJFFUUTR25:00000001 [INF] Request finished in 1.7548ms 304 text/css (791a596a)
+2018-11-26T11:15:25.3577280+02:00 0HLIJFFUUTR23:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T11:15:25.3580183+02:00 0HLIJFFUUTR23:00000004 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:15:25.3583537+02:00 0HLIJFFUUTR23:00000004 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:15:25.3584466+02:00 0HLIJFFUUTR23:00000004 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0082ms. (50a9e262)
+2018-11-26T11:15:25.3595353+02:00 0HLIJFFUUTR23:00000004 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:15:25.3625315+02:00 0HLIJFFUUTR23:00000004 [INF] Executed ViewResult - view "Register" executed in 3.9525ms. (f66409e9)
+2018-11-26T11:15:25.3626547+02:00 0HLIJFFUUTR23:00000004 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 4.5566ms (afa2e885)
+2018-11-26T11:15:25.3627918+02:00 0HLIJFFUUTR23:00000004 [INF] Request finished in 5.0662ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:15:43.6747878+02:00 0HLIJFFUUTR24:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 317 (ca22a1cb)
+2018-11-26T11:15:43.6752575+02:00 0HLIJFFUUTR24:00000002 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:15:43.6768627+02:00 0HLIJFFUUTR24:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:15:43.6769733+02:00 0HLIJFFUUTR24:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0304ms. (50a9e262)
+2018-11-26T11:15:43.6770977+02:00 0HLIJFFUUTR24:00000002 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:15:43.6793887+02:00 0HLIJFFUUTR24:00000002 [INF] Executed ViewResult - view "Register" executed in 2.3138ms. (f66409e9)
+2018-11-26T11:15:43.6794654+02:00 0HLIJFFUUTR24:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 4.1386ms (afa2e885)
+2018-11-26T11:15:43.6795724+02:00 0HLIJFFUUTR24:00000002 [INF] Request finished in 4.9007ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:21:53.1455261+02:00 0HLIJFFUUTR26:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 318 (ca22a1cb)
+2018-11-26T11:21:53.1458959+02:00 0HLIJFFUUTR26:00000001 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:21:53.1466691+02:00 0HLIJFFUUTR26:00000001 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:21:53.1467951+02:00 0HLIJFFUUTR26:00000001 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0177ms. (50a9e262)
+2018-11-26T11:21:53.1468983+02:00 0HLIJFFUUTR26:00000001 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:21:53.1492390+02:00 0HLIJFFUUTR26:00000001 [INF] Executed ViewResult - view "Register" executed in 2.3407ms. (f66409e9)
+2018-11-26T11:21:53.1493630+02:00 0HLIJFFUUTR26:00000001 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 3.384ms (afa2e885)
+2018-11-26T11:21:53.1494985+02:00 0HLIJFFUUTR26:00000001 [INF] Request finished in 4.1398ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:25:04.5020945+02:00 0HLIJFFUUTR27:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 321 (ca22a1cb)
+2018-11-26T11:25:04.5024995+02:00 0HLIJFFUUTR27:00000001 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:25:04.5030960+02:00 0HLIJFFUUTR27:00000001 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T11:25:04.5141976+02:00 0HLIJFFUUTR27:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T11:25:04.5241516+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:25:04.5277648+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 4000), @p17='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UniqueCitizenNumber], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);" (0723d8ff)
+2018-11-26T11:25:04.5295841+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2018-11-26T11:25:04.5323625+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-26T11:25:04.5378642+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-11-26T11:25:04.5394626+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-26T11:25:04.5417267+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:25:04.5445601+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-11-26T11:25:04.5519599+02:00 0HLIJFFUUTR27:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UniqueCitizenNumber] = @p15, [UserName] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-26T11:25:04.5526948+02:00 0HLIJFFUUTR27:00000001 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 49.4996ms. (50a9e262)
+2018-11-26T11:25:04.5529236+02:00 0HLIJFFUUTR27:00000001 [INF] Executing RedirectResult, redirecting to "/Users/Login". (d98d540e)
+2018-11-26T11:25:04.5529927+02:00 0HLIJFFUUTR27:00000001 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 50.4288ms (afa2e885)
+2018-11-26T11:25:04.5531405+02:00 0HLIJFFUUTR27:00000001 [INF] Request finished in 51.0964ms 302  (791a596a)
+2018-11-26T11:25:04.5613727+02:00 0HLIJFFUUTR27:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Login   (ca22a1cb)
+2018-11-26T11:25:04.5617551+02:00 0HLIJFFUUTR27:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T11:25:04.5620435+02:00 0HLIJFFUUTR27:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:25:04.5621103+02:00 0HLIJFFUUTR27:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0071ms. (50a9e262)
+2018-11-26T11:25:04.5632627+02:00 0HLIJFFUUTR27:00000002 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T11:25:04.5647683+02:00 0HLIJFFUUTR27:00000002 [INF] Executed ViewResult - view "Login" executed in 2.5635ms. (f66409e9)
+2018-11-26T11:25:04.5648521+02:00 0HLIJFFUUTR27:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 3.034ms (afa2e885)
+2018-11-26T11:25:04.5649303+02:00 0HLIJFFUUTR27:00000002 [INF] Request finished in 3.6381ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:32:32.7191504+02:00 0HLIJFFUUTR28:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T11:32:32.7195597+02:00 0HLIJFFUUTR28:00000001 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:32:32.7199615+02:00 0HLIJFFUUTR28:00000001 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:32:32.7200385+02:00 0HLIJFFUUTR28:00000001 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0122ms. (50a9e262)
+2018-11-26T11:32:32.7204028+02:00 0HLIJFFUUTR28:00000001 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:32:32.7240369+02:00 0HLIJFFUUTR28:00000001 [INF] Executed ViewResult - view "Register" executed in 3.8427ms. (f66409e9)
+2018-11-26T11:32:32.7246682+02:00 0HLIJFFUUTR28:00000001 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 4.9868ms (afa2e885)
+2018-11-26T11:32:32.7253486+02:00 0HLIJFFUUTR28:00000001 [INF] Request finished in 5.9883ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:32:32.7522870+02:00 0HLIJFFUUTR28:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/reset-css.css   (ca22a1cb)
+2018-11-26T11:32:32.7529578+02:00 0HLIJFFUUTR28:00000002 [INF] The file "/css/reset-css.css" was not modified (f1f8d725)
+2018-11-26T11:32:32.7531036+02:00 0HLIJFFUUTR28:00000002 [INF] Request finished in 1.0887ms 304 text/css (791a596a)
+2018-11-26T11:32:32.7531214+02:00 0HLIJFFUUTR29:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/bootstrap.min.css   (ca22a1cb)
+2018-11-26T11:32:32.7531309+02:00 0HLIJFFUUTR2A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/style.css   (ca22a1cb)
+2018-11-26T11:32:32.7533770+02:00 0HLIJFFUUTR29:00000001 [INF] The file "/css/bootstrap.min.css" was not modified (f1f8d725)
+2018-11-26T11:32:32.7533774+02:00 0HLIJFFUUTR2A:00000001 [INF] The file "/css/style.css" was not modified (f1f8d725)
+2018-11-26T11:32:32.7534426+02:00 0HLIJFFUUTR2A:00000001 [INF] Request finished in 0.3354ms 304 text/css (791a596a)
+2018-11-26T11:32:32.7534943+02:00 0HLIJFFUUTR29:00000001 [INF] Request finished in 0.335ms 304 text/css (791a596a)
+2018-11-26T11:33:05.8495326+02:00 0HLIJFFUUTR28:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 316 (ca22a1cb)
+2018-11-26T11:33:05.8497854+02:00 0HLIJFFUUTR28:00000003 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:33:05.8507664+02:00 0HLIJFFUUTR28:00000003 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:33:05.8508474+02:00 0HLIJFFUUTR28:00000003 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0134ms. (50a9e262)
+2018-11-26T11:33:05.8509276+02:00 0HLIJFFUUTR28:00000003 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:33:05.8523143+02:00 0HLIJFFUUTR28:00000003 [INF] Executed ViewResult - view "Register" executed in 1.3752ms. (f66409e9)
+2018-11-26T11:33:05.8523810+02:00 0HLIJFFUUTR28:00000003 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 2.5465ms (afa2e885)
+2018-11-26T11:33:05.8524545+02:00 0HLIJFFUUTR28:00000003 [INF] Request finished in 2.9637ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:33:28.3534439+02:00 0HLIJFFUUTR29:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 318 (ca22a1cb)
+2018-11-26T11:33:28.3537335+02:00 0HLIJFFUUTR29:00000002 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:33:28.3544004+02:00 0HLIJFFUUTR29:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:33:28.3544916+02:00 0HLIJFFUUTR29:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0158ms. (50a9e262)
+2018-11-26T11:33:28.3545904+02:00 0HLIJFFUUTR29:00000002 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:33:28.3560462+02:00 0HLIJFFUUTR29:00000002 [INF] Executed ViewResult - view "Register" executed in 1.4664ms. (f66409e9)
+2018-11-26T11:33:28.3561304+02:00 0HLIJFFUUTR29:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 2.3241ms (afa2e885)
+2018-11-26T11:33:28.3562197+02:00 0HLIJFFUUTR29:00000002 [INF] Request finished in 2.8598ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:34:00.7171273+02:00 0HLIJFFUUTR28:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 304 (ca22a1cb)
+2018-11-26T11:34:00.7174533+02:00 0HLIJFFUUTR28:00000004 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:34:00.7186712+02:00 0HLIJFFUUTR28:00000004 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:34:00.7194187+02:00 0HLIJFFUUTR28:00000004 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0762ms. (50a9e262)
+2018-11-26T11:34:00.7196897+02:00 0HLIJFFUUTR28:00000004 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:34:00.7218614+02:00 0HLIJFFUUTR28:00000004 [INF] Executed ViewResult - view "Register" executed in 2.2617ms. (f66409e9)
+2018-11-26T11:34:00.7219483+02:00 0HLIJFFUUTR28:00000004 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 4.4286ms (afa2e885)
+2018-11-26T11:34:00.7220518+02:00 0HLIJFFUUTR28:00000004 [INF] Request finished in 4.9785ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:34:28.7799421+02:00 0HLIJFFUUTR28:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 313 (ca22a1cb)
+2018-11-26T11:34:28.7802566+02:00 0HLIJFFUUTR28:00000005 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:34:28.7809191+02:00 0HLIJFFUUTR28:00000005 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:34:28.7810095+02:00 0HLIJFFUUTR28:00000005 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0161ms. (50a9e262)
+2018-11-26T11:34:28.7810996+02:00 0HLIJFFUUTR28:00000005 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:34:28.7830619+02:00 0HLIJFFUUTR28:00000005 [INF] Executed ViewResult - view "Register" executed in 1.8484ms. (f66409e9)
+2018-11-26T11:34:28.7831524+02:00 0HLIJFFUUTR28:00000005 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 2.8333ms (afa2e885)
+2018-11-26T11:34:28.7832539+02:00 0HLIJFFUUTR28:00000005 [INF] Request finished in 3.3805ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:34:38.8797114+02:00 0HLIJFFUUTR28:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 325 (ca22a1cb)
+2018-11-26T11:34:38.8799923+02:00 0HLIJFFUUTR28:00000006 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:34:38.8806137+02:00 0HLIJFFUUTR28:00000006 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T11:34:38.8903642+02:00 0HLIJFFUUTR28:00000006 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T11:34:38.8983626+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:34:38.9032748+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 4000), @p17='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UniqueCitizenNumber], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);" (0723d8ff)
+2018-11-26T11:34:38.9059482+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2018-11-26T11:34:38.9091612+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-26T11:34:38.9127508+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-11-26T11:34:38.9138040+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-26T11:34:38.9148316+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:34:38.9177171+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-11-26T11:34:38.9222066+02:00 0HLIJFFUUTR28:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UniqueCitizenNumber] = @p15, [UserName] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-26T11:34:38.9241490+02:00 0HLIJFFUUTR28:00000006 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 43.2205ms. (50a9e262)
+2018-11-26T11:34:38.9244809+02:00 0HLIJFFUUTR28:00000006 [INF] Executing RedirectResult, redirecting to "/Users/Login". (d98d540e)
+2018-11-26T11:34:38.9245883+02:00 0HLIJFFUUTR28:00000006 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 44.5076ms (afa2e885)
+2018-11-26T11:34:38.9247681+02:00 0HLIJFFUUTR28:00000006 [INF] Request finished in 45.0792ms 302  (791a596a)
+2018-11-26T11:34:38.9320862+02:00 0HLIJFFUUTR28:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Login   (ca22a1cb)
+2018-11-26T11:34:38.9323987+02:00 0HLIJFFUUTR28:00000007 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T11:34:38.9326283+02:00 0HLIJFFUUTR28:00000007 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:34:38.9326986+02:00 0HLIJFFUUTR28:00000007 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0071ms. (50a9e262)
+2018-11-26T11:34:38.9327745+02:00 0HLIJFFUUTR28:00000007 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T11:34:38.9339770+02:00 0HLIJFFUUTR28:00000007 [INF] Executed ViewResult - view "Login" executed in 1.2088ms. (f66409e9)
+2018-11-26T11:34:38.9340604+02:00 0HLIJFFUUTR28:00000007 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 1.5999ms (afa2e885)
+2018-11-26T11:34:38.9341256+02:00 0HLIJFFUUTR28:00000007 [INF] Request finished in 2.1029ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:35:22.7581774+02:00 0HLIJFFUUTR28:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T11:35:22.7585136+02:00 0HLIJFFUUTR28:00000008 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:35:22.7589221+02:00 0HLIJFFUUTR28:00000008 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:35:22.7589963+02:00 0HLIJFFUUTR28:00000008 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.009ms. (50a9e262)
+2018-11-26T11:35:22.7590967+02:00 0HLIJFFUUTR28:00000008 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:35:22.7610811+02:00 0HLIJFFUUTR28:00000008 [INF] Executed ViewResult - view "Register" executed in 2.0009ms. (f66409e9)
+2018-11-26T11:35:22.7611467+02:00 0HLIJFFUUTR28:00000008 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 2.5769ms (afa2e885)
+2018-11-26T11:35:22.7612340+02:00 0HLIJFFUUTR28:00000008 [INF] Request finished in 3.1838ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:44:35.4814680+02:00 0HLIJGF36IK1F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/   (ca22a1cb)
+2018-11-26T11:44:35.6146140+02:00 0HLIJGF36IK1F:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "Eventures.Controllers.HomeController.Index (Eventures)" (a44c0341)
+2018-11-26T11:44:35.6280848+02:00 0HLIJGF36IK1F:00000001 [INF] Executing action method "Eventures.Controllers.HomeController.Index (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:44:35.6317565+02:00 0HLIJGF36IK1F:00000001 [INF] Executed action method "Eventures.Controllers.HomeController.Index (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3437ms. (50a9e262)
+2018-11-26T11:44:37.1916772+02:00 0HLIJGF36IK1F:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-11-26T11:44:37.7123233+02:00 0HLIJGF36IK1F:00000001 [INF] Executed ViewResult - view "Index" executed in 2070.3837ms. (f66409e9)
+2018-11-26T11:44:37.7126873+02:00 0HLIJGF36IK1F:00000001 [INF] Executed action "Eventures.Controllers.HomeController.Index (Eventures)" in 2097.6114ms (afa2e885)
+2018-11-26T11:44:37.7227380+02:00 0HLIJGF36IK1F:00000001 [INF] Request finished in 2248.1176ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:44:44.1080167+02:00 0HLIJGF36IK1F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T11:44:44.1150748+02:00 0HLIJGF36IK1F:00000002 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:44:44.1419734+02:00 0HLIJGF36IK1F:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:44:44.1422618+02:00 0HLIJGF36IK1F:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1465ms. (50a9e262)
+2018-11-26T11:44:44.4267615+02:00 0HLIJGF36IK1F:00000002 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:44:44.4796906+02:00 0HLIJGF36IK1F:00000002 [INF] Executed ViewResult - view "Register" executed in 337.1143ms. (f66409e9)
+2018-11-26T11:44:44.4798403+02:00 0HLIJGF36IK1F:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 364.6552ms (afa2e885)
+2018-11-26T11:44:44.4811973+02:00 0HLIJGF36IK1F:00000002 [INF] Request finished in 373.2387ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:45:30.8832341+02:00 0HLIJGF36IK1F:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 336 (ca22a1cb)
+2018-11-26T11:45:30.9028731+02:00 0HLIJGF36IK1F:00000003 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:45:30.9565256+02:00 0HLIJGF36IK1F:00000003 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:45:30.9569396+02:00 0HLIJGF36IK1F:00000003 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3393ms. (50a9e262)
+2018-11-26T11:45:30.9570917+02:00 0HLIJGF36IK1F:00000003 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:45:30.9604153+02:00 0HLIJGF36IK1F:00000003 [INF] Executed ViewResult - view "Register" executed in 3.3351ms. (f66409e9)
+2018-11-26T11:45:30.9605998+02:00 0HLIJGF36IK1F:00000003 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 57.6588ms (afa2e885)
+2018-11-26T11:45:30.9608092+02:00 0HLIJGF36IK1F:00000003 [INF] Request finished in 77.6141ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:51:46.3105861+02:00 0HLIJGF36IK1G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/   (ca22a1cb)
+2018-11-26T11:51:46.3111778+02:00 0HLIJGF36IK1G:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "Eventures.Controllers.HomeController.Index (Eventures)" (a44c0341)
+2018-11-26T11:51:46.3113370+02:00 0HLIJGF36IK1G:00000001 [INF] Executing action method "Eventures.Controllers.HomeController.Index (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:51:46.3114868+02:00 0HLIJGF36IK1G:00000001 [INF] Executed action method "Eventures.Controllers.HomeController.Index (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0256ms. (50a9e262)
+2018-11-26T11:51:46.3117037+02:00 0HLIJGF36IK1G:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-11-26T11:51:46.3127213+02:00 0HLIJGF36IK1G:00000001 [INF] Executed ViewResult - view "Index" executed in 1.0599ms. (f66409e9)
+2018-11-26T11:51:46.3128992+02:00 0HLIJGF36IK1G:00000001 [INF] Executed action "Eventures.Controllers.HomeController.Index (Eventures)" in 1.6355ms (afa2e885)
+2018-11-26T11:51:46.3130133+02:00 0HLIJGF36IK1G:00000001 [INF] Request finished in 2.5406ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:51:46.3523374+02:00 0HLIJGF36IK1G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/reset-css.css   (ca22a1cb)
+2018-11-26T11:51:46.3881899+02:00 0HLIJGF36IK1G:00000002 [INF] The file "/css/reset-css.css" was not modified (f1f8d725)
+2018-11-26T11:51:46.3937062+02:00 0HLIJGF36IK1G:00000002 [INF] Request finished in 41.5403ms 304 text/css (791a596a)
+2018-11-26T11:51:46.3963887+02:00 0HLIJGF36IK1H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/style.css   (ca22a1cb)
+2018-11-26T11:51:46.3972293+02:00 0HLIJGF36IK1H:00000001 [INF] The file "/css/style.css" was not modified (f1f8d725)
+2018-11-26T11:51:46.3973257+02:00 0HLIJGF36IK1G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44314/css/bootstrap.min.css   (ca22a1cb)
+2018-11-26T11:51:46.3974924+02:00 0HLIJGF36IK1H:00000001 [INF] Request finished in 1.3657ms 304 text/css (791a596a)
+2018-11-26T11:51:46.3977201+02:00 0HLIJGF36IK1G:00000003 [INF] The file "/css/bootstrap.min.css" was not modified (f1f8d725)
+2018-11-26T11:51:46.3978461+02:00 0HLIJGF36IK1G:00000003 [INF] Request finished in 0.5562ms 304 text/css (791a596a)
+2018-11-26T11:51:51.9756485+02:00 0HLIJGF36IK1H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Register   (ca22a1cb)
+2018-11-26T11:51:51.9760542+02:00 0HLIJGF36IK1H:00000002 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:51:51.9764544+02:00 0HLIJGF36IK1H:00000002 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:51:51.9765524+02:00 0HLIJGF36IK1H:00000002 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.015ms. (50a9e262)
+2018-11-26T11:51:51.9766492+02:00 0HLIJGF36IK1H:00000002 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:51:51.9795636+02:00 0HLIJGF36IK1H:00000002 [INF] Executed ViewResult - view "Register" executed in 2.8946ms. (f66409e9)
+2018-11-26T11:51:51.9796560+02:00 0HLIJGF36IK1H:00000002 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 3.4907ms (afa2e885)
+2018-11-26T11:51:51.9798488+02:00 0HLIJGF36IK1H:00000002 [INF] Request finished in 4.2251ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:52:47.4859674+02:00 0HLIJGF36IK1H:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 321 (ca22a1cb)
+2018-11-26T11:52:47.4865425+02:00 0HLIJGF36IK1H:00000003 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:52:47.4892539+02:00 0HLIJGF36IK1H:00000003 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:52:47.4893834+02:00 0HLIJGF36IK1H:00000003 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0237ms. (50a9e262)
+2018-11-26T11:52:47.4895027+02:00 0HLIJGF36IK1H:00000003 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:52:47.4910395+02:00 0HLIJGF36IK1H:00000003 [INF] Executed ViewResult - view "Register" executed in 1.5537ms. (f66409e9)
+2018-11-26T11:52:47.4911837+02:00 0HLIJGF36IK1H:00000003 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 4.5677ms (afa2e885)
+2018-11-26T11:52:47.4912718+02:00 0HLIJGF36IK1H:00000003 [INF] Request finished in 5.3752ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:53:28.6414438+02:00 0HLIJGF36IK1H:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Register application/x-www-form-urlencoded 298 (ca22a1cb)
+2018-11-26T11:53:28.6417121+02:00 0HLIJGF36IK1H:00000004 [INF] Route matched with "{action = \"Register\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Register (Eventures)" (a44c0341)
+2018-11-26T11:53:28.6424220+02:00 0HLIJGF36IK1H:00000004 [INF] Executing action method "Eventures.Controllers.UsersController.Register (Eventures)" with arguments (["Eventures.ViewModels.Users.RegisterViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-11-26T11:53:28.6425026+02:00 0HLIJGF36IK1H:00000004 [INF] Executed action method "Eventures.Controllers.UsersController.Register (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0146ms. (50a9e262)
+2018-11-26T11:53:28.6426211+02:00 0HLIJGF36IK1H:00000004 [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2018-11-26T11:53:28.6441503+02:00 0HLIJGF36IK1H:00000004 [INF] Executed ViewResult - view "Register" executed in 1.5628ms. (f66409e9)
+2018-11-26T11:53:28.6442270+02:00 0HLIJGF36IK1H:00000004 [INF] Executed action "Eventures.Controllers.UsersController.Register (Eventures)" in 2.4525ms (afa2e885)
+2018-11-26T11:53:28.6443052+02:00 0HLIJGF36IK1H:00000004 [INF] Request finished in 2.9044ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:54:21.1810046+02:00 0HLIJGF36IK1H:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44314/   (ca22a1cb)
+2018-11-26T11:54:21.1815807+02:00 0HLIJGF36IK1H:00000005 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "Eventures.Controllers.HomeController.Index (Eventures)" (a44c0341)
+2018-11-26T11:54:21.1818462+02:00 0HLIJGF36IK1H:00000005 [INF] Executing action method "Eventures.Controllers.HomeController.Index (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:54:21.1819568+02:00 0HLIJGF36IK1H:00000005 [INF] Executed action method "Eventures.Controllers.HomeController.Index (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0126ms. (50a9e262)
+2018-11-26T11:54:21.1823495+02:00 0HLIJGF36IK1H:00000005 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-11-26T11:54:21.1839893+02:00 0HLIJGF36IK1H:00000005 [INF] Executed ViewResult - view "Index" executed in 1.8255ms. (f66409e9)
+2018-11-26T11:54:21.1840723+02:00 0HLIJGF36IK1H:00000005 [INF] Executed action "Eventures.Controllers.HomeController.Index (Eventures)" in 2.4355ms (afa2e885)
+2018-11-26T11:54:21.1841738+02:00 0HLIJGF36IK1H:00000005 [INF] Request finished in 3.4362ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:54:28.8209589+02:00 0HLIJGF36IK1H:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44314/Users/Login   (ca22a1cb)
+2018-11-26T11:54:28.8225360+02:00 0HLIJGF36IK1H:00000006 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T11:54:28.8227980+02:00 0HLIJGF36IK1H:00000006 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" - Validation state: Valid (dad538d7)
+2018-11-26T11:54:28.8230342+02:00 0HLIJGF36IK1H:00000006 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1576ms. (50a9e262)
+2018-11-26T11:54:29.0181872+02:00 0HLIJGF36IK1H:00000006 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T11:54:29.0455622+02:00 0HLIJGF36IK1H:00000006 [INF] Executed ViewResult - view "Login" executed in 222.4184ms. (f66409e9)
+2018-11-26T11:54:29.0456369+02:00 0HLIJGF36IK1H:00000006 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 223.058ms (afa2e885)
+2018-11-26T11:54:29.0457167+02:00 0HLIJGF36IK1H:00000006 [INF] Request finished in 224.869ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:54:40.5515748+02:00 0HLIJGF36IK1H:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Login application/x-www-form-urlencoded 230 (ca22a1cb)
+2018-11-26T11:54:40.5536943+02:00 0HLIJGF36IK1H:00000007 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T11:54:40.5571875+02:00 0HLIJGF36IK1H:00000007 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" with arguments (["Eventures.ViewModels.Users.LoginUserViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T11:54:40.5723503+02:00 0HLIJGF36IK1H:00000007 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T11:54:40.7200259+02:00 0HLIJGF36IK1H:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:54:40.8724948+02:00 0HLIJGF36IK1H:00000007 [WRN] Invalid password for user "0e303de3-a60b-4fd2-b3f4-c79424455d1a". (c2dce6c7)
+2018-11-26T11:54:40.8729167+02:00 0HLIJGF36IK1H:00000007 [WRN] User "0e303de3-a60b-4fd2-b3f4-c79424455d1a" failed to provide the correct password. (ec8d2479)
+2018-11-26T11:54:40.8737934+02:00 0HLIJGF36IK1H:00000007 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 316.4423ms. (50a9e262)
+2018-11-26T11:54:40.8739190+02:00 0HLIJGF36IK1H:00000007 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T11:54:40.8756074+02:00 0HLIJGF36IK1H:00000007 [INF] Executed ViewResult - view "Login" executed in 1.6912ms. (f66409e9)
+2018-11-26T11:54:40.8756833+02:00 0HLIJGF36IK1H:00000007 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 321.9143ms (afa2e885)
+2018-11-26T11:54:40.8761013+02:00 0HLIJGF36IK1H:00000007 [INF] Request finished in 324.5731ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:54:51.9495737+02:00 0HLIJGF36IK1H:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Login application/x-www-form-urlencoded 230 (ca22a1cb)
+2018-11-26T11:54:51.9499786+02:00 0HLIJGF36IK1H:00000008 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T11:54:51.9507398+02:00 0HLIJGF36IK1H:00000008 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" with arguments (["Eventures.ViewModels.Users.LoginUserViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T11:54:51.9515241+02:00 0HLIJGF36IK1H:00000008 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T11:54:51.9637022+02:00 0HLIJGF36IK1H:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:54:51.9731265+02:00 0HLIJGF36IK1H:00000008 [WRN] Invalid password for user "0e303de3-a60b-4fd2-b3f4-c79424455d1a". (c2dce6c7)
+2018-11-26T11:54:51.9732212+02:00 0HLIJGF36IK1H:00000008 [WRN] User "0e303de3-a60b-4fd2-b3f4-c79424455d1a" failed to provide the correct password. (ec8d2479)
+2018-11-26T11:54:51.9733500+02:00 0HLIJGF36IK1H:00000008 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 22.5189ms. (50a9e262)
+2018-11-26T11:54:51.9734721+02:00 0HLIJGF36IK1H:00000008 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T11:54:51.9750421+02:00 0HLIJGF36IK1H:00000008 [INF] Executed ViewResult - view "Login" executed in 1.5691ms. (f66409e9)
+2018-11-26T11:54:51.9751140+02:00 0HLIJGF36IK1H:00000008 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 25.0311ms (afa2e885)
+2018-11-26T11:54:51.9752681+02:00 0HLIJGF36IK1H:00000008 [INF] Request finished in 25.7461ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-26T11:54:55.0891852+02:00 0HLIJGF36IK1H:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:44314/Users/Login application/x-www-form-urlencoded 230 (ca22a1cb)
+2018-11-26T11:54:55.0894772+02:00 0HLIJGF36IK1H:00000009 [INF] Route matched with "{action = \"Login\", controller = \"Users\"}". Executing action "Eventures.Controllers.UsersController.Login (Eventures)" (a44c0341)
+2018-11-26T11:54:55.0899994+02:00 0HLIJGF36IK1H:00000009 [INF] Executing action method "Eventures.Controllers.UsersController.Login (Eventures)" with arguments (["Eventures.ViewModels.Users.LoginUserViewModel"]) - Validation state: Valid (4e3479ed)
+2018-11-26T11:54:55.0903167+02:00 0HLIJGF36IK1H:00000009 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-11-26T11:54:55.0912530+02:00 0HLIJGF36IK1H:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UniqueCitizenNumber], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-26T11:54:55.1031072+02:00 0HLIJGF36IK1H:00000009 [WRN] Invalid password for user "0e303de3-a60b-4fd2-b3f4-c79424455d1a". (c2dce6c7)
+2018-11-26T11:54:55.1031973+02:00 0HLIJGF36IK1H:00000009 [WRN] User "0e303de3-a60b-4fd2-b3f4-c79424455d1a" failed to provide the correct password. (ec8d2479)
+2018-11-26T11:54:55.1033735+02:00 0HLIJGF36IK1H:00000009 [INF] Executed action method "Eventures.Controllers.UsersController.Login (Eventures)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 13.2819ms. (50a9e262)
+2018-11-26T11:54:55.1034861+02:00 0HLIJGF36IK1H:00000009 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-11-26T11:54:55.1051465+02:00 0HLIJGF36IK1H:00000009 [INF] Executed ViewResult - view "Login" executed in 1.6663ms. (f66409e9)
+2018-11-26T11:54:55.1052177+02:00 0HLIJGF36IK1H:00000009 [INF] Executed action "Eventures.Controllers.UsersController.Login (Eventures)" in 15.644ms (afa2e885)
+2018-11-26T11:54:55.1053073+02:00 0HLIJGF36IK1H:00000009 [INF] Request finished in 16.1524ms 200 text/html; charset=utf-8 (791a596a)

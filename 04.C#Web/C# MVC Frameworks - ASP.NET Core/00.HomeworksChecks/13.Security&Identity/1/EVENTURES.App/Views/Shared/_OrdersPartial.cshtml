@@ -1,0 +1,21 @@
+@model System.Collections.Generic.IEnumerable<EVENTURES.App.ViewModels.OrderViewModel>
+
+@if (Model == null)
+{
+    <h1></h1>
+}
+else
+{
+    int counter = 1;
+    @foreach (var order in Model)
+    {
+        <tr class="row center-block text-center">
+            <th class="col-md-2">@counter</th>
+            <td class="col-md-2">@order.Event.Name</td>
+            <td class="col-md-4">@order.Customer.FirstName</td>
+            <td class="col-md-4">@order.OrderedOn</td>
+        </tr>
+
+        counter += 1;
+    }
+}

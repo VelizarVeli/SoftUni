@@ -1,0 +1,30 @@
+﻿.bg-eventures {
+    background-color: #AFEEEE;
+}
+
+.text-eventures {
+    color: #AFEEEE;
+}
+
+.hr-2 {
+   height: 2px; 
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #AFEEEE;
+    text-align: center;
+}
+
+.pt {
+    margin: 30px;
+}
+
+.padding {
+    padding: 150%;
+}
+
+

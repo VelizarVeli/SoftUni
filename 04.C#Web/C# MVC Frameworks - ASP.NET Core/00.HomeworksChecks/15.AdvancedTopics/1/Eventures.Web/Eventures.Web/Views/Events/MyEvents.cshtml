@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Eventures.Web.ViewModels.Events.MyEventViewModel>
+
+<h1 class="text-center">My Events</h1>
+<div class="container-fluid app-sizing">
+    <hr class="hr-3 eventures-bg-color" />
+    <table class="table mx-auto table-hover">
+        <thead class="font-weight-bold">
+            <tr class="row">
+                <th class="col-md-1">#</th>
+                <th class="col-md-3">Name</th>
+                <th class="col-md-3">Start</th>
+                <th class="col-md-3">End</th>
+                <th class="col-md-2">Tickets</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int counter = 1;
+            }
+
+            @foreach (var eventure in Model)
+            {
+                <tr class="row">
+                    <th class="col-md-1">@(counter++)</th>
+                    <td class="col-md-3">@eventure.Name</td>
+                    <td class="col-md-3">@eventure.Start</td>
+                    <td class="col-md-3">@eventure.End</td>
+                    <td class="col-md-2">@eventure.Tickets</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr class="hr-3 eventures-bg-color" />
+</div>

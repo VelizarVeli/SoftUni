@@ -1,0 +1,68 @@
+﻿@model IPagedList<EventWebApp.Models.Events.EventViewModel>
+
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@using X.PagedList.Mvc.Common;
+
+@{
+    ViewData["Title"] = "All Events";
+    ViewData["Error"] = TempData["Error"];
+}
+
+<h1 class="text-center">All Events</h1>
+@if (ViewData["Error"] != null)
+{
+    <h3 style="color:red">@ViewData["Error"]</h3>
+}
+<hr class="chushka-bg-color w-75 hr-2" />
+<div class="container d-flex justify-content-center w-75">
+    <!-- output a paging control that lets the user navigation to the previous page, next page, etc -->
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("All", new { page }), new PagedListRenderOptions
+{
+    LiElementClasses = new string[] { "page-item" },
+    PageClasses = new string[] { "page-link" }})
+</div>
+
+<hr class="chushka-bg-color w-75 hr-2" />
+<div class="container d-flex justify-content-center w-75">
+
+    <table class="table table-hover">
+        <thead>
+            <tr class="row">
+                <th class="col-md-1">#</th>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-2">Start</th>
+                <th class="col-md-2">End</th>
+                <th class="col-md-5">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var index = 0; index < Model.Count; index++)
+            {
+                var evento = Model[index];
+                var realIndex = index + 1 + (Model.PageNumber - 1) * Model.PageSize;
+                <tr class="row">
+                    <th class="col-md-1">@realIndex</th>
+                    <td class="col-md-2">@evento.Name</td>
+                    <td class="col-md-2">@evento.Start.ToString("dd-MMM-yy hh:mm:ss")</td>
+                    <td class="col-md-2">@evento.End.ToString("dd-MMM-yy hh:mm:ss")</td>
+                    <td class="col-md-5">
+                        <div class="row">
+                            <form class="mx-auto justify-content-center d-flex" asp-controller="Orders" asp-action="Create">
+                                <input type="text" name="@(nameof(evento.Order.EventId))" value="@evento.Order.EventId" hidden />
+                                <label id="TicketsCount" for="@(nameof(evento.Order.TicketsCount))"> Tickets </label>
+                                <input type="number" id="TicketsCount" name="@(nameof(evento.Order.TicketsCount))" />
+                                <button type="submit" class="btn chushka-bg-color">Order</button>
+                                <br />
+                            </form>
+                        </div>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+<hr class="chushka-bg-color w-75 hr-2" />
+

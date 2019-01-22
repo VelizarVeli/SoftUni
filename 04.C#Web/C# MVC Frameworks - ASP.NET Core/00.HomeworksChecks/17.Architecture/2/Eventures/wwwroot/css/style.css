@@ -1,0 +1,52 @@
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: black;
+}
+
+.half-width {
+    width: 50%;
+}
+
+textarea {
+    resize: none;
+}
+
+.eventures-bg-color {
+    background-color: #AFEEEE;
+}
+
+.nav-link-dark {
+    color: black
+}
+
+.hr-2 {
+   height: 2px;
+}
+
+.hr-1 {
+    height: 1px;
+}
+
+.a-link {
+    color: blue
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: #DC143C;
+    color: #F8F8FF;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border: 0;
+    width: 100%;
+}
+
+/*.product {*/
+	/*word-wrap: break-word;*/
+/*}*/

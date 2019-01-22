@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>iRunes @Model.PageTitle</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/site.css" />
+</head>
+<body onload="authenticationCheck(@Model.IsAuthenticated)">
+    <header role="banner">
+        <nav class="navbar navbar-expand-sm navbar-dark p-0 bg-success" role="navigation">
+            <a class="navbar-brand ml-2 mr-auto pt-auto pb-auto" href="/"><img src="/iRunes.ico" alt="iRunes" /></a>
+            <button class="navbar-toggler ml-auto mr-1" type="button" id="navbar-toggler" data-toggle="collapse" data-target="#nav-list" aria-controls="#nav-list" aria-expanded="false" aria-label="Toggle navigation" role="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-list">
+                <ul class="navbar-nav mt-1 mr-auto mb-1 ml-1">
+                    <li class="nav-item">
+                        <a class="nav-link ml-1 mr-1 pr-1 pl-1" href="/Home/Index"><i class="fa fa-home fa-sm"></i> Home</a>
+                    </li>
+                    <li class="nav-item" id="anchorAlbums">
+                        <a class="nav-link ml-1 mr-1 pr-1 pl-1" href="/Albums/All"><i class="fa fa-compact-disc fa-sm"></i> Albums</a>
+                    </li>
+                    <li class="nav-item" id="anchorLogin">
+                        <a class="nav-link ml-1 mr-1 pr-1 pl-1" href="/Users/Login"><i class="fa fa-user fa-sm"></i> Login</a>
+                    </li>
+                    <li class="nav-item" id="anchorLogout">
+                        <a class="nav-link ml-1 mr-1 pr-1 pl-1" href="/Users/Logout"><i class="fa fa-sign-out-alt fa-sm"></i> Logout</a>
+                    </li>
+                    <li class="nav-item" id="anchorRegister">
+                        <a class="nav-link ml-1 mr-1 pr-1 pl-1" href="/Users/Register"><i class="fa fa-pen fa-sm"></i> Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr class="hr-success bg-success" />
+    <main class="container container-fluid col-sm-12 p-0" role="main">
+        @RenderError
+        @RenderBody
+    </main>
+    <hr class="hr-success bg-success" />
+    <footer class="footer" role="contentinfo">
+        <div class="container container-fluid text-center">
+            <span class="text-muted credit">
+                <b>CopyRight&nbsp;&copy;&nbsp;SoftUni. All&nbsp;rights&nbsp;reserved.</b>
+            </span>
+        </div>
+    </footer>
+    <script src="/site.js" type="text/javascript" charset="utf-8" async></script>
+    <script src="/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="/popper.min.js" type="text/javascript"></script>
+    <script src="/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿@model EventuresWebApp.Web.ViewModels.Accounts.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1 class="text-center">Register</h1>
+<hr class="eventures-bg-color half-width hr-3" />
+<form class="mx-auto half-width" method="post" asp-controller="Accounts" asp-action="Register">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="label" asp-for="Username"></label>
+                    <input class="form-control" asp-for="Username" placeholder="Username...">
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" asp-for="Password"></label>
+                    <input class="form-control" asp-for="Password" placeholder="Password...">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="label" asp-for="Email"></label>
+                    <input class="form-control" asp-for="Email" placeholder="Email...">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" asp-for="ConfirmPassword"></label>
+                    <input class="form-control" asp-for="ConfirmPassword" placeholder="Confirm Password...">
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <hr class="eventures-bg-color hr-3" />
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="label" asp-for="FirstName"></label>
+                    <input class="form-control" asp-for="FirstName" placeholder="First Name...">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="label" asp-for="LastName"></label>
+                    <input class="form-control" asp-for="LastName" placeholder="Last Name...">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="label" asp-for="UniqueCitizenNumber"></label>
+            <input class="form-control" asp-for="UniqueCitizenNumber" placeholder="Unique citizen number...">
+            <span asp-validation-for="UniqueCitizenNumber" class="text-danger"></span>
+        </div>
+        <hr class="eventures-bg-color hr-3" />
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn eventures-bg-color">Register</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
+

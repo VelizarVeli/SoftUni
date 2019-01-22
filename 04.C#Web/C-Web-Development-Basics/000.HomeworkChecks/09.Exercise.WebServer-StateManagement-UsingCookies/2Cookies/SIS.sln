@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.Http", "SIS.Http\SIS.Http.csproj", "{8BA1221C-2EC5-4058-8BB2-2614FA2A750A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.WebServer", "SIS.WebServer\SIS.WebServer.csproj", "{5D8F0A72-0B20-4854-A09B-536635763A34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.Demo", "SIS.Demo\SIS.Demo.csproj", "{270ABEEC-A81E-4F27-93AF-521A1A5A8867}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BA1221C-2EC5-4058-8BB2-2614FA2A750A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA1221C-2EC5-4058-8BB2-2614FA2A750A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA1221C-2EC5-4058-8BB2-2614FA2A750A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA1221C-2EC5-4058-8BB2-2614FA2A750A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D8F0A72-0B20-4854-A09B-536635763A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8F0A72-0B20-4854-A09B-536635763A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8F0A72-0B20-4854-A09B-536635763A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8F0A72-0B20-4854-A09B-536635763A34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{270ABEEC-A81E-4F27-93AF-521A1A5A8867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270ABEEC-A81E-4F27-93AF-521A1A5A8867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270ABEEC-A81E-4F27-93AF-521A1A5A8867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270ABEEC-A81E-4F27-93AF-521A1A5A8867}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CC1D53A-3B92-49CB-B7F4-5023A276566A}
+	EndGlobalSection
+EndGlobal

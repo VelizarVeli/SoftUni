@@ -1,0 +1,54 @@
+﻿@page
+@model RegisterModel
+
+<h1 class="text-center">Register</h1>
+<hr class="hr-2 eventures-bg-color half-width" />
+
+<form class="mx-auto half-width" method="post">
+    <div class="form-row">
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Input.Username" class="font-weight-bold">Username</label>
+            <input asp-for="Input.Username" class="form-control" placeholder="Username...">
+            <span asp-validation-for="Input.Username" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Input.Email" class="font-weight-bold">Email</label>
+            <input asp-for="Input.Email" class="form-control" placeholder="Email...">
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Input.Password" class="font-weight-bold">Password</label>
+            <input asp-for="Input.Password" type="password" class="form-control" placeholder="Password...">
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Input.ConfirmPassword" class="font-weight-bold">Confirm Password</label>
+            <input asp-for="Input.ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password...">
+            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+    </div>
+    <hr class="hr-2 eventures-bg-color" />
+    <div class="form-row">
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Input.FirstName" class="font-weight-bold">First Name</label>
+            <input asp-for="Input.FirstName" class="form-control" placeholder="First Name...">
+            <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Input.LastName" class="font-weight-bold">Last Name</label>
+            <input asp-for="Input.LastName" class="form-control" placeholder="Last Name...">
+            <span asp-validation-for="Input.LastName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group text-center">
+        <label asp-for="Input.UCN" class="font-weight-bold">UCN</label>
+        <input asp-for="Input.UCN" class="form-control" placeholder="UCN...">
+        <span asp-validation-for="Input.UCN" class="text-danger"></span>
+    </div>
+    <hr class="hr-2 eventures-bg-color" />
+    <div class="button-holder d-flex justify-content-center">
+        <button type="submit" class="btn eventures-bg-color">Register</button>
+    </div>
+</form>

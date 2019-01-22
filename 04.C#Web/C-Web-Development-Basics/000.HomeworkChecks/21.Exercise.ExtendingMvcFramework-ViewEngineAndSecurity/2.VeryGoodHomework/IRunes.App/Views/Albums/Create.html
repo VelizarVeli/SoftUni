@@ -1,0 +1,33 @@
+﻿<div class="container col-sm-6">
+    <h1 class="text-center text-success">Create&nbsp;Album</h1>
+    <hr class="hr-success bg-success" />
+    <form action="/Albums/Create" method="post" accept-charset="utf-8" id="formAlCreate" name="formAlbumCreate" role="form">
+        <fieldset class="form-group">
+            <div class="form-group">
+                <label for="artist"><b>Artist:</b></label>
+                <input class="form-control" type="text" id="artist" name="Artist" required />
+            </div>
+            <div class="form-group">
+                <label for="title"><b>Title:</b></label>
+                <input class="form-control" type="text" id="title" name="AlbumTitle" required />
+            </div>
+            <div class="form-group">
+                <label for="genre"><b>Genre:</b></label>
+                <select class="form-control" id="genre" name="Genre">@Model.Collection.MusicGenres(@Item)</select>
+            </div>
+            <div class="form-group">
+                <label for="coverArt"><b>Cover&nbsp;Art&nbsp;(URL):</b></label>
+                <input class="form-control" type="text" id="coverArt" name="CoverArt" />
+            </div>
+            <hr class="hr-success bg-success mt-5 mb-4" />
+            <div class="form-group row mb-4">
+                <div class="col-sm-6 mb-1 text-center">
+                    <button type="submit" class="btn btn-success">Create</button>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <a class="btn btn-success" href="/Albums/All">Back&nbsp;To&nbsp;All</a>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

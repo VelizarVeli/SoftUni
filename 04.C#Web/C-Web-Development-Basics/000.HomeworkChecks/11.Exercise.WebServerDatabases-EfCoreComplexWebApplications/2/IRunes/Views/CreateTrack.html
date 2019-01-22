@@ -1,0 +1,23 @@
+﻿<div class="container">
+    <div class="signup-form">
+        <form action="/Tracks/Create?albumId={albumId}" method="post" style="width:65%;margin-left:15%;" class="text-center">
+            <h2>Create Track</h2>
+            <div class="form-group">
+                <div><input type="text" class="form-control" name="trackName" placeholder="Track Name" required="required"></div>
+            </div>
+            <div class="form-group">
+                <div><input type="text" class="form-control" name="trackLink" placeholder="Track Link" required="required"></div>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="trackPrice" placeholder="Track Price" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Create Track</button>
+            </div>
+        </form>
+    </div>
+    <hr />
+    <div>
+        <p><a href="/Album/Details?id={albumId}" class="btn btn-primary">Back to Album</a></p>
+    </div>
+</div>

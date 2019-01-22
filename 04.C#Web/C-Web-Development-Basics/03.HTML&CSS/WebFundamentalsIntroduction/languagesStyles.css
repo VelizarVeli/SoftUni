@@ -1,0 +1,15 @@
+﻿body {
+    background-color: #EEEEEE
+}
+div
+{
+    font-size: 35px;
+    line-height: 57px
+}
+span {
+    background-color: #CBCBCB;
+    padding: 5px 13px 5px 13px;
+    border: groove grey;
+    border-width: 1px;
+    border-radius: 10px 
+}

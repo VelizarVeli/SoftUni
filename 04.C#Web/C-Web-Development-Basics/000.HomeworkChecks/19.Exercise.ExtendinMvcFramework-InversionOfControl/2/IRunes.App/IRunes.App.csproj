@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\css\" />
+    <Folder Include="Resources\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IRunes.Services\IRunes.Services.csproj" />
+    <ProjectReference Include="..\SIS.Framework\SIS.Framework.csproj" />
+    <ProjectReference Include="..\SIS.WebServer\SIS.WebServer.csproj" />
+  </ItemGroup>
+
+</Project>

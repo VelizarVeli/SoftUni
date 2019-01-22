@@ -1,0 +1,12 @@
+﻿@using FDMCBook.Models
+@model IEnumerable<FDMCBook.Models.Cat>
+<div class="container-fluid">
+    <div class="row p-1">
+        <div class="col font-weight-bold">Name</div>
+    </div>
+    @foreach (Cat r in Model) {
+        <div class="row p-1">
+            <div class="col">@r.Name</div>
+        </div>
+    }
+</div>

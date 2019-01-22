@@ -1,0 +1,34 @@
+﻿@using Chushka.Models
+@using Chushka.Web.Utilities
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ChushkaUser> SignInManager
+@inject UserManager<ChushkaUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+<div class="container-fluid text-center">
+    @if (User.IsInRole(RoleNames.Administrator))
+    {
+        <h2>Greetings, admin!</h2>
+        <h4>Enjoy your work today!</h4>
+    }
+    else
+    {
+        <h2>Greetings, @UserManager.GetUserName(User)!</h2>
+        <h4>Feel free to view and order any of our products.</h4>
+    }
+    <hr class="hr-2 bg-dark"/>
+</div>
+}
+else
+{
+    <h1>Welcome to Chushka Universal Web Shop</h1>
+    <hr class="bg-white" />
+    <h3>
+        <a asp-action="Login" asp-controller="Account" class="nav-link-dark">Login</a>if you have an account.
+    </h3>
+    <h3>
+        <a asp-action="Register" asp-controller="Account" class="nav-link-dark">Register</a>if you don't.
+    </h3>
+}

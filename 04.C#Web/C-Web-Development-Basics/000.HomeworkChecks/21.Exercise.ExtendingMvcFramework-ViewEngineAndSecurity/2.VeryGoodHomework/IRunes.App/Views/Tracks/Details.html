@@ -1,0 +1,32 @@
+﻿<div class="container col-sm-12">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1 class="text-success m-0">Track&nbsp;Details</h1>
+        </div>
+    </div>
+    <hr class="hr-success bg-success" />
+    <div class="container col-sm-6">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h6><b>Artist:&nbsp;@Model.Artist</b></h6>
+                <h6><b>Title:&nbsp;@Model.TrackTitle</b></h6>
+                <h6><b>Genre:&nbsp;@Model.Genre</b></h6>
+                <h6><b>Price:&nbsp;@Model.Price</b></h6>
+                <hr class="hr-success bg-success" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="480" height="270" src="@Model.Link" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-success bg-success" />
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <a class="btn btn-sm btn-success" href="/Albums/Details?AlbumId=@Model.AlbumId">Back&nbsp;To&nbsp;Album</a>
+            </div>
+        </div>
+    </div>
+</div>

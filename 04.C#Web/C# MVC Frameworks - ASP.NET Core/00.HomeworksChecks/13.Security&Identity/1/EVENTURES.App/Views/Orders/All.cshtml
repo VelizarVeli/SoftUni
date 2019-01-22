@@ -1,0 +1,24 @@
+﻿
+
+<main class="text-center  mt-7 ">
+    <h1 class="content-center">All orders</h1>
+    <hr class="hr-2 bg-dark" />
+    <table class="table w-75 mx-auto table-hover text-center content-center">
+        <thead>
+            <tr class="row text-center">
+                <th class="col-md-2">#</th>
+                <th class="col-md-2">Event</th>
+                <th class="col-md-4">Customer</th>
+                <th class="col-md-4">OrderedOn</th>                                
+            </tr>
+        </thead>
+
+        <tbody class="content-center text-center">
+            @{
+                await Html.RenderPartialAsync("_OrdersPartial");
+            }
+        </tbody>
+    </table>
+</main>
+
+

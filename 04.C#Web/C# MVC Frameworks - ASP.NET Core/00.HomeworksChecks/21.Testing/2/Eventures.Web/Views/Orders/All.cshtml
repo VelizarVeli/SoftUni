@@ -1,0 +1,51 @@
+﻿@using Eventures.Web.Controllers
+@model Eventures.Web.Structures.PaginatedList<Eventures.Web.Controllers.OrderViewModel>
+
+<main class="mt-3 mb-5">
+    <h1 class="text-center">All Orders</h1>
+    <hr class="hr-2 bg-eventure" />
+    <table class="table w-75 mx-auto table-hover">
+        <thead>
+            <tr class="row">
+                <th class="col-md-1">#</th>
+                <th class="col-md-5">Event</th>
+                <th class="col-md-3">Customer</th>
+                <th class="col-md-3">Ordered On</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 1;
+
+                foreach (var m in Model)
+                {
+                    <tr class="row">
+                        <th class="col-md-1">@(i++)</th>
+                        <td class="col-md-5">@m.EventName</td>
+                        <td class="col-md-3">@m.CustomerName</td>
+                        <td class="col-md-3">@m.OrderedOn</td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+
+    @{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    }
+    <div class="button-holder d-flex justify-content-center">
+        <a asp-controller="Orders" asp-action="All"
+           asp-route-pageIndex="@(Model.PageIndex - 1)"
+           class="btn bg-eventure @prevDisabled">
+            Previous
+        </a>
+        <a asp-controller="Orders" asp-action="All"
+           asp-route-pageIndex="@(Model.PageIndex + 1)"
+           class="btn bg-eventure @nextDisabled ml-3">
+            Next
+        </a>
+    </div>
+
+</main>

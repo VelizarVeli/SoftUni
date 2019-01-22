@@ -1,0 +1,66 @@
+﻿.navbar {
+    background-color: green;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    
+}
+.nav-link:hover {
+    color: white;
+}
+
+a {
+    color: orange;
+}
+.navbar .navbar-brand {
+    color: white;
+}
+
+.jumbotron {
+    background-color: green;
+}
+
+.heading-container {
+    border-bottom: solid;
+    border-color: white;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+
+
+footer {
+    color: black;
+    text-align: center;
+}
+
+.text-green {
+    color: green;
+}
+.form-control-label {
+    color: black;
+}
+
+.btn-green {
+    background-color: green;
+    color: white;
+}
+.text-orange {
+    color: orange;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: solid;
+    border-color: green;
+}
+
+.text-lightblue {
+    color: #007bff
+}
+
+.btn:hover {
+    color: white
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="2.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Sieve">
+      <HintPath>..\..\..\.nuget\packages\sieve\2.2.0\lib\netstandard2.0\Sieve.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

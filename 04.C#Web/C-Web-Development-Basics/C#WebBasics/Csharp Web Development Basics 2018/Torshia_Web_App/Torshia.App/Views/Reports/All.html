@@ -1,0 +1,32 @@
+﻿<main class="mt-3 mb-5">
+    <h1 class="text-center text-torshia">Task Reports</h1>
+    <hr class="hr-2 bg-torshia" />
+    <table class="table w-75 mx-auto table-hover">
+        <thead>
+            <tr class="row">
+                <th class="col-md-1">#</th>
+                <th class="col-md-5">Task</th>
+                <th class="col-md-1">Level</th>
+                <th class="col-md-2">Status</th>
+                <th class="col-md-2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(int index = 0; index < @Model.Length; index++)
+            { var report = Model[index];
+            {int realIndex = index + 1;}
+            <tr class="row">
+                <th class="col-md-1">@realIndex</th>
+                <td class="col-md-5">@report.Title</td>
+                <td class="col-md-1">@report.Level</td>
+                <td class="col-md-2">@report.Status</td>
+                <td class="col-md-2">
+                    <div class="button-holder d-flex justify-content-between">
+                        <button class="btn bg-torshia text-white" onclick="location.href='/Reports/Details?Id=@report.Id'">Details</button>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</main>

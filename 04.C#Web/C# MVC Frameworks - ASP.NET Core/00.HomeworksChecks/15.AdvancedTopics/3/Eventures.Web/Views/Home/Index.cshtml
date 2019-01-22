@@ -1,0 +1,27 @@
+﻿@inject UserManager<ApplicationUser> UserManager
+
+@if (!this.User.Identity.IsAuthenticated)
+{
+    <div class="jumbotron mt-3 eventures-bg-color">
+        <h1>Eventures - The best ticket service in the world.</h1>
+        <hr class="bg-dark hr-2" />
+        <h3><a asp-area="Identity" asp-page="/Account/Login" class="nav-link-blue">Login</a> to start eventing.</h3>
+        <h3><a asp-area="Identity" asp-page="/Account/Register" class="nav-link-blue">Register</a> if you don't have an account.</h3>
+    </div>
+}
+else if (this.User.IsInRole("Admin"))
+{
+    <div class="jumbotron mt-3 eventures-bg-color text-center">
+        <h1>Greetings, Administrator - @UserManager.GetUserAsync(this.User).GetAwaiter().GetResult().UserName</h1>
+        <hr class="hr-jumbotron hr-2" />
+        <h3 class="jumbotron-hr-color">Enjoy your work.</h3>
+    </div>
+}
+else if (this.User.IsInRole("User") || this.User.Identity.IsAuthenticated)
+{
+    <div class="jumbotron mt-3 eventures-bg-color text-center">
+        <h1>Welcome, @UserManager.GetUserAsync(this.User).GetAwaiter().GetResult().UserName</h1>
+        <hr class="hr-jumbotron hr-2" />
+        <h3 class="jumbotron-hr-color">Eventures wishes you an exciting experience.</h3>
+    </div>
+}

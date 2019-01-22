@@ -1,0 +1,53 @@
+﻿@model EventWebApp.Models.Events.EventViewModel;
+
+<h1 class="text-center">Create Event</h1>
+<hr class="chushka-bg-color hr-2 w-50" />
+<form class="mx-auto w-50" asp-controller="Events" asp-action="Create">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="form-group col">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" type="text" class="form-control" placeholder="Iron Maiden -Hills of Rock ..." name="name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group col">
+            <label asp-for="Place"></label>
+            <input asp-for="Place" type="text" class="form-control" placeholder="Plovdiv,Bulgaria..." name="Place">
+            <span asp-validation-for="Place" class="text-danger"></span>
+        </div>
+    </div>
+    <hr class="chushka-bg-color hr-2" />
+    <div class="row">
+        <div class="form-group col">
+            <label asp-for="Start"></label>
+            <input asp-for="Start"  class="form-control" placeholder="20-Jul-2018 22:00" name="Start">
+            <span asp-validation-for="Start" class="text-danger"></span>
+        </div>
+        <div class="form-group col">
+            <label asp-for="End"></label>
+            <input asp-for="End"  class="form-control" placeholder="20-Avg-2018 4:00" name="End">
+            <span asp-validation-for="End" class="text-danger"></span>
+        </div>
+    </div>
+    <hr class="chushka-bg-color hr-2" />
+    <div class="row d-flex">
+        <div class="form-group col">
+            <label asp-for="TotalTickets"></label>
+            <input asp-for="TotalTickets" type="number" class="form-control" placeholder="1000" name="TotalTickets">
+            <span asp-validation-for="TotalTickets" class="text-danger"></span>
+        </div>
+        <div class="form-group col">
+            <label asp-for="PricePerTicket"></label>
+            <input asp-for="PricePerTicket" type="number" class="form-control" placeholder="150" name="PricePerTicket">
+            <span asp-validation-for="PricePerTicket" class="text-danger"></span>
+        </div>
+    </div>
+    <hr class="chushka-bg-color hr-2" />
+    <div class="button-holder d-flex justify-content-center">
+        <button type="submit" class="btn chushka-bg-color">Create Event</button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

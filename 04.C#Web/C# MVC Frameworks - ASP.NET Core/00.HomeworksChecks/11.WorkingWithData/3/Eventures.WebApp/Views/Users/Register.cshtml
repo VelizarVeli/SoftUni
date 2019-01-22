@@ -1,0 +1,73 @@
+﻿@model RegisterInputModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container d-flex justify-content-between">
+
+    <div class="col-md-8">
+
+        <h2 class="d-flex justify-content-center">@ViewData["Title"] </h2>
+        <hr class="h2 chushka-bg-color" />
+        <form role="form" class="justify-content-around" method="post" asp-controller="Users" asp-action="Register">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Username" class="d-flex justify-content-center "></label>
+                        <input asp-for="Username" class="form-control" placeholder="Username..." />
+                        <span asp-validation-for="@Model.Username" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Email" class="d-flex justify-content-center "></label>
+                        <input asp-for="Email" class="form-control" placeholder="Email..." />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Password" class="d-flex justify-content-center "></label>
+                        <input asp-for="Password" class="form-control" placeholder="Password..." />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword" class="d-flex justify-content-center "></label>
+                        <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password..." />
+                        <spam asp-la></spam>
+                    </div>
+                </div>
+            </div>
+            <hr class="h2 chushka-bg-color" />
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Firstname" class="d-flex justify-content-center "></label>
+                        <input asp-for="Firstname" class="form-control" placeholder="Firstname..." />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Lastname" class="d-flex justify-content-center "></label>
+                        <input asp-for="Lastname" class="form-control" placeholder="Lastname..." />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="UniqueCitizenNumber" class="d-flex justify-content-center "></label>
+                <input asp-for="UniqueCitizenNumber" class="form-control" placeholder="Universal Citizen Number..." />
+            </div>
+            <hr class="h2 chushka-bg-color" />
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-info">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

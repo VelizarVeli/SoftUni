@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>IRunes</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="all.css" type="text/css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">IRunes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="userLoggedIn">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/albums/all">Albums</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="top-border-line"></div>
+
+    <div class="container">
+        <jumbotron>
+            <h1 id="logintitle" align="center">Create Track</h1>
+
+            <div class="album-border-line" bg-success></div>
+
+            <form method="post" action="/tracks/create">
+                <div class="form-group">
+                    <label for="exampleName">Name</label>
+                    <input type="text" class="form-control" id="exampleName" name="name" aria-describedby="emailHelp" placeholder="Name...">
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="exampleLink">Link</label>
+                        <input type="url" class="form-control" id="exampleLink" name="link" placeholder="Link...">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="examplePrice">Price</label>
+                        <input type="number" min="0.01" step="0.01" class="form-control" id="examplePrice" name="price" placeholder="Price...">
+                    </div>
+                </div>
+
+                <div class="bottom-border-line"></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div align="center">
+                            <button type="submit" class="btn btn-success">Create</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div align="center">
+                            <a href="\albums\details{{albumId}}" class="btn btn-success" role="button">Back To Album</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </jumbotron>
+    </div>
+
+    <div class="bottom-border-line"></div>
+
+    <footer>
+        <p class="footer-logo"><strong>CopyRight &#169; Sanity Design Studios. All rights reserved.</strong></p>
+    </footer>
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+</body>
+</html>

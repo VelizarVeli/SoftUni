@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Eventures.Web.ViewModels.Orders.OrderViewModel>
+
+@{
+    ViewData["Title"] = "All";
+}
+
+<h1 class="text-center">All Orders</h1>
+<div class="container-fluid app-sizing">
+    <hr class="hr-3 eventures-bg-color" />
+    <table class="table mx-auto table-hover">
+        <thead class="font-weight-bold">
+            <tr class="row">
+                <th class="col-md-1">#</th>
+                <th class="col-md-4">Event</th>
+                <th class="col-md-4">Customer</th>
+                <th class="col-md-3">Ordered On</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int counter = 1;
+            }
+
+            @foreach (var order in Model)
+            {
+                <tr class="row">
+                    <th class="col-md-1">@(counter++)</th>
+                    <td class="col-md-4">@order.EventName</td>
+                    <td class="col-md-4">@order.CustomerName</td>
+                    <td class="col-md-3">@order.OrderedOn</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr class="hr-3 eventures-bg-color" />
+</div>
+

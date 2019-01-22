@@ -1,0 +1,16 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="alert alert-danger alert-dismissable container w-50">
+    <h1 class="font-weight-bold text-center">An error occured!!</h1>
+    <h6>@Model.ErrorMessage</h6>   
+</div>
+<div class="row d-flex justify-content-center">
+    <a href="javascript:window.history.back()" class="close d-flex justify-content-center btn eventures-bg-color" aria-label="close">Back</a>
+</div>
+
+
+
+

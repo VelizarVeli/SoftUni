@@ -1,0 +1,25 @@
+﻿
+
+<main class="mt-3 mb-5">
+    <h1 class="text-center">All Events</h1>
+    <hr class="hr-2 bg-dark" />
+    <table class="table w-75 mx-auto table-hover">
+        <thead>
+            <tr class="row">
+                <th class="col-md-1">#</th>
+                <th class="col-md-1">Name</th>
+                <th class="col-md-2">Start</th>
+                <th class="col-md-2">End</th>                
+                <th class="col-md-4">Tickets</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @{
+                await Html.RenderPartialAsync("_EventsPartial");
+            }
+        </tbody>
+    </table>
+</main>
+
+

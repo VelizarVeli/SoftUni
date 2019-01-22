@@ -1,0 +1,36 @@
+﻿@model IEnumerable<OrderViewModel>
+
+<h1 class="text-center">All Events</h1>
+<hr class="hr-2" />
+<table class="table mx-auto table-hover">
+    <thead>
+        <tr class="row mx-auto">
+            <th class="col-md-1 font-weight-bold">#</th>
+            <th class="col-md-5 font-weight-bold">Event</th>
+            <th class="col-md-3 font-weight-bold">Customer</th>
+            <th class="col-md-3 font-weight-bold">Ordered On</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var counter = 0;
+        }
+
+        @foreach (var order in Model)
+        {
+            counter++;
+            <tr class="row mx-auto">
+                <th class="col-md-1">@counter</th>
+                <td class="col-md-5">@order.EventName</td>
+                <td class="col-md-3">@order.Customer</td>
+                <td class="col-md-3">@order.CreatedOn</td>                
+            </tr>
+        }
+    </tbody>
+</table>
+<hr class="hr-2" />
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial" />
+}

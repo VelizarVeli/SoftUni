@@ -1,0 +1,49 @@
+﻿@model Eventures.Web.ViewModels.Events.CreateEventBindingModel
+
+<h1 class="text-center">Create event</h1>
+<hr class="hr-3 half-width eventures-bg-color" />
+<form class="mx-auto half-width" method="post" asp-controller="events" asp-action="create">
+    <div class="form-row">
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" placeholder="Name...">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Place"></label>
+            <input asp-for="Place" class="form-control" placeholder="City, Country">
+            <span asp-validation-for="Place" class="text-danger"></span>
+        </div>
+    </div>
+    <hr class="hr-3 eventures-bg-color" />
+    <div class="form-row">
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="Start"></label>
+            <input type="datetime-local" asp-for="Start" class="form-control" placeholder="dd-MM-yyyy HH:mm">
+            <span asp-validation-for="Start" class="text-danger"></span>
+        </div>
+        <hr class="hr-3 eventures-bg-color" />
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="End"></label>
+            <input type="datetime-local" asp-for="End" class="form-control" placeholder="dd-MM-yyyy HH:mm">
+            <span asp-validation-for="End" class="text-danger"></span>
+        </div>
+    </div>
+    <hr class="hr-3 eventures-bg-color" />
+    <div class="form-row">
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="TotalTickets"></label>
+            <input asp-for="TotalTickets" class="form-control" placeholder="Total number of tickets...">
+            <span asp-validation-for="TotalTickets" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6 text-center">
+            <label asp-for="TicketPrice"></label>
+            <input asp-for="TicketPrice" class="form-control" placeholder="Price per ticket...">
+            <span asp-validation-for="TicketPrice" class="text-danger"></span>
+        </div>
+    </div>
+    <hr class="hr-3 eventures-bg-color" />
+    <div class="button-holder d-flex justify-content-center">
+        <button type="submit" class="btn eventures-bg-color">Create event</button>
+    </div>
+</form>

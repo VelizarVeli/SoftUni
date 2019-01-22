@@ -1,0 +1,50 @@
+﻿@using Chushka.Models
+@using Chushka.Web.Utilities
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ChushkaUser> SingInManager
+@inject UserManager<ChushkaUser> UserManager
+
+@{
+    ViewData["Title"] = "_LoginPartial";
+    bool isLogedIn = SingInManager.IsSignedIn(User);
+}
+
+<ul class="navbar-nav right-side">
+    <li class="nav-item">
+        <a asp-action="Index" asp-controller="Home" class="nav-link nav-link-white">Home</a>
+    </li>
+    @if (!isLogedIn)
+    {
+        <li class="nav-item">
+            <a asp-action="Login" asp-controller="Account" class="nav-link nav-link-white">Login</a>
+        </li>
+        <li class="nav-item">
+            <a asp-action="Register" asp-controller="Account" class="nav-link nav-link-white">Register</a>
+        </li>
+    }
+    else if (User.IsInRole(RoleNames.Administrator))
+    {
+        <li class="nav-item">
+            <a asp-action="Create" asp-controller="Product" class="nav-link nav-link-white">
+                Create Product
+            </a>
+        </li>
+        <li class="nav-item">
+            <a asp-action="All" asp-controller="Product" class="nav-link nav-link-white">
+                All Orders
+            </a>
+        </li>
+    }
+</ul>
+
+@if (isLogedIn)
+{
+    <form asp-controller="Account" asp-action="Logout" method="post" class="navbar-right">
+        <ul>
+            <li>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link">LogOut</button>
+            </li>
+        </ul>
+    </form>
+}

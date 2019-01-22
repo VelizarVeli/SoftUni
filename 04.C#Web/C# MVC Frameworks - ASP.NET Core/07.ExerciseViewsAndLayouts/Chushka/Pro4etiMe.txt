@@ -1,0 +1,6 @@
+In order to start the project
+1. Change Server in appsettings.json to the Db server you are using
+2.  If you have database with "Chushka" name
+ - Drop database "Chushka" on your server  or in appsettings.json file change the name of the database to a name you don't currently have
+ - update-database 
+ - Enjoy :)

@@ -1,0 +1,35 @@
+﻿@using Eventures.Areas.Events.ViewModels
+@model IEnumerable<OrderViewModel>
+
+@{
+    ViewData["Tittle"] = "All Orders";
+    var index = 0;
+}
+
+<div class="container">
+    <h1 class="text-center">@ViewData["Tittle"]</h1>
+    <hr class="hr-2 eventures-bg-color" />
+    <table class="table">
+        <thead>
+            <tr class="font-weight-bold">
+                <th scope="col">#</th>
+                <th scope="col">Event</th>
+                <th scope="col">Customer</th>
+                <th scope="col">Ordered On</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                index++;
+                <tr>
+                    <th scope="row">@index</th>
+                    <td>@order.Event.Name</td>
+                    <td>@order.Customer.UserName</td>
+                    <td>@order.OrderedOn</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr class="hr-2 eventures-bg-color" />
+</div>

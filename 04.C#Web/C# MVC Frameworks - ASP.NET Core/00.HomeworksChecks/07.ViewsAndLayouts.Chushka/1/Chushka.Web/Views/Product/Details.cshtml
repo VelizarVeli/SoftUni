@@ -1,0 +1,33 @@
+﻿@using Chushka.Web.Utilities
+@model Chushka.Web.Models.ProductViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    var user = User;
+}
+
+<h1 class="text-center">@Model.Name</h1>
+<hr class="hr-2 bg-dark"/>
+<div class="product-type-holder half-width mx-auto d-flex justify-content-between">
+    <h3 class="text-center">Type: @Model.Type</h3>
+    <h3 class="text-center">Price: $@Model.Price</h3>
+</div>
+<hr class="hr-2 bg-dark"/>
+<h3 class="text-center">Description</h3>
+<div class="product-description-holder">
+    <p class="text-center mt-4">
+        @Model.Description
+    </p>
+</div>
+<hr class="hr-2 bg-dark"/>
+<h3 class="text-center">Actions</h3>
+<div class="product-action-holder mt-4 half-width mx-auto d-flex justify-content-around">
+    <form asp-route-id="@Model.Id" asp-controller="Product" asp-action="Order" method="post">
+        <button type="submit">Order</button>
+    </form>
+    @if (user.IsInRole(RoleNames.Administrator))
+    {
+        <a asp-route-id="@Model.Id" asp-action="Edit" asp-controller="Product">Edit</a>
+        <a asp-route-id="@Model.Id" asp-action="Delete" asp-controller="Product">Delete</a>
+    }
+</div>

@@ -1,0 +1,82 @@
+﻿@bgPrmColor = mediumseagreen;
+@txPrmColor = whitesmoke;
+
+.navbar {
+    background-color: mediumseagreen;
+}
+
+.navbar-brand {
+    color: whitesmoke;
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.footer-logo {
+    text-align: center
+}
+
+.top-border-line {
+    border-top: solid;
+    border-color: mediumseagreen;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.bottom-border-line {
+    border-top: solid;
+    border-color: mediumseagreen;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.index-border-line {
+    border-top: solid;
+    border-color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.album-border-line {
+    border-top: solid;
+    border-color: mediumseagreen;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.track-border-line {
+    border-top: solid;
+    border-color: mediumseagreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.track-botom-line {
+    border-top: solid;
+    border-color: mediumseagreen;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.orange {
+    color: orange;
+}
+
+.btn-success {
+    background-color: mediumseagreen;
+}
+
+#logintitle {
+    color: mediumseagreen;
+    margin-bottom: 15px;
+}
+
+.white {
+    color: white;
+}

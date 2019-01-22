@@ -1,0 +1,57 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<EvUser> SignInManager
+@inject UserManager<EvUser> UserManager
+
+@if (!SignInManager.IsSignedIn(User))
+{
+    <main class="marg">
+        <div class="jumbotron mt-3 chushka-bg-color">
+            <h1>Welcome to Chushka Universal Web Shop</h1>
+            <hr class="hr-2" />
+            <h3><a asp-controller="Account" asp-action="Login" class="nav-link-dark">Login</a> if you have an account.</h3>
+            <h3><a asp-controller="Account" asp-action="Register" class="nav-link-dark">Register</a> if you don't.</h3>
+        </div>
+    </main>
+}
+else
+{
+    <main class="mt-3 mb-5">
+        <div class="jumbotron mt-3 chushka-bg-color container-fluid text-center">
+            @if (User.IsInRole("Administrator"))
+            {
+                <h2>Greetings, Administrator - @UserManager.GetUserName(User)!</h2>
+                <hr class="hr-3 bg-dark" />
+                <h4 class="text-gr">Enjoy your work.</h4>
+            }
+            else
+            {
+                <h2>Welcome, @UserManager.GetUserName(User)!</h2>
+                <hr class="hr-3 bg-dark" />
+                <h4 class="text-gr">Eventures wishes you an exciting experience.</h4>
+            }
+
+        </div>
+        
+        <div class="container-fluid product-holder">
+            @*<div class="row d-flex justify-content-around">
+                @{
+                    await Html.RenderPartialAsync("_ProductsPartial");
+                }
+            </div>*@
+            @*<div class="row d-flex justify-content-around mt-4">
+                    <a href="/products/details" class="col-md-2">
+                        <div class="product p-1 chushka-bg-color rounded-top rounded-bottom">
+                            <h5 class="text-center mt-3">Injektoplqktor</h5>
+                            <hr class="hr-1 bg-white" />
+                            <p class="text-white text-center">
+                                A universal tool for basically everything. It's ba...
+                            </p>
+                            <hr class="hr-1 bg-white" />
+                            <h6 class="text-center text-white mb-3">$1.56</h6>
+                        </div>
+                    </a>
+                </div>*@
+        </div>
+    </main>
+}

@@ -1,0 +1,32 @@
+﻿@inject UserManager<ApplicationUser> UserManager
+
+<nav class="navbar navbar-expand-lg eventures-bg-color">
+    <div class="container">
+        <a class="navbar-brand nav-link-dark font-weight-bold" href="/">Eventures</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-dark font-weight-bold">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link nav-link-dark font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a asp-controller="Events" asp-action="MyEvents" class="dropdown-item">My Events</a>
+                        <a asp-controller="Events" asp-action="All" class="dropdown-item">All Events</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav left-side">
+                <li class="nav-item">
+                    <div class="nav-link nav-link-dark font-weight-bold">Hello @UserManager.GetUserAsync(this.User).GetAwaiter().GetResult().FirstName</div>
+                </li>
+                <partial name="LogoutPartial" />
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,35 @@
+@model System.Collections.Generic.IEnumerable<EVENTURES.App.ViewModels.OrderViewModel>
+
+@if (Model == null)
+{
+<h1></h1>
+}
+else
+{
+    int counter = 1;
+@foreach (var order in Model)
+    {
+<tr class="row">
+    <th class="col-md-1">@counter</th>
+    <td class="col-md-1">@order.Event.Name</td>
+    <td class="col-md-2">@order.Event.Start</td>
+    <td class="col-md-2">@order.Event.End</td>
+    <td class="col-md-2">@order.TicketsCount</td>
+    @*<td class="col-md-4">
+            <form asp-controller="Orders" asp-action="Create" asp-route-id="@order.Id">
+                <div class="form-group inline col-sm-2">
+                    <label for=" Tickets"><b>Tickets</b></label>
+                </div>
+                <div class="form-group inline col-sm-6">
+                    <input type="number" name="tickets" id="tickets" class="form-control" placeholder="Count..">
+                </div>
+                <div class="form-group inline col-sm-4">
+                    <b><input type="submit" value="Order" /></b>
+                </div>
+            </form>
+        </td>*@
+</tr>
+
+        counter += 1;
+    }
+}

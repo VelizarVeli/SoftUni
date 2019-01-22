@@ -1,0 +1,122 @@
+﻿@model EventuresWebApp.Web.ViewModels.Events.AllEventsViewModel
+
+@{
+    ViewData["Title"] = "All";
+}
+
+<h1 class="text-center">All Events</h1>
+<hr class="eventures-bg-color hr-3 mt-3" />
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-warning alert-dismissible m-3">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Oops!</strong> @Model.ErrorMessage
+    </div>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th class="font-weight-bold" scope="col">#</th>
+            <th class="font-weight-bold" scope="col">Name</th>
+            <th class="font-weight-bold" scope="col">Start</th>
+            <th class="font-weight-bold" scope="col">End</th>
+            <th class="font-weight-bold" scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Events.Count(); i++)
+        {
+            var eventViewModel = Model.Events.ToList()[i];
+            <tr>
+                <th scope="row">@(i + 1 + ((Model.CurrentPage - 1) * Model.PageSize))</th>
+                <td>@eventViewModel.Name</td>
+                <td>@eventViewModel.Start</td>
+                <td>@eventViewModel.End</td>
+                <td>
+                    <form class="form-inline" method="post" asp-controller="Orders" asp-action="Order">
+                        <div class="form-group">
+                            <label class="label" asp-for="@eventViewModel.TicketsCount"></label>
+                            <input class="form-control ml-2" name="ticketsCount" asp-for="@eventViewModel.TicketsCount" value="">
+                            <span asp-validation-for="@eventViewModel.TicketsCount" class="text-danger"></span>
+                            <input type="hidden" name="eventId" value="@eventViewModel.Id" />
+                        </div>
+                        <div class="ml-2">
+                            <button type="submit" class="btn eventures-bg-color">Order</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<hr class="eventures-bg-color hr-3 mt-3" />
+
+<div class="text-center">
+    <ul class="pagination">
+        @if (Model.CurrentPage == 1)
+        {
+            <li class="page-item disabled">
+                <a class="page-link" style="pointer-events: none" asp-controller="Events" asp-action="All" asp-route-page="@Model.PreviousPage" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item">
+                <a class="page-link" asp-controller="Events" asp-action="All" asp-route-page="@Model.PreviousPage" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+        }
+
+        @{
+            int endIndex = 5;
+            if (Model.CurrentPage > 2 && Model.CurrentPage + 2 <= Model.TotalPages)
+            {
+                endIndex = Model.CurrentPage + 2;
+            }
+            else if (Model.CurrentPage + 2 > Model.TotalPages)
+            {
+                endIndex = Model.TotalPages;
+            }
+
+            int startIndex = Model.CurrentPage > 2 ? Model.CurrentPage - 2 - (2 - (endIndex - Model.CurrentPage)) : 1;
+
+            for (int i = startIndex; i <= endIndex; i++)
+            {
+                if (Model.CurrentPage == i)
+                {
+                    <li class="page-item active"><a class="page-link" asp-controller="Events" asp-action="All" asp-route-page="@i">@i</a></li>
+                }
+                else
+                {
+                    <li class="page-item"><a class="page-link" asp-controller="Events" asp-action="All" asp-route-page="@i">@i</a></li>
+                }
+            }
+        }
+
+        @if (Model.CurrentPage == Model.TotalPages)
+        {
+            <li class="page-item disabled">
+                <a class="page-link" style="pointer-events: none" asp-controller="Events" asp-action="All" asp-route-page="@Model.NextPage" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        }
+        else
+        {
+            <li>
+                <a class="page-link" asp-controller="Events" asp-action="All" asp-route-page="@Model.NextPage" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+
+

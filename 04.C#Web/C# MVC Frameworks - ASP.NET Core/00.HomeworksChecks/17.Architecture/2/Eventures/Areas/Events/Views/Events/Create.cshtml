@@ -1,0 +1,72 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model Eventures.Areas.Event.ViewModels.EventViewModel
+@{
+    ViewData["Title"] = "Create Event";
+}
+<div class="container" style="padding-top: 20px; text-align: center">
+    <div class="row justify-content-center">
+        <div class="col-md-7 col-md-offset-2">
+            <section>
+                <h2 style="font-weight: bold">@ViewData["Title"]</h2>
+                <form method="post">
+                    <hr class="hr-2 eventures-bg-color" />
+                    <div asp-validation-summary="All" class="text-danger font-weight-bold"></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group font-weight-bold">
+                                <label asp-for="Name"></label>
+                                <input asp-for="Name" class="form-control" placeholder="Name..." />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group font-weight-bold">
+                                <label asp-for="Place"></label>
+                                <input asp-for="Place" class="form-control" placeholder="Place..." />
+                                <span asp-validation-for="Place" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-2 eventures-bg-color" />
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group font-weight-bold">
+                                <label asp-for="Start"></label>
+                                <input asp-for="Start" class="form-control"  />
+                                <span asp-validation-for="Start" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group font-weight-bold">
+                                <label asp-for="End"></label>
+                                <input asp-for="End" class="form-control"  />
+                                <span asp-validation-for="End" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group font-weight-bold">
+                                <label asp-for="TotalTickets"></label>
+                                <input asp-for="TotalTickets" class="form-control" placeholder="123..." />
+                                <span asp-validation-for="TotalTickets" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <hr class="hr-2 eventures-bg-color" />
+                        <div class="col">
+                            <div class="form-group font-weight-bold">
+                                <label asp-for="PricePerTicket"></label>
+                                <input asp-for="PricePerTicket" class="form-control" placeholder="PricePerTicket..." />
+                                <span asp-validation-for="PricePerTicket" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-2 eventures-bg-color" />
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default eventures-bg-color">Create</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>

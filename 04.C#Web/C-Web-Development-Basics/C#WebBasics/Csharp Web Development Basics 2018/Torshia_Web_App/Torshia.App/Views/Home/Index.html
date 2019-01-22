@@ -1,0 +1,75 @@
+﻿@if(user.Username == null)
+{
+<main>
+    <div class="jumbotron mt-3 bg-torshia">
+        <h1 class="text-white">Welcome to TORSHIA Task Management.</h1>
+        <hr class="bg-white hr-2" />
+        <h3 class="text-white"><a href="/Users/Login">Login</a> if you have an account.</h3>
+        <h3 class="text-white"><a href="/Users/Register">Register</a> if you don't.</h3>
+    </div>
+</main>
+}
+@else
+{
+<main class="mt-3">
+    <h4 class="text-torshia text-center">Welcome, @User.Username!</h4>
+    <h4 class="text-torshia text-center">Have a nice tasking experience!</h4>
+    <hr class="hr-2 bg-torshia">
+    <div class="container-fluid">
+        <div class="row">
+            @for(int index = 0; index < @Model.Count(); index++)
+            {var task = @Model.ElementAt(index);
+            @if(index % 5 == 0 && (index != 1 || index != 0))
+            {
+        </div>
+        <div class="row">
+
+            <div class="rounded col-md-2 pt-4 pl-5 pr-5 mb-4 mt-2 ml-4 mr-4 bg-torshia">
+
+                <p class="text-center nav-link-white"><h6 class="text-center text-white">@task.Title</h6></p>
+                <hr class="hr-2 bg-white" />
+                <p class="text-center nav-link-white"><h6 class="text-center text-white">Level: @task.AffectedSectors.Count</h6></p>
+                <hr class="hr-2 bg-white" />
+                <div class="row justify-content-md-center pb-4">
+                    <div class="col-md-5">
+                        <a href="/Reports/Report?Id=@task.Id" style="color:white">
+                            <h6 class="text-center text-white">Report</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="/Tasks/Details?Id=@task.Id" style="color:white">
+                            <h6 class="text-center text-white">Details</h6>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            }
+            @else
+            {
+            <div class="rounded col-md-2 pt-4 pl-5 pr-5 mb-4 mt-2 ml-4 mr-4 bg-torshia">
+
+                <p class="text-center nav-link-white"><h6 class="text-center text-white">@task.Title</h6></p>
+                <hr class="hr-2 bg-white" />
+                <p class="text-center nav-link-white"><h6 class="text-center text-white">Level: @task.AffectedSectors.Count</h6></p>
+                <hr class="hr-2 bg-white" />
+                <div class="row justify-content-md-center pb-4">
+                    <div class="col-md-5">
+                        <a href="/Reports/Report?Id=@task.Id" style="color:white">
+                            <h6 class="text-center text-white">Report</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="/Tasks/Details?Id=@task.Id" style="color:white">
+                            <h6 class="text-center text-white">Details</h6>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            }
+            }
+        </div>
+    </div>
+</main>
+}

@@ -1,0 +1,36 @@
+﻿<<div class="container text-center text-success">
+    <h1>Create Track</h1>
+</div>
+<div class="container-fluid col-md-6 align-content-center">
+    <hr />
+    <form action="/Tracks/Create?albumid=@Model.AlbumId" method="post">
+        <div class="form-group">
+            <label for="name">Name </label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name..." />
+        </div>
+        <div class="row">
+            <div class="col form-group">
+                <label for="link">Link </label>
+                <input type="text" class="form-control" name="link" id="link" placeholder="Link..." />
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col form-group">
+                <label for="price">Price </label>
+                <input type="number" class="form-control" step=".01" name="price" id="price" placeholder="Price..." />
+            </div>
+        </div>
+        <br />
+        <hr />
+        <div class="row text-center">
+            <div class="col">
+                <input type="submit" class="btn btn-success text-white" value="Create">
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-success">
+                    <a class="text-white nounderline" href="/Albums/Details?id=@Model.AlbumId">Back To Album</a>
+                </button>
+            </div>
+        </div>
+        <br />
+    </form>
+</div>

@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Eventures.Models
+
+@inject SignInManager<EventuresUser> SignInManager
+@inject UserManager<EventuresUser> UserManager
+
+<div class="jumbotron mt-3 eventures-bg-color">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <div class="container-fluid text-center">
+
+            @if (this.User.IsInRole("Admin"))
+            {
+                <h3>Greetings, Administrator @this.User.Identity.Name!</h3>
+                <hr class="hr-3 bg-color-grey" />
+                <h5 class="text-color-grey">Enjoy your work!</h5>
+            }
+            else
+            {
+                <h3>Welcome, @this.User.Identity.Name!</h3>
+                <hr class="hr-3 bg-color-grey" />
+                <h5 class="text-color-grey">Eventures wishes you an exciting experience.</h5>
+            }
+        </div>
+    }
+    else
+    {
+        <h3>Eventures - The best ticket service in the world.</h3>
+        <hr class="hr-3 bg-dark" />
+        <h5><a asp-controller="Account" asp-action="Login">Login</a> to start "eventing".</h5>
+        <h5><a asp-controller="Account" asp-action="Register">Register</a> if you don't have an account..</h5>
+    }
+</div>
+
+

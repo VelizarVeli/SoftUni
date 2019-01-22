@@ -1,0 +1,38 @@
+﻿@model EVENTURES.App.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<main class="mt-3">
+    <h1 class="text-center">Login</h1>
+    <hr class="bg-secondary hr-2" />
+    <div class="text-center chushka-bg-color">
+        @(Html.ValidationSummary(true))
+    </div>
+    <form class="wiy mx-auto half-width justify-content-center" method="post" asp-controller="Account" asp-action="Login">
+        <div class="form-group text-center">
+            <label asp-for="Username">Username</label>
+            <input asp-for="Username" class="form-control" placeholder="Username...">
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+        <div class="form-group text-center">
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" class="form-control" placeholder="Password...">
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <hr class="chushka-bg-color height: 7px" />
+        <div class="form-group">
+
+            <div class="checkbox  text-center">
+                <label asp-for="RememberMe">
+                </label>
+                <input asp-for="RememberMe" />
+            </div>
+        </div>
+        <hr class="chushka-bg-color height: 7px" />
+        <div class="button-holder d-flex justify-content-center">
+            <button type="submit" class="btn chushka-bg-color">Login</button>
+        </div>
+    </form>
+</main>
+

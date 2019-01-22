@@ -1,0 +1,43 @@
+﻿@using Eventures.Areas.Event.ViewModels
+@model IEnumerable<EventViewModel>
+
+@{
+    ViewData["Tittle"] = "All Events";
+    var index = 0;
+}
+
+<div class="container">
+    <h1 class="text-center">@ViewData["Tittle"]</h1>
+    <hr class="hr-2 eventures-bg-color" />
+    <table class="table">
+        <thead>
+            <tr class="font-weight-bold">
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Start</th>
+                <th scope="col">End</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var eventView in Model)
+            {
+                index++;
+                <tr>
+                    <th scope="row">@index</th>
+                    <td>@eventView.Name</td>
+                    <td>@eventView.Start</td>
+                    <td>@eventView.End</td>
+                    <td>
+                        <form method="post" asp-route-Id="@eventView.Id" asp-area="Events" asp-action="Create" asp-controller="Orders">
+                            <label class="font-weight-bold">Tickets</label>
+                            <input type="number" min="0" name="ticketCount" />
+                            <button class="btn eventures-bg-color" type="submit">Order</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr class="hr-2 eventures-bg-color" />
+</div>

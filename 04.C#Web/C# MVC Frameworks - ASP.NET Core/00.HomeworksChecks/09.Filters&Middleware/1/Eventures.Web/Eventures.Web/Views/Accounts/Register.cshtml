@@ -1,0 +1,50 @@
+﻿@model Eventures.Web.ViewModels.Accounts.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1 class="text-center">Register</h1>
+<hr class="eventures-bg-color half-width hr-2" />
+<form asp-controller="Accounts" asp-action="Register" class="mx-auto half-width" method="post">
+    <div class="form-row d-flex justify-content-between">
+        <div class="form-group text-center col-md-6">
+            <label asp-for="Username" class="font-weight-bold">Username</label>
+            <input asp-for="Username" class="form-control" placeholder="Username...">
+        </div>
+        <div class="form-group text-center col-md-6">
+            <label asp-for="Email" class="font-weight-bold">Email</label>
+            <input asp-for="Email" class="form-control" placeholder="Email...">
+        </div>
+    </div>
+    <div class="form-row d-flex justify-content-between">
+        <div class="form-group text-center col-md-6">
+            <label asp-for="Password" class="font-weight-bold">Password</label>
+            <input asp-for="Password" class="form-control" placeholder="Password...">
+        </div>
+        <div class="form-group text-center col-md-6">
+            <label asp-for="ConfirmPassword" class="font-weight-bold">Confirm password</label>
+            <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm password...">
+        </div>
+    </div>
+    <hr class="eventures-bg-color hr-2" />
+    <div class="form-row d-flex justify-content-between">
+        <div class="form-group text-center col-md-6">
+            <label asp-for="FirstName" class="font-weight-bold">First Name</label>
+            <input asp-for="FirstName" class="form-control" placeholder="First Name...">
+        </div>
+        <div class="form-group text-center col-md-6">
+            <label asp-for="LastName" class="font-weight-bold">Last Name</label>
+            <input asp-for="LastName" class="form-control" placeholder="Last Name...">
+        </div>
+    </div>
+    <div class="form-row d-flex justify-content-between">
+        <div class="form-group text-center w-100">
+            <label asp-for="UniqueCitizenNumber" class="font-weight-bold">UCN</label>
+            <input asp-for="UniqueCitizenNumber" class="form-control" placeholder="Unique Citizen Number...">
+        </div>
+    </div>
+    <hr class="eventures-bg-color hr-2" />
+    <div class="button-holder d-flex justify-content-center">
+        <button type="submit" class="btn eventures-bg-color ">Login</button>
+    </div>
+</form>

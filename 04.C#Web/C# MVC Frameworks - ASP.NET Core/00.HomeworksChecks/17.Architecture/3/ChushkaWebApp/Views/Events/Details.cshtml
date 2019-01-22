@@ -1,0 +1,26 @@
+﻿@model EventWebApp.Data.Models.Event;
+
+<h1 class="text-center">@Model.Name</h1>
+<hr class="hr-2 bg-dark" />
+<div class="product-type-holder half-width mx-auto d-flex justify-content-between">
+    <h3 class="text-center">Place: @Model.Place</h3>
+    <h3 class="text-center">Total Tickets: $@Model.TotalTickets</h3>
+</div>
+<hr class="hr-2 bg-dark" />
+
+<h3 class="text-center">Actions</h3>
+<div class="product-action-holder mt-4 d-flex justify-content-center">
+    <a class="btn chushka-bg-color mr-5" href="/events/buyTicket?id=@Model.Id">Buy Ticket</a>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <a class="btn chushka-bg-color ml-5 mr-5" href="/events/edit?id=@Model.Id">Edit</a>
+
+        <a class="btn chushka-bg-color ml-5" href="/events/delete?id=@Model.Id">Delete</a>
+    }
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,44 @@
+.bg-eventure {
+    background-color: #afeeee;
+}
+
+.text-eventure {
+    color: black;
+}
+
+.nav-link-white {
+    color: black;
+}
+
+.hr-2 {
+    height: 2px;
+}
+
+.bg-grey {
+    background-color: #9b9ea3;
+}
+
+.text-grey {
+    color: #9b9ea9;
+}
+a {
+    text-underline: none;
+    color:dodgerblue
+}
+
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border: 0;
+    width: 98%;
+}
+

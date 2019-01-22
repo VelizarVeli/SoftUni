@@ -1,0 +1,21 @@
+﻿<div class="container">
+    <div class="signup-form">
+        <form action="/Albums/Create" method="post" style="width:65%;margin-left:15%;" class="text-center">
+            <h2>Create Album</h2>
+            <div class="form-group">
+                <div><input type="text" class="form-control" name="albumName" placeholder="Album Name" required="required"></div>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" name="albumCover" placeholder="Album Cover" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Create Album</button>
+            </div>
+        </form>
+    </div>
+    <hr />
+    <div>
+        <p><a href="/Albums/All"  class="btn btn-primary">Back to all albums</a></p>
+    </div>
+</div>

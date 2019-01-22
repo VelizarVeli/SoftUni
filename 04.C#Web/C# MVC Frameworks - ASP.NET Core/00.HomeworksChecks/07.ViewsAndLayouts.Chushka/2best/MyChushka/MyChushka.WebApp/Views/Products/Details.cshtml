@@ -1,0 +1,31 @@
+﻿@using MyChushka.WebApp.Constants
+@model MyChushka.WebApp.ViewModels.Products.DetailsViewModel
+@{
+    this.ViewData["Title"] = "Details";
+}
+
+<main class="mt-3 mb-5">
+    <h1 class="text-center">@this.Model.Name</h1>
+    <hr class="hr-2 bg-dark"/>
+    <div class="product-type-holder half-width mx-auto d-flex justify-content-between">
+        <h3 class="text-center">Type: @this.Model.Type</h3>
+        <h3 class="text-center">Price: $@this.Model.Price</h3>
+    </div>
+    <hr class="hr-2 bg-dark"/>
+    <h3 class="text-center">Description</h3>
+    <div class="product-description-holder">
+        <p class="text-center mt-4">
+            @this.Model.ShortDescription
+        </p>
+    </div>
+    <hr class="hr-2 bg-dark"/>
+    <h3 class="text-center">Actions</h3>
+    <div class="product-action-holder mt-4 d-flex justify-content-around">
+        <a asp-controller="Orders" asp-action="Order" asp-route-productId="@this.Model.Id" class="btn chushka-bg-color">Order</a>
+        @if (this.User.IsInRole(MyConst.AdminRole))
+        {
+            <a asp-controller="Products" asp-action="Edit" asp-route-id="@this.Model.Id" class="btn chushka-bg-color">Edit</a>
+            <a asp-controller="Products" asp-action="Delete" asp-route-id="@this.Model.Id" class="btn chushka-bg-color">Delete</a>
+        }
+    </div>
+</main>

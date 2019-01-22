@@ -1,0 +1,54 @@
+@using Microsoft.AspNetCore.Identity
+@using Eventures.Models
+
+@inject SignInManager<EventuresUser> SignInManager
+@inject UserManager<EventuresUser> UserManager
+
+<ul class="navbar-nav mr-auto mt-0 mt-lg-0">
+    <li> <a class="nav-link nav-link-dark" asp-controller="Home" asp-action="Index">Home</a></li>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link-dark" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Events
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" asp-controller="Events" asp-action="All">All Events</a>
+                @if (this.User.IsInRole("Admin"))
+                {
+                    <a class="dropdown-item" asp-controller="Events" asp-action="Create">Create Event</a>
+                }
+                <a class="dropdown-item" asp-controller="Events" asp-action="MyEvents">My Events</a>
+            </div>
+        </li>
+        @if (this.User.IsInRole("Admin"))
+        {
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-link-dark" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Orders
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" asp-controller="Orders" asp-action="All">All Orders</a>
+                </div>
+            </li>
+        }
+    }
+</ul>
+@if (SignInManager.IsSignedIn(User))
+{
+    <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+            <a class="nav-link nav-link-dark"> Hello,@(this.User.IsInRole("Admin") ? "Admin" : this.User.Identity.Name)!</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link-dark" asp-controller="Account" asp-action="Logout">Logout</a>
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="navbar-nav navbar-right">
+        <li class="nav-item"><a class="nav-link nav-link-dark" asp-controller="Account" asp-action="Register">Register</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-dark" asp-controller="Account" asp-action="Login">Login</a></li>
+    </ul>
+}

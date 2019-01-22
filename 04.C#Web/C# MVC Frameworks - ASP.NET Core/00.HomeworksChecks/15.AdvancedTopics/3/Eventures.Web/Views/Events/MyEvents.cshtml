@@ -1,0 +1,31 @@
+﻿@using System.Globalization
+@model IList<MyEventsViewModel>
+
+<h1 class="text-center font-weight-bold">My Events</h1>
+<hr class="hr-2 eventures-bg-color">
+
+<table class="table">
+    <thead>
+        <tr class="font-weight-bold">
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+            <th scope="col">Tickets</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int index = 0; index < Model.Count; index++)
+        {
+            <tr>
+                <th scope="row">@(index + 1)</th>
+                <td>@Model[index].Name</td>
+                <td>@Model[index].Start</td>
+                <td>@Model[index].End</td>
+                <td>@Model[index].Tickets</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<hr class="hr-2 eventures-bg-color">

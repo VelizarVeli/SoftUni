@@ -1,0 +1,33 @@
+﻿@if (User.Role == "Admin")
+{
+<h1 class="text-center text-torshia">Welcome, Admin-@User.Username!</h1>
+}
+@else
+{
+<h1 class="text-center text-torshia">Welcome, @User.Username!</h1>
+
+<h1 class="text-center text-torshia">Have a nice tasking experience!</h1>
+}
+<hr class="bg-torshia hr-2" />
+<div class="container-fluid">
+    <div class="row justify-content-around">
+        @for(var i = 0; i < Model.Tasks.Count(); i++)
+        {
+        { var task = Model.Tasks.ToList()[i]; }
+        @if (i % 5 == 0 && i > 1)
+        {
+    </div>
+    <div class="row justify-content-around mt-3">
+        }
+        <div class="col-md-2 bg-torshia text-center text-white">
+            @task.Id
+            @task.Title
+            <hr class="hr-2 bg-white text-white"/>
+            Level: @task.Level
+            <hr class="hr-2 bg-white text-white"/>
+            <a href="/Tasks/Report/@Report.Id" class="text-white">Report</a> &nbsp;
+            <a href="/Tasks/Details/Details.Id" class="text-white">Details</a>
+        </div>
+        }
+    </div>
+</div>

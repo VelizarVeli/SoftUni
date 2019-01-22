@@ -1,0 +1,59 @@
+<!-- <h1>Create Track</h1>
+
+<hr />
+
+<form action="/tracks/create?albumId=@Model.AlbumId" method="post">
+    <label>Name </label>
+    <input type="text" name="name" placeholder="Name..." />
+    <br />
+    <label>Link </label>
+    <input type="text" name="link" placeholder="Link..." />
+    <br />
+    <label>Price </label>
+    <input type="number" step=".01" name="price" placeholder="Price..." />
+
+    <br />
+
+    <input type="submit" value="Create" />
+</form> -->
+<!-- 
+<a href="/albums/details?id=@Model.AlbumId">Back to Album</a> -->
+
+<div class="container">
+    <h1 class="text-center text-green">Create Track</h1>
+    <hr>
+    <form action="/tracks/create?albumId=@Model.AlbumId" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Name...">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="link">Link</label>
+                    <input type="text" name="link" class="form-control" id="link" placeholder="Link...">
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" step=".01" name="price" class="form-control" id="price" placeholder="Price...">
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+
+        <div class="row text-center">
+            <div class="col">
+                <input class="btn btn-success" type="submit" value="Create">
+            </div>
+            <div class="col">
+                <a href="/albums/all" class="btn btn-success">Back To All</a>
+            </div>
+        </div>
+    </form>
+</div>

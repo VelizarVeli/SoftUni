@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "CustomError";
+}
+
+<div class="text-center">
+    <h2>My Custom Error Page</h2>
+</div>
+
+<div class="jumbotron mt-3 alert alert-danger" role="alert">
+    <div class="text-center font-weight-bold mb-1">
+        @ViewData["ExceptionMessage"]
+    </div>
+    This is a danger alert with @ViewData["Exception"];
+</div>

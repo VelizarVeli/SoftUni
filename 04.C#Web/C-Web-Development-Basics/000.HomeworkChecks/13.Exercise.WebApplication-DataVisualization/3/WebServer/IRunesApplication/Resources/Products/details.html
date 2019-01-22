@@ -1,0 +1,38 @@
+﻿<div class="row">    
+    <div class="col-md-12">
+        <div>
+            <img src="{{{image-url}}}" alt="Alternate Text" />
+        </div>
+        <div class="col-md-12 text-center">
+            <div class="row">
+                <p class="text-center">
+                    <h5>Album Name: {{{album-name}}}</h5>
+                </p>
+            </div>
+            <div class="row">
+                <p class="text-center">
+                    <h5>Album Price: ${{{album-price}}}</h5>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-success"><a href="/Track/Create/{{{album-id}}}" class="text-white">Create Track</a></button>
+            </div>
+            <div class="col-md-4 offset-md-4">
+                <button class="btn btn-success center"><a href="/Albums/All" class="text-white">Back to all</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-2"></div>
+<div class="row">
+    <div class="col-md-5">
+        <h3>Tracks</h3>
+        <div style="display:{{{tracks}}}">
+            <ol>
+                {{{content-album}}}
+            </ol>
+        </div>
+    </div>
+</div>

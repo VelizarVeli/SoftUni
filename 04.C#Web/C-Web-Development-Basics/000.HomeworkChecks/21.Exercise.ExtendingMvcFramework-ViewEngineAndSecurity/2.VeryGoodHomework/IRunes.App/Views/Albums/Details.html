@@ -1,0 +1,48 @@
+﻿<div class="container col-sm-12">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1 class="text-success m-0">Album&nbsp;Details</h1>
+        </div>
+    </div>
+    <hr class="hr-success bg-success" />
+    <div class="row">
+        <div class="col-sm-5 mt-2 mb-3">
+            <div class="text-center">
+                <img src="@Model.AlbumCoverArt" alt="@Model.AlbumCoverArtTooltip" height="256" width="256" />
+            </div>
+            <div class="text-center">
+                <h6><b>Artist:&nbsp;@Model.AlbumArtist</b></h6>
+                <h6><b>Title:&nbsp;@Model.AlbumTitle</b></h6>
+                <h6><b>Genre:&nbsp;@Model.AlbumGenre</b></h6>
+                <h6><b>Price:&nbsp;@Model.AlbumPrice</b></h6>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="mr-auto">
+                    <a class="btn btn-sm btn-success" href="/Tracks/Create?AlbumId=@Model.AlbumId">Create&nbsp;Track</a>
+                </div>
+                <div class="ml-auto">
+                    <a class="btn btn-sm btn-success" href="/Albums/All">Back&nbsp;To&nbsp;All</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7 mt-2 mb-3">
+            <h4><b>Tracks</b></h4>
+            <div class="col-sm-12" id="trackListEmpty">
+                <p>No tracks added to album yet.</p>
+            </div>
+            <div class="col-sm-12" id="trackList">
+		<ul class="list">@Model.Collection.AlbumTracks(@Item)</ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var hasTracks = @Model.HasTracks;
+    window.addEventListener("DOMContentLoaded", function () {
+	if (hasTracks == true || hasTracks == 1) {
+	    document.getElementById("trackListEmpty").style.display = 'none';
+	} else {
+	    document.getElementById("trackList").style.display = 'none';
+	}
+    }, false)
+</script>

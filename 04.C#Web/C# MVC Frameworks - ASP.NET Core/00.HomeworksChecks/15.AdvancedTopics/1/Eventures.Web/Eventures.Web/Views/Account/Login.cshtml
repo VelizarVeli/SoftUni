@@ -1,0 +1,48 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Eventures.Models
+
+@model Eventures.Web.ViewModels.Users.LoginUserViewModel
+@inject SignInManager<EventuresUser> SignInManager
+
+<h1 class="text-center">Login</h1>
+<hr class="hr-3 third-width eventures-bg-color" />
+<form class="mx-auto third-width" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group text-center">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" class="form-control" style="background-color:yellow" placeholder="Username...">
+
+    </div>
+    <div class="form-group text-center">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" style="background-color:yellow" placeholder="Password...">
+
+    </div>
+    <hr class="hr-3 eventures-bg-color" />
+    <div class="form-group text-center">
+        <div class="checkbox">
+            <input asp-for="RememberMe">
+            <label asp-for="RememberMe"></label>
+        </div>
+    </div>
+    <hr class="hr-3 eventures-bg-color" />
+    <div class="button-holder d-flex justify-content-center mb-2">
+        <button type="submit" class="btn eventures-bg-color">Login</button>
+    </div>
+</form>
+<div class="text-center"><a href="#">Forgot your password?</a></div>
+<div class="text-center"><a asp-controller="Account" asp-action="Register">Register as a new user?</a></div>
+<hr class="hr-3 third-width eventures-bg-color" />
+<form asp-controller="Account" asp-action="ExternalLogin" method="post">
+    <div>
+        <p>
+            @foreach (var provider in SignInManager.GetExternalAuthenticationSchemesAsync().Result)
+            {
+                <div class="button-holder d-flex justify-content-center mb-2">
+                    <button type="submit" class="btn eventures-bg-color" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                </div>
+            }
+        </p>
+    </div>
+</form>
+<hr class="hr-3 third-width eventures-bg-color" />

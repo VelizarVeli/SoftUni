@@ -1,0 +1,92 @@
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: black !important;
+}
+
+.half-width {
+    width: 60%;
+}
+
+textarea {
+    resize: none;
+}
+
+.rrr2 {
+    justify-content: center !important
+}
+
+.rrr1 {
+    justify-content:flex-start !important
+}
+
+.chushka-bg-color {
+    background-color: aquamarine !important;
+    color: #37373e;
+}
+
+.nav-link-dark {
+    color: #115ed2f2
+}
+
+.hr-2 {
+    height: 2px !important;
+    color: aquamarine !important;
+    width: 30%;
+}
+
+.hr-1 {
+    height: 1px !important;
+    color: aquamarine !important;
+}
+.hr-3 {
+    height: 3px !important;
+    color: grey !important;
+}
+.rrr {
+    height: 2px !important;
+    color: aquamarine !important;
+    width: 70%;
+}
+
+.text-gr {
+    color: grey !important;
+}
+.table-hover > tbody > tr:hover {
+    background-color: aquamarine;
+    color:black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border: 0;
+    width: 98%;
+}
+
+.marg {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+}
+
+.wiy {
+    width: 30% !important;
+}
+
+.wiy1 {
+    width: 47% !important;
+}
+
+.inline {
+    display: inline-block !important;
+}
+
+
+
+
+

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>IRunes</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="all.css" type="text/css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">IRunes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="userLoggedIn">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/albums/all">Albums</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="top-border-line"></div>
+
+    <div class="jumbotron col-md-12">
+        <h1>Welcome, <div class="orange">{{username}}</div></h1>
+        <div class="index-border-line"></div>
+        <h3>IRunes wishes you a fun experience.</h3>
+    </div>
+
+    <div class="bottom-border-line"></div>
+
+    <footer>
+        <p class="footer-logo"><strong>CopyRight &#169; Sanity Design Studios. All rights reserved.</strong></p>
+    </footer>
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+</body>
+</html>

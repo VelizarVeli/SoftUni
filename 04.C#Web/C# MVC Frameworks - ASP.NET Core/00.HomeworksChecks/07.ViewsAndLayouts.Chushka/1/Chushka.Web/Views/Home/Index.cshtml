@@ -1,0 +1,22 @@
+﻿@using Chushka.Models
+@using Microsoft.AspNetCore.Identity
+@model IEnumerable<ProductViewModel>
+@{
+    ViewData["Title"] = "Index";
+    var user = User;
+}
+
+@inject SignInManager<ChushkaUser> SingInManager
+@inject UserManager<ChushkaUser> UserManager
+
+<div class="jumbotron mt-3 chushka-bg-color">
+    <partial name="_Greeting" />
+    @if (SingInManager.IsSignedIn(user))
+    {
+        <div class="container-fluid product-holder">
+            <div class="row d-flex justify-content-around">
+                @await Html.PartialAsync("_ProductsPartial", @Model)
+            </div>
+        </div>
+    }
+</div>

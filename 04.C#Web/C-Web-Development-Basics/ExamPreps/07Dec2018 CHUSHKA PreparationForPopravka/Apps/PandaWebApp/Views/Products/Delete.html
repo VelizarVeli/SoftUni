@@ -1,0 +1,84 @@
+﻿<h1 class="text-center">Delete Product</h1>
+<hr class="bg-secondary w-50" />
+<form class="mx-auto w-50" method="post" action="/products/delete">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input disabled type="text" value="@Model.Name" class="form-control" id="name" placeholder="@Model.Name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input disabled type="number" value="@Model.Price" step="0.01" min="0" class="form-control" id="price" placeholder="Price..." name="price">
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea disabled class="form-control" id="description" name="description" rows="4" placeholder="Description...">@Model.Description</textarea>
+    </div>
+    <h4 class="text-center">Product type</h4>
+    <hr class="bg-secondary w-50" />
+    <div class="row justify-content-around">
+        { var types = new[] { "Food", "Domestic", "Health", "Cosmetic", "Other" }; }
+        @foreach(var type in types)
+        {
+        <div class="col-md-2">
+            <input disabled id="type@type"
+                   type="radio"
+                   @if (Model.Type==type)
+                   {
+                   checked="checked"
+                   }
+                   name="type"
+                   value="@type" />
+            <label for="type@type">@type</label>
+        </div>
+        }
+    </div>
+    <hr class="bg-secondary w-50" />
+    <div class="button-holder d-flex justify-content-center row">
+        <span class=" col-sm-1 float-left"><button type="submit" class="btn chushka-bg-color">Delete</button></span><span class="col-sm-5 float-right"><a class="btn chushka-bg-color" href="/products/details?id=@Model.Id">Cancel</a></span>
+</div>
+</form>
+
+
+
+
+
+
+        <!--<input type="text" class="form-control" id="name" placeholder="@Model.Name" name="name">
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" id="price" placeholder="@Model.Price" name="price">
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" placeholder="@Model.Description" name="description"></textarea>
+    </div>
+    <h2 class="text-center">Product Type</h2>
+    <hr class="w-50 hr-2" />
+    <div class="row justify-content-around">
+        <div class="col-md-2">
+            <input name="type" id="Food" value="Food" type="radio" />
+            <label for="Food">Food</label>
+        </div>
+        <div class="col-md-2">
+            <input name="type" id="Domestic" value="Domestic" type="radio" />
+            <label for="Domestic">Domestic</label>
+        </div>
+        <div class="col-md-2">
+            <input name="type" id="Health" value="Health" type="radio" />
+            <label for="Health">Health</label>
+        </div>
+        <div class="col-md-2">
+            <input name="type" id="Cosmetic" value="Cosmetic" type="radio" />
+            <label for="Cosmetic">Cosmetic</label>
+        </div>
+        <div class="col-md-2">
+            <input name="type" id="Other" value="Other" type="radio" />
+            <label for="Other">Other</label>
+        </div>
+    </div>
+    <hr class="w-50 hr-2" />
+    <div class="btn mt-4 d-flex justify-content-center">
+        <button type="submit" class="btn chushka-bg-color">Edit</button>
+    </div>
+</form>-->

@@ -1,0 +1,15 @@
+﻿hr {
+    height: 2px;
+    border-color: #28a745;
+    background-color: #28a745;
+}
+
+.jumbotron>hr {
+    height: 2px;
+    border-color: white;
+    background-color: white;
+}
+
+.nounderline {
+    text-decoration: none !important
+}

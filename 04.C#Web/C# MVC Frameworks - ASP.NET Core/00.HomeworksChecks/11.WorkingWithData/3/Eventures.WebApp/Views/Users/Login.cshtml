@@ -1,0 +1,52 @@
+﻿@model LoginInputModel
+
+@{
+    ViewData["Title"] ="Login";
+}
+
+
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <h2 class="d-flex justify-content-center">@ViewData["Title"]</h2>
+        <form method="post" asp-action="Login" asp-controller="Users">
+
+            <hr class="h2 chushka-bg-color" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Username" class="d-flex justify-content-center "></label>
+                <input asp-for="Username" class="form-control" value="Pesho" style="background-color: darkkhaki"/>
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="d-flex justify-content-center "></label>
+                <input asp-for="Password" type="password" class="form-control" value="*******" style="background-color: darkkhaki"/>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <hr class="h2 chushka-bg-color" />
+            <div class="d-flex justify-content-center">
+                <div class="checkbox ">
+                    <label asp-for="RememberMe">
+                        <input asp-for="RememberMe" />
+                        @Html.DisplayNameFor(m => m.RememberMe)
+                    </label>
+                </div>
+            </div>
+            <hr class="h2 chushka-bg-color" />
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn chushka-bg-color">Login</button>
+            </div>
+        </form>
+        
+            <div>
+                <a asp-action="ForgottenPassword" asp-controller="Users"><span style="color: lightskyblue">Forgot your password?</span></a>
+            </div>
+            <div>
+                <a asp-action="Register" asp-controller="Users"><span style="color: lightskyblue" >Register as a new user</span></a>
+            </div>
+      
+    </div>
+<</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

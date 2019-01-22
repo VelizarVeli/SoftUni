@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>IRunes</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+</head>
+<body>
+    <div class="form-row">
+        <div class="col-md-5 mb-3 text-center">
+            {{album}}
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="/track/create?albumId={{albumId}}" class="btn btn-success">Create Track</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="/album/all" class="btn btn-success">Back To All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 mb-3"></div>
+        <div class="col-md-6 mb-3">
+            <h2><b>Tracks</b></h2>
+            {{tracks}}
+        </div>
+    </div>
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="popper.min.js" type="text/javascript"></script>
+    <script src="bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

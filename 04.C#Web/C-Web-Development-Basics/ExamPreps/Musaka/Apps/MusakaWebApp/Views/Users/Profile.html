@@ -1,0 +1,31 @@
+﻿<h1 class="text-center">Greetings, @User.Username</h1>
+<hr class="hr-2 bg-musaca">
+<div class="d-flex justify-content-between">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr class="row">
+                <th scope="col" class="col-lg-5 d-flex justify-content-center"><h3>Id</h3></th>
+                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>Total</h3></th>
+                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>Issued On</h3></th>
+                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>Cashier</h3></th>
+                <th scope="col" class="col-lg-1 d-flex justify-content-center"><h3>Actions</h3></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(int i = 0; i < Model.Products.Count(); i++)
+            {
+            { var number = i + 1; }
+            { var product = Model.Products.ToList()[i]; }
+            <tr class="row">
+                <th scope="row" class="col-lg-5 d-flex justify-content-center"><h5>@receipt.Id</h5></th>
+                <td class="col-lg-2 d-flex justify-content-center"><h5>$@product.Total</h5></td>
+                <td class="col-lg-2 d-flex justify-content-center"><h5>@product.IssuedOn</h5></td>
+                <td class="col-lg-2 d-flex justify-content-center"><h5>@product.Cashier</h5></td>
+                <td class="col-lg-1 d-flex justify-content-center">
+                    <a href="/Receipts/Details?id=@receipt.Id" class="btn bg-musaca text-white">Details</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

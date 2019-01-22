@@ -1,0 +1,74 @@
+﻿@using Eventures.Models
+@using Eventures.Web.Controllers
+@using Microsoft.AspNetCore.Identity
+@model Eventures.Web.Structures.PaginatedList<UserViewModel>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+@inject UserManager<EventureUser> userManager
+<main class="mt-3 mb-5">
+    <h1 class="text-center">All Events</h1>
+    <hr class="hr-2 bg-eventure" />
+    <table class="table w-75 mx-auto table-hover">
+        <thead>
+            <tr class="row">
+                <th class="col-md-1">#</th>
+                <th class="col-md-5">User</th>
+                <th class="col-md-5">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 1;
+                foreach (var m in Model)
+                {
+
+                    <tr class="row">
+                        <th class="col-md-1">@(i + 1)</th>
+                        <td class="col-md-5">@m.Username</td>
+
+                        <td class="col-md-4">
+                            <form asp-controller="Account" asp-action="Manage" method="post">
+                                <input class="form-control" name="userId" value="@m.Id" hidden />
+                                @{
+                                    var user = await userManager.FindByIdAsync(m.Id);
+                                    var roles = await userManager.GetRolesAsync(user);   
+
+                                    if (roles.Contains("Administrator"))
+                                    {
+                                        <button type="submit" class="btn bg-eventure">Demote</button>
+
+                                    }
+                                    else
+                                    {
+                                        <button type="submit" class="btn bg-eventure">Promote</button>
+                                    }
+                                }
+
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    @{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    }
+    <div class="button-holder d-flex justify-content-center">
+        <a asp-controller="Account" asp-action="Manage"
+           asp-route-pageIndex="@(Model.PageIndex - 1)"
+           class="btn bg-eventure @prevDisabled">
+            Previous
+        </a>
+        <a asp-controller="Account" asp-action="Manage"
+           asp-route-pageIndex="@(Model.PageIndex + 1)"
+           class="btn bg-eventure @nextDisabled ml-3">
+            Next
+        </a>
+    </div>
+</main>

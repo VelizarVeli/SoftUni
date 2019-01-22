@@ -1,0 +1,51 @@
+﻿@font-face {
+    font-family: 'Andika-R';
+    src: url('../woff/Andika-R.woff');
+    src: local('Andika-R'), url('../woff/Andika-R.woff') format('woff'), url('../ttf/Andika-R.ttf') format('truetype');
+}
+
+body {
+    font-family: Andika-R, Arial, 'Courier New', Helvetica, Verdana, sans-serif;
+}
+
+hr {
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    border-width: 0.2rem;
+}
+
+main {
+    margin-bottom: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.greeting {
+    border-bottom: 0.2rem solid whitesmoke;
+    padding-bottom: 0.8rem;
+}
+
+.jumbotron {
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.list-group {
+    padding: 0.5rem 0 1rem 0.1rem;
+}
+
+.list-group-item{
+    padding: 0;
+}
+
+.nav-item > a {
+    color: whitesmoke !important;
+}
+
+.nav-item > a:hover {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    color: mediumseagreen !important;
+}
+
+#navbar-toggler {
+    border-color: whitesmoke;
+}

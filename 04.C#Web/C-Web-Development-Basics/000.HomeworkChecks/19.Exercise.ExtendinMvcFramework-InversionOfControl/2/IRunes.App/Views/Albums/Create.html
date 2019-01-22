@@ -1,0 +1,29 @@
+﻿<<div class="container text-center text-success">
+    <h1>Create Album</h1>
+</div>
+<div class="container-fluid col-md-6 align-content-center">
+    <hr />
+    <form action="/Albums/Create" method="post">
+        <div class="form-group">
+            <label for="name">Name </label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name..." />
+        </div>
+        <div class="form-group">
+            <label for="cover">Cover </label>
+            <input type="text" class="form-control" name="cover" id="cover" placeholder="Cover..." />
+        </div>
+        <br />
+        <hr />
+        <div class="row text-center">
+            <div class="col">
+                <input type="submit" class="btn btn-success text-white" value="Create">
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-success">
+                    <a class="text-white nounderline" href="/Albums/All">Back To All</a>
+                </button>
+            </div>
+        </div>
+        <br />
+    </form>
+</div>

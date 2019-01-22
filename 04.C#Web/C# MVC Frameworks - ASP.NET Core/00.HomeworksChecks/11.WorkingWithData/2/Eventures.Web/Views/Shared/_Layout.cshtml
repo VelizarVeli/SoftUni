@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>@ViewData["Title"] - Eventures.Web</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset-css.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg eventures-bg-color" style="background-color:#AFEEEE">
+                <a class="navbar-brand nav-link-dark" href="/">Eventures</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                    @{
+                        await Html.RenderPartialAsync("_LoginPartial");
+                    }
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid">
+                @RenderBody()
+            </div>
+        </main>
+        <footer>
+            <div class="container-fluid" style="background-color:#AFEEEE">
+                <div class="text-black p-2 text-center">
+                    &copy; Eventures Designs 2018. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

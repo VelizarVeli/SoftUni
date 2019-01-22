@@ -1,0 +1,18 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using Eventures.Areas.Event.ViewModels
+@model IEnumerable<EventViewModel>
+
+@{
+    ViewBag.Title = "Product List";
+}
+
+@foreach (var eventView in Model)
+{
+    <div class="row">
+        <h3 class="col-sm-6">@eventView.Name</h3>
+        <h3 class="col-sm-6">@eventView.Place</h3>
+    </div>
+}
+
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))

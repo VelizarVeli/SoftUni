@@ -1,0 +1,38 @@
+﻿@inject SignInManager<EventureUser> signInManager
+@{
+    ViewData["Title"] = "Home";
+}
+
+@if (!signInManager.IsSignedIn(User))
+{
+    <div class="jumbotron mt-3 chushka-bg-color ml-lg-5 mr-lg-5">
+        <h1 class="nav-link-dark"><span class="nav-link-dark">Eventures - The best ticket service in the world.</span></h1>
+        <hr class="bg-dark" />
+        <h3 class="nav-link-dark"><a class="nav-link-dark" asp-controller="Users" asp-action="Login">Login</a> to start "eventing"</h3>
+        <h3 class="nav-link-dark"><a class="nav-link-dark" asp-controller="Users" asp-action="Register">Register</a> if you don't. have an account</h3>
+    </div>
+}
+else
+{
+    <main>
+        @if (this.User.IsInRole("admin"))
+        { 
+            <div class="jumbotron mt-5 chushka-bg-color ml-lg-5 mr-lg-5">
+                <h2 class="nav-link-dark "><span class="d-flex justify-content-center">Greetings,Administrator @User.Identity.Name!</span></h2>
+                <h4 class="nav-link-dark"><span class="d-flex justify-content-center">Enjoy your work today!</span></h4>
+                <hr class="bg-dark" />                
+            </div>
+        }
+        else
+        {
+
+            <div class="jumbotron mt-5 chushka-bg-color ml-lg-5 mr-lg-5">
+                <h2 class="nav-link-dark "><span class="d-flex justify-content-center">Greetings, @User.Identity.Name!</span></h2>
+                <h4 class="nav-link-dark"><span class="d-flex justify-content-center">Feel free to enjoy your time!</span></h4>
+                <hr class="bg-dark" />                
+            </div>
+
+         
+        }
+    </main>
+}

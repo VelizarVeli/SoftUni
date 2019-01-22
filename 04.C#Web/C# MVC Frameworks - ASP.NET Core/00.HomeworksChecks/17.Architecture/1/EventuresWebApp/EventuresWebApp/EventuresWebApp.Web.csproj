@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-EventuresWebApp-0DAB42B3-8CF6-491C-A5A0-E7C5E410837F</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.4" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventuresWebApp.Data\EventuresWebApp.Data.csproj" />
+    <ProjectReference Include="..\EventuresWebApp.Models\EventuresWebApp.Models.csproj" />
+    <ProjectReference Include="..\EventuresWebApp.Services\EventuresWebApp.Services.csproj" />
+  </ItemGroup>
+
+</Project>

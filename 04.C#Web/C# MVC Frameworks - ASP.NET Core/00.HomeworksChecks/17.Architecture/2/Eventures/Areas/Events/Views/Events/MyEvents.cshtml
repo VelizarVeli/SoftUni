@@ -1,0 +1,42 @@
+﻿@using Eventures.Areas.Event.ViewModels
+@model IEnumerable<EventViewModel>
+
+@{
+    ViewData["Tittle"] = "All Events";
+    var index = 0;
+}
+
+<div class="container">
+    <h1 class="text-center">@ViewData["Tittle"]</h1>
+    <hr class="hr-2 eventures-bg-color" />
+    <table class="table">
+        <thead>
+            <tr class="font-weight-bold">
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Start</th>
+                <th scope="col">End</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var eventt in Model)
+            {
+                index++;
+                <tr>
+                    <th scope="row">@index</th>
+                    <td>@eventt.Name</td>
+                    <td>@eventt.Start</td>
+                    <td>@eventt.End</td>
+                    <td>@eventt.TicketCount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr class="hr-2 eventures-bg-color" />
+</div>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}

@@ -1,0 +1,18 @@
+﻿<div class="row">
+    <div class="col-md-5 col-sm-12">
+        <img src="{{coverImageUrl}}" alt="{{albumName}}" />
+        <div class="text-center">
+            <h2>Name: {{albumName}}</h2>
+            <h2>Price: {{albumPrice}}</h2>
+        </div>
+        <a class="btn btn-green" href="/tracks/create?albumId={{albumId}}">Create Track</a>
+        <a class="btn btn-green float-right" href="/albums/all">Back To All</a>
+    </div>
+    <hr class="col-sm-12 d-md-none">
+    <div class="col-md-5 col-sm-12 offset-md-2">
+        <h2>Tracks</h2>
+        <ol>
+            {{tracksList}}
+        </ol>
+    </div>
+</div>

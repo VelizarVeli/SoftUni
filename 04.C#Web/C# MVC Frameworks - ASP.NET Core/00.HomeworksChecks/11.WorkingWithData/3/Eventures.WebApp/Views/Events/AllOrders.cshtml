@@ -1,0 +1,36 @@
+﻿@model IEnumerable<OrderOutputModel>
+@{
+    ViewData["Title"] = "AllOrders";
+}
+
+<main class="mt-3 mb-5">
+    <h2 class="text-center">@ViewData["Title"]</h2>
+    <hr class="hr-2 chushka-bg-color  w-75" />
+    <table class="table w-75 mx-auto table-hover">
+
+        <thead>
+            <tr class="row">
+                <th class="col-md-2">#</th>
+                <th class="col-md-4">Event</th>
+                <th class="col-md-2">Customer</th>
+                <th class="col-md-4">Ordered On</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var num = 1;
+            }
+            @foreach (var eventure in Model)
+            {
+                <tr class="row">
+                    <th class="col-md-2">@num</th>
+                    <th class="col-md-4">@eventure.EventName</th>
+                    <td class="col-md-2">@eventure.CustomerName</td>
+                    <td class="col-md-4">@eventure.OrderedOn</td>
+                </tr>
+                num++;
+            }
+        </tbody>
+    </table>
+    <hr class="hr-2 chushka-bg-color  w-75" />
+</main>

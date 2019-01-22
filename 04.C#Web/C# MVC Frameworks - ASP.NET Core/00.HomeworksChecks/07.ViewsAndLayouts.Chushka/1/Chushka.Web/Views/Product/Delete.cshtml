@@ -1,0 +1,46 @@
+﻿@model Chushka.Web.Models.ProductViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="text-center">Delete Product</h1>
+<hr class="hr-2 bg-dark" />
+<div class="product-type-holder mt-4 d-flex justify-content-around">
+    <h4>ProductViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete" asp-controller="Product">
+        <hr class="hr-2 bg-dark half-width mt-4"/>
+        <div class="button-holder mt-2 d-flex w-25 mx-auto justify-content-between">
+            <button type="submit" class="btn chushka-bg-color">Delete</button>
+            <a asp-action="Index" asp-controller="Home" class="btn chushka-bg-color">Cancel</a>
+        </div>
+    </form>
+</div>

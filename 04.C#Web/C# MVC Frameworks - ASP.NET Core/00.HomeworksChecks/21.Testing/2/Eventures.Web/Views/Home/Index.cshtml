@@ -1,0 +1,53 @@
+﻿@using Eventures.Models
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<EventureUser> SignInManager
+@inject UserManager<EventureUser> UserManager
+
+@if (ViewData.ContainsKey("Error"))
+{
+    <div class="bg-danger text-center container rounded mt-3 py-3">
+        <h5 class="text-white">@ViewData["Error"]</h5>
+    </div>
+}
+@if (SignInManager.IsSignedIn(User))
+{
+    if (User.IsInRole("Administrator"))
+    {
+        <main>
+            <div class="jumbotron mt-3 bg-eventure offset-1 col-md-10 px-md-5">
+                <h1 class="text-center mt-4">Greetings, Administrator - @User.Identity.Name!</h1>
+                <hr class="hr-2 bg-grey" />
+                <h3 class="text-center text-grey">Enjoy your work!</h3>
+            </div>
+        </main>
+    }
+    else
+    {
+        <main>
+            <div class="jumbotron mt-3 bg-eventure offset-1 col-md-10 px-md-5">
+                <h1 class="text-center mt-4">Greetings, @User.Identity.Name!</h1>
+                <hr class="hr-2 bg-grey" />
+                <h3 class="text-center text-grey">Eventures wishes you an exciting experience!</h3>
+            </div>
+        </main>
+
+    }
+}
+else
+{
+    <main>
+        <div class="jumbotron mt-3 bg-eventure offset-1 col-md-10 px-md-5">
+            <h1>Eventures - The best ticket service in the world.</h1>
+            <hr class="hr-2 bg-dark" />
+            <div class="row">
+                <div> <h3><a class="nav-link nav-link-white text-primary px-2" asp-action="Login" asp-controller="Account">Login</a></h3></div>
+                <div class="mt-2"> <h3> to start "eventing".</h3> </div>
+            </div>
+            <div class="row">
+                <div> <h3><a class="nav-link nav-link-white  text-primary px-2" asp-action="Register" asp-controller="Account">Register</a></h3> </div>
+                <div class="mt-2"> <h3> if you don't have an account.</h3> </div>
+            </div>
+        </div>
+    </main>
+}

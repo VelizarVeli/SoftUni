@@ -1,0 +1,41 @@
+﻿@using Eventures.Web.Areas.Administration.Models
+@model UserViewModel
+@{
+    ViewData["Title"] = "Administration";
+}
+<h2 class="text-center">@ViewData["Title"]</h2>
+<div class="row margin-top">
+    <div class="col-md-8 col-sm-8">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>E-mail</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Users)
+                {
+                    <tr>
+                        <td>@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td>
+                            <form asp-controller="Admin" asp-action="AddToRole" method="post">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <input type="hidden" name="UserId" value="@user.Id" />
+                                        <select name="Role" asp-items="@Model.Roles" class="form-control"></select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="btn btn-sm btn-primary" type="submit" value="Add To Role" />
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

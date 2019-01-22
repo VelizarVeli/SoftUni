@@ -1,0 +1,22 @@
+﻿<div class="container">
+    <hr />
+    <h1>Album Name:  "@Model.Name"</h1>
+    <div><em>Album Price: $@Model.Price</em></div>
+    <img class="img-fluid" title="@Model.Name" src="@Model.Cover" />
+    <hr />
+    <div class="text-center">
+        <h3>Tracks</h3>
+    </div>
+    <hr />
+    <div class="item-link">
+        <p><a class="btn btn-primary" href="/Tracks/Create?albumId={albumId}">Add new track to this album</a></p>
+    </div>
+    <hr />
+    <div class="albumTracks">
+        @Model.Tracks
+    </div>
+    <div>
+        <p><a href="/Albums/All" class="btn btn-primary">Back to all albums</a></p>
+    </div>
+
+</div>
