@@ -1,6 +1,5 @@
-# SoftUni-Software-Engineering
-All labs and exercises I wrote during my education in SoftUni
-
+# <p align="center"> SoftUni-Software-Engineering <p>
+<p align="center">All labs and exercises I wrote during my education in SoftUni <p>
 
 
 
