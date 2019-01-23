@@ -9,7 +9,7 @@ function gcd_two_numbers(x, y) {
       x = t;
     }
     return x;
-  }
+  } 
   
   console.log(gcd_two_numbers(12, 13));
   console.log(gcd_two_numbers(9, 3));
