@@ -23,8 +23,8 @@
 |<a href="https://softuni.bg/trainings/2085/csharp-oop-advanced-november-2018"> C# OOP Advanced</a> | <a href="https://softuni.bg/certificates/details/61773/4ff25f3e"> Link</a> |
 |<a href="https://softuni.bg/trainings/1985/database-basics-mssql-may-2018"> Databases Basics - MS SQL </a> | <a href="https://softuni.bg/certificates/details/55509/6eb59dbe"> Link</a> |
 |<a href="https://softuni.bg/trainings/1972/databases-advanced-entity-framework-june-2018"> Databases Advanced - Entity Framework </a> | <a href="https://softuni.bg/certificates/details/57788/0b6c9184"> Link</a> |
-|<a href="https://softuni.bg/trainings/2086/csharp-web-development-basics-september-2018"> C# Web Development Basics </a> | <a 
+|<a href="https://softuni.bg/trainings/2086/csharp-web-development-basics-september-2018"> C# Web Development Basics </a> |
 |<a href="https://softuni.bg/trainings/2197/csharp-mvc-frameworks-asp-net-core-november-2018"> C# MVC Frameworks - ASP.NET Core </a> | 
-|<a href="https://softuni.bg/trainings/2247/js-fundamentals-january-2019"> JavaScript Fundamentals </a> | <a 
-|<a href="https://softuni.bg/trainings/2248/js-advanced-february-2019"> JavaScript Advanced </a> | <a 
-|<a href="https://softuni.bg/trainings/2249/js-applications-march-2019"> JavaScript Applications </a> | <a 
+|<a href="https://softuni.bg/trainings/2247/js-fundamentals-january-2019"> JavaScript Fundamentals </a> |
+|<a href="https://softuni.bg/trainings/2248/js-advanced-february-2019"> JavaScript Advanced </a> |
+|<a href="https://softuni.bg/trainings/2249/js-applications-march-2019"> JavaScript Applications </a> |
