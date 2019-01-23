@@ -1,16 +1,6 @@
 # <p align="center"> SoftUni-Software-Engineering <p>
 <p align="center">All labs and exercises I wrote during my education in SoftUni <p>
 
-
-
-
-
-
-
-
-
-
-
 # <p align="center"> Courses from the main program in SoftUni <p>
 
 <a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/>
