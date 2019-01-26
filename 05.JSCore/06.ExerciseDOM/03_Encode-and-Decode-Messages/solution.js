@@ -9,9 +9,6 @@ function solve() {
 			decodedMessage += String.fromCharCode(message.charCodeAt(i) - 1);
 		}
 
-
-		
-
 		decodeTextArea.value = decodedMessage; 
 	}
 
