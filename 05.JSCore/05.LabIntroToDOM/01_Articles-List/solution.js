@@ -15,6 +15,6 @@ function createArticle() {
 		articlesList.appendChild(article)
 	}
 	
-	document.getElementById('createTitle').value = ""
-	document.getElementById('createContent').value = ""
+	document.getElementById('createTitle').value = "";
+	document.getElementById('createContent').value = "";
 }
