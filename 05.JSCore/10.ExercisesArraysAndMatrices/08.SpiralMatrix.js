@@ -21,7 +21,7 @@ function solve(rows, cols) {
                 dir = 'd';
                 currRow++;
             } else {
-                currCol++
+                currCol++;
             }
         } else if (dir === 'd') {
             if (currRow + 1 >= rows || matrix[currRow + 1][currCol] !== 0) {
@@ -34,16 +34,14 @@ function solve(rows, cols) {
             if (currCol - 1 < 0 || matrix[currRow][currCol - 1] !== 0) {
                 dir = 'u';
                 currRow--;
-            }
-            else{
+            } else {
                 currCol--;
             }
         } else if (dir === 'u') {
             if (currRow - 1 <= 0 || matrix[currRow - 1][currCol] !== 0) {
                 dir = 'r';
                 currCol++;
-            }
-            else{
+            } else {
                 currRow--;
             }
         }

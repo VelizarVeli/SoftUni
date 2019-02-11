@@ -24,17 +24,17 @@ function solve() {
         btn.addEventListener('click', buttonClick);
     });
 
-    function buttonClick(e){
+    function buttonClick(e) {
         let button = e.target;
         let seatNumber = +button.textContent;
         let zone = button.parentNode.parentNode.parentNode.parentNode.parentNode.className;
         let sector = String.fromCharCode(+(e.target.parentNode.cellIndex) + 65);
 
-        if(button.style.backgroundColor === ''){
-            ticketPrices.summary.fans +=1;
-            
+        if (button.style.backgroundColor === '') {
+            ticketPrices.summary.fans += 1;
+
             let key = zone !== "VIP" ? 'TEAM' : 'VIP';
-           
+
             ticketPrices.summary.profit += ticketPrices[key][sector];
             e.target.style.backgroundColor = "rgb(255,0,0)";
 
@@ -43,10 +43,10 @@ function solve() {
             textArea.value += ` Seat ${seatNumber} in zone ${zone} sector ${sector} is unavailable.\n`;
         }
     }
-    
+
     summary.children[0].addEventListener('click', printTheSummary);
 
-    function printTheSummary(){
+    function printTheSummary() {
         summary.children[1].textContent = `${ticketPrices.summary.profit} leva, ${ticketPrices.summary.fans} fans.`;
     }
 }

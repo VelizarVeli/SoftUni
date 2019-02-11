@@ -55,7 +55,7 @@ function solve() {
 
    function get() {
       let input = document.getElementById('input').value.split('');
-      let position = (+document.getElementById('getPosition').value) - 1
+      let position = (+document.getElementById('getPosition').value) - 1;
       output.textContent += input[position]
    }
 }
