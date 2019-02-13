@@ -14,7 +14,7 @@ function solve(input) {
             price: cur.price
         });
 
-        
+        return acc;
     }, {});
 
     //console.log(check.Burgas);
@@ -23,7 +23,7 @@ function solve(input) {
         
         let totalProfit = check[town].reduce((a,b) => a.price + b.price);
 
-        console.log(`${town} total profit - ${totalProfit}`)
+        console.log(`${town} total profit - ${totalProfit}`);
     })
 }
 
