@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../02. Fisher Game/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<button type="button" id="createStudentBtn" class="btn btn-success mb-2 mt-2">Create Student</button>
+<div id="createStudentSection" class="container" style="display: none">
+
+        <div class="form-group ">
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="inputID" placeholder="ID">
+            </div>
+            <div class="col-sm-4 mt-2">
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+            </div>
+            <div class="col-sm-4 mt-2">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+            </div>
+            <div class="col-sm-4 mt-2">
+                <input type="text" class="form-control" id="inputFacultyNumber" placeholder="Faculty Number">
+            </div>
+            <div class="col-sm-4 mt-2">
+                <input type="number" class="form-control" id="inputGrade" placeholder="Grade">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" id="newStudentBtn" class="btn btn-success">Save</button>
+            </div>
+        </div>
+</div>
+
+<table id="results">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Faculty Number</th>
+        <th>Grade</th>
+    </tr>
+    </thead>
+    <tbody id="studentsInfo">
+    </tbody>
+</table>
+<script>attachEvents()</script>
+</body>
+</html>
