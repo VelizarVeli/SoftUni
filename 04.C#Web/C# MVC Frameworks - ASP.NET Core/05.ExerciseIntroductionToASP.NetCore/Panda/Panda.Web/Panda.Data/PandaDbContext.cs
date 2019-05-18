@@ -4,7 +4,7 @@ using Panda.Model;
 
 namespace Panda.Data
 {
-    public class PandaDbContext : IdentityDbContext<PandaUser>
+    public class PandaDbContext : IdentityDbContext<User>
     {
         public PandaDbContext(DbContextOptions<PandaDbContext> options)
             : base(options)

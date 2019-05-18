@@ -1,7 +1,7 @@
 @using Microsoft.AspNetCore.Identity
 @using Panda.Model
-@inject SignInManager<PandaUser> SignInManager
-@inject UserManager<PandaUser> UserManager
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
@@ -18,10 +18,10 @@
 else
 {
     <li class="nav-item">
-        <a class="nav-link nav-link-white active" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        <a class="nav-link nav-link-white active" asp-area="Identity" asp-page="/Account/Login">Login</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link nav-link-white active" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a class="nav-link nav-link-white active" asp-area="Identity" asp-page="/Account/Register">Register</a>
     </li>
 }
 </ul>

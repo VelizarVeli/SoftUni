@@ -37,7 +37,7 @@ namespace Panda.Web
             services.AddDbContext<PandaDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<PandaUser, IdentityRole>(identityOptions =>
+            services.AddIdentity<User, IdentityRole>(identityOptions =>
                     {
                         identityOptions.Password.RequireDigit = false;
                         identityOptions.Password.RequireLowercase = false;
@@ -48,8 +48,8 @@ namespace Panda.Web
                 .AddEntityFrameworkStores<PandaDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddScoped<UserManager<PandaUser>>();
-            services.AddScoped<UserStore<PandaUser>>();
+            services.AddScoped<UserManager<User>>();
+            services.AddScoped<UserStore<User>>();
             services.AddScoped<Logger<RegisterModel>>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
