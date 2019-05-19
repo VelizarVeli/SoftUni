@@ -40,8 +40,7 @@ namespace Panda.Data.Migrations
                     TwoFactorEnabled = table.Column<bool>(nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
-                    AccessFailedCount = table.Column<int>(nullable: false),
-                    Role = table.Column<int>(nullable: false)
+                    AccessFailedCount = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -155,7 +154,7 @@ namespace Panda.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Package",
+                name: "Packages",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -169,9 +168,9 @@ namespace Panda.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Package", x => x.Id);
+                    table.PrimaryKey("PK_Packages", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Package_AspNetUsers_RecipientId",
+                        name: "FK_Packages_AspNetUsers_RecipientId",
                         column: x => x.RecipientId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -179,7 +178,7 @@ namespace Panda.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Receipt",
+                name: "Receipts",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -191,15 +190,15 @@ namespace Panda.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Receipt", x => x.Id);
+                    table.PrimaryKey("PK_Receipts", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Receipt_Package_PackageId",
+                        name: "FK_Receipts_Packages_PackageId",
                         column: x => x.PackageId,
-                        principalTable: "Package",
+                        principalTable: "Packages",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Receipt_AspNetUsers_RecipientId",
+                        name: "FK_Receipts_AspNetUsers_RecipientId",
                         column: x => x.RecipientId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -246,18 +245,18 @@ namespace Panda.Data.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Package_RecipientId",
-                table: "Package",
+                name: "IX_Packages_RecipientId",
+                table: "Packages",
                 column: "RecipientId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Receipt_PackageId",
-                table: "Receipt",
+                name: "IX_Receipts_PackageId",
+                table: "Receipts",
                 column: "PackageId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Receipt_RecipientId",
-                table: "Receipt",
+                name: "IX_Receipts_RecipientId",
+                table: "Receipts",
                 column: "RecipientId");
         }
 
@@ -279,13 +278,13 @@ namespace Panda.Data.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Receipt");
+                name: "Receipts");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "Package");
+                name: "Packages");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

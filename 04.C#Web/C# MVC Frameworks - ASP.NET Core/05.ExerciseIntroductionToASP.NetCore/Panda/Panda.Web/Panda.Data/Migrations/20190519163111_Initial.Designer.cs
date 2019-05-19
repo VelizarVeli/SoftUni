@@ -10,7 +10,7 @@ using Panda.Data;
 namespace Panda.Data.Migrations
 {
     [DbContext(typeof(PandaDbContext))]
-    [Migration("20190518053844_Initial")]
+    [Migration("20190519163111_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -154,34 +154,10 @@ namespace Panda.Data.Migrations
 
                     b.HasIndex("RecipientId");
 
-                    b.ToTable("Package");
+                    b.ToTable("Packages");
                 });
 
-            modelBuilder.Entity("Panda.Model.Receipt", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<decimal>("Fee");
-
-                    b.Property<DateTime>("IssuedOn");
-
-                    b.Property<Guid>("PackageId");
-
-                    b.Property<string>("RecipientId");
-
-                    b.Property<Guid>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PackageId");
-
-                    b.HasIndex("RecipientId");
-
-                    b.ToTable("Receipt");
-                });
-
-            modelBuilder.Entity("Panda.Model.User", b =>
+            modelBuilder.Entity("Panda.Model.PandaUser", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
@@ -212,8 +188,6 @@ namespace Panda.Data.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed");
 
-                    b.Property<int>("Role");
-
                     b.Property<string>("SecurityStamp");
 
                     b.Property<bool>("TwoFactorEnabled");
@@ -234,6 +208,30 @@ namespace Panda.Data.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("Panda.Model.Receipt", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<decimal>("Fee");
+
+                    b.Property<DateTime>("IssuedOn");
+
+                    b.Property<Guid>("PackageId");
+
+                    b.Property<string>("RecipientId");
+
+                    b.Property<Guid>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PackageId");
+
+                    b.HasIndex("RecipientId");
+
+                    b.ToTable("Receipts");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole")
@@ -244,7 +242,7 @@ namespace Panda.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Panda.Model.User")
+                    b.HasOne("Panda.Model.PandaUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -252,7 +250,7 @@ namespace Panda.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Panda.Model.User")
+                    b.HasOne("Panda.Model.PandaUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -265,7 +263,7 @@ namespace Panda.Data.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Panda.Model.User")
+                    b.HasOne("Panda.Model.PandaUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -273,7 +271,7 @@ namespace Panda.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Panda.Model.User")
+                    b.HasOne("Panda.Model.PandaUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -281,7 +279,7 @@ namespace Panda.Data.Migrations
 
             modelBuilder.Entity("Panda.Model.Package", b =>
                 {
-                    b.HasOne("Panda.Model.User", "Recipient")
+                    b.HasOne("Panda.Model.PandaUser", "Recipient")
                         .WithMany("Packages")
                         .HasForeignKey("RecipientId");
                 });
@@ -293,7 +291,7 @@ namespace Panda.Data.Migrations
                         .HasForeignKey("PackageId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Panda.Model.User", "Recipient")
+                    b.HasOne("Panda.Model.PandaUser", "Recipient")
                         .WithMany("Receipts")
                         .HasForeignKey("RecipientId");
                 });

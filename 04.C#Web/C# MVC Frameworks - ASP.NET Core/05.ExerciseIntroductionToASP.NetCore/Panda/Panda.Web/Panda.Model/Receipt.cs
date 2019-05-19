@@ -9,9 +9,9 @@ namespace Panda.Model
         public DateTime IssuedOn { get; set; }
 
         public Guid UserId { get; set; }
-        public User Recipient { get; set; }
+        public virtual PandaUser Recipient { get; set; }
 
         public Guid PackageId { get; set; }
-        public Package Package { get; set; }
+        public virtual Package Package { get; set; }
     }
 }

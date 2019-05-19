@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Panda.Data;
 using Panda.Model;
+using Panda.Web.Services;
 
 namespace Panda.Web
 {
@@ -37,7 +40,7 @@ namespace Panda.Web
             services.AddDbContext<PandaDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<User, IdentityRole>(identityOptions =>
+            services.AddIdentity<PandaUser, IdentityRole>(identityOptions =>
                     {
                         identityOptions.Password.RequireDigit = false;
                         identityOptions.Password.RequireLowercase = false;
@@ -48,14 +51,19 @@ namespace Panda.Web
                 .AddEntityFrameworkStores<PandaDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddScoped<UserManager<User>>();
-            services.AddScoped<UserStore<User>>();
-            services.AddScoped<Logger<RegisterModel>>();
+            services.AddScoped<UserManager<PandaUser>>();
+            //services.AddScoped<UserStore<PandaUser>>();
+            //services.AddScoped<Logger<RegisterModel>>();
+            //services.ConfigureApplicationCookie(options =>
+            //{
+            //    options.LoginPath = $"/Account/Login";
+            //    options.LogoutPath = $"/Account/Logout";
+            //    options.AccessDeniedPath = $"/Account/AccessDenied";
+            //}); 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -65,10 +73,10 @@ namespace Panda.Web
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
+            RoleSeeder.Seed(serviceProvider);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -82,5 +90,25 @@ namespace Panda.Web
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+
+        //private async Task CreateUserRoles(IServiceProvider serviceProvider)
+        //{
+        //    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+        //    var userManager = serviceProvider.GetRequiredService<UserManager<PandaUser>>();
+
+        //    IdentityResult roleResult;
+        //    //Adding Admin Role
+        //    var roleCheck = await roleManager.RoleExistsAsync("Admin");
+        //    if (!roleCheck)
+        //    {
+        //        //create the roles and seed them to the database
+        //        roleResult = await roleManager.CreateAsync(new IdentityRole("Admin"));
+        //    }
+        //    //Assign Admin role to the main PandaUser here we have given our newly registered 
+        //    //login id for Admin management
+        //    PandaUser user = await userManager.FindByEmailAsync("syedshanumcain@gmail.com");
+        //    var PandaUser = new PandaUser();
+        //    await userManager.AddToRoleAsync(user, "Admin");
+        //}
     }
 }

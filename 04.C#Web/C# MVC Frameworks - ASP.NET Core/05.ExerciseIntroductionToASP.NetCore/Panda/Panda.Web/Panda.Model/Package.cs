@@ -16,6 +16,6 @@ namespace Panda.Model
         public DateTime EstimatedDeliveryDate { get; set; }
 
         public Guid UserId { get; set; }
-        public User Recipient { get; set; }
+        public virtual PandaUser Recipient { get; set; }
     }
 }
