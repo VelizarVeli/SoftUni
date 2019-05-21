@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -8,7 +7,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Logging;
 using Panda.Model;
 
@@ -74,7 +72,14 @@ namespace Panda.Web.Areas.Identity.Pages.Account
             {
                 var user = new PandaUser { UserName = Input.Username, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
-
+                if (this._signInManager.UserManager.Users.Count() == 1)
+                {
+                    var roleResult = this._signInManager.UserManager.AddToRoleAsync(user, "Admin").Result;
+                }
+                else
+                {
+                    var roleResult = this._signInManager.UserManager.AddToRoleAsync(user, "User").Result;
+                }
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("PandaUser created a new account with password.");
