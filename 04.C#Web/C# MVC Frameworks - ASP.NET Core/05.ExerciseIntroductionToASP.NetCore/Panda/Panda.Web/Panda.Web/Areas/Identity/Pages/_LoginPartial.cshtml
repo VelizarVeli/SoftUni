@@ -9,9 +9,9 @@
 <ul class="navbar-nav">
     @if (SignInManager.IsSignedIn(User))
     {
-        <li class="nav-item">
+        @*<li class="nav-item">
             <a id="manage" class="nav-link nav-link-white active" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello!!!!!! @UserManager.GetUserName(User)!</a>
-        </li>
+        </li>*@
         <li class="nav-item">
             <form id="logoutForm" class="nav-link nav-link-white active" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                 <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
@@ -20,7 +20,7 @@
         if (User.IsInRole("Admin"))
         {
             <li class="nav-item">
-                <a  class="nav-link nav-link-white active" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Fuck You motherfucker~~!!!</a>
+                <a  class="nav-link nav-link-white active" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"></a>
             </li>
         }
     }

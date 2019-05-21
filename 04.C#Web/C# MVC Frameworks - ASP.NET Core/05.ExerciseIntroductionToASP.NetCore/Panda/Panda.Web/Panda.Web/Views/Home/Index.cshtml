@@ -1,9 +1,55 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using Panda.Model
+@inject SignInManager<PandaUser> SignInManager
+@inject UserManager<PandaUser> UserManager
+@inject RoleManager<IdentityRole> RoleManager
+@{
     ViewData["Title"] = "Home Page";
 }
-<div class="jumbotron mt-3 bg-panda">
-    <h1 class="text-white">Welcome to PANDA Delivery Services.</h1>
-    <hr class="bg-white hr-2" />
-    <h3 class="text-white"><a asp-area="Identity" asp-page="/Account/Login">Login</a> if you have an account.</h3>
-    <h3 class="text-white"><a asp-area="Identity" asp-page="/Account/Register">Register</a> if you don't.</h3>
-</div>
+@if (SignInManager.IsSignedIn(User))
+{
+    <h1 class="text-center">Hello, @UserManager.GetUserName(User)!</h1>
+    <hr class="bg-dark hr-2" />
+    <div class="row">
+        <div class="col-sm-3 mx-5">
+            <h3 class="text-center">Pending</h3>
+            <div class="border-panda">
+                <div class="card-body row">
+                    <h5 class="card-title col-md-9">Special title treatment</h5>
+                    <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
+                </div>
+                <div class="card-body row">
+                    <h5 class="card-title col-md-9">Special title treatment</h5>
+                    <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 mx-5 justify-content-center">
+            <h3 class="text-center">Shipped</h3>
+            <div class="border-panda">
+                <div class="card-body row">
+                    <h5 class="card-title col-md-9">Special title treatment</h5>
+                    <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 ml-5">
+            <h3 class="text-center">Delivered</h3>
+            <div class="border-panda">
+                <div class="card-body row">
+                    <h5 class="card-title col-md-9">Special treatment</h5>
+                    <a href="#" class="btn btn-primary col-md-3 bg-dark">Acquire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="jumbotron mt-3 bg-panda">
+        <h1 class="text-white">Welcome to PANDA Delivery Services.</h1>
+        <hr class="bg-white hr-2" />
+        <h3 class="text-white"><a asp-area="Identity" asp-page="/Account/Login">Login</a> if you have an account.</h3>
+        <h3 class="text-white"><a asp-area="Identity" asp-page="/Account/Register">Register</a> if you don't.</h3>
+    </div>
+}

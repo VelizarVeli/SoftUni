@@ -43,3 +43,7 @@ footer {
     border: 0;
     width: 98%;
 }
+
+.border-3 {
+    border-width: 3px !important;
+}
