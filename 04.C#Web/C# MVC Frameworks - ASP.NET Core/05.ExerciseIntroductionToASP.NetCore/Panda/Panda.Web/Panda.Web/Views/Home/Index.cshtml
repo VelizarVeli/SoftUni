@@ -8,7 +8,14 @@
 }
 @if (SignInManager.IsSignedIn(User))
 {
-    <h1 class="text-center">Hello, @UserManager.GetUserName(User)!</h1>
+    if (User.IsInRole("Admin"))
+    {
+        <h1 class="text-center">Hello, Administrator @UserManager.GetUserName(User)!</h1>
+    }
+    else
+    {
+        <h1 class="text-center">Hello, @UserManager.GetUserName(User)!</h1>
+    }
     <hr class="bg-dark hr-2" />
     <div class="row">
         <div class="col-sm-3 mx-5">
