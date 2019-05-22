@@ -1,6 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Panda.Common.ViewModels.Packages;
 using Panda.Data;
 using Panda.Model;
@@ -48,6 +50,22 @@ namespace Panda.Services
                     });
             }
 
+            return viewModel;
+        }
+
+        public async Task<PackageDetailsViewModel> Details(Guid id, string userId)
+        {
+            var currentPackage = await Db.Packages.FirstOrDefaultAsync(i => i.Id == id);
+            var currentUsername = await UserManager.FindByIdAsync(userId);
+            var viewModel = new PackageDetailsViewModel
+            {
+                Address = currentPackage.ShippingAddress,
+                Status = currentPackage.Status,
+                EstimatedDeliveryDate = currentPackage.EstimatedDeliveryDate,
+                Weight = currentPackage.Weight,
+                Recipient = currentUsername.UserName,
+                Description = currentPackage.Description
+            };
             return viewModel;
         }
     }

@@ -26,7 +26,7 @@
                 {
                     <div class="card-body row py-2">
                         <h5 class="card-title col-md-9">@package.Name</h5>
-                        <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
+                        <a asp-controller="Packages" asp-action="Details" asp-route-id="@package.Id" class="btn btn-primary col-md-3 bg-dark">Details</a>
                     </div>
                 }
             </div>
@@ -38,7 +38,7 @@
                 {
                     <div class="card-body row py-2">
                         <h5 class="card-title col-md-9">@package.Name</h5>
-                        <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
+                        <a asp-controller="Packages" asp-action="Details" asp-route-id="@package.Id" class="btn btn-primary col-md-3 bg-dark">Details</a>
                     </div>
                 }
             </div>
@@ -48,10 +48,9 @@
             <div class="border-panda">
                 @foreach (var package in Model.DeliveredPackages)
                 {
-
                     <div class="card-body row py-2">
                         <h5 class="card-title col-md-9">Special treatment</h5>
-                        <a href="#" class="btn btn-primary col-md-3 bg-dark">Acquire</a>
+                        <a asp-controller="Packages" asp-action="Details" asp-route-id="@package.Id" class="btn btn-primary col-md-3 bg-dark">Acquire</a>
                     </div>
                 }
             </div>

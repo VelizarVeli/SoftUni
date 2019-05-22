@@ -2,7 +2,7 @@
 
 namespace Panda.Web.Controllers
 {
-    public class ReceiptController : Controller
+    public class ReceiptsController : Controller
     {
         public IActionResult Index()
         {
