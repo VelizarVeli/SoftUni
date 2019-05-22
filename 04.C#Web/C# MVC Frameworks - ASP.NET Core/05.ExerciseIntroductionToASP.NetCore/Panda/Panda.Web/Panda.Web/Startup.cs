@@ -91,6 +91,7 @@ namespace Panda.Web
         private void voidRegisterGlobalServices(IServiceCollection services)
         {
             services.AddScoped<IPackageService, PackageService>();
+            services.AddScoped<IReceiptService, ReceiptService>();
         }
     }
 }

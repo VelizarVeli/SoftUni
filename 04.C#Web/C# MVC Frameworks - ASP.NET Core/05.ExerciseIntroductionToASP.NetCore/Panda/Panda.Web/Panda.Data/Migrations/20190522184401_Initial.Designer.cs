@@ -10,7 +10,7 @@ using Panda.Data;
 namespace Panda.Data.Migrations
 {
     [DbContext(typeof(PandaDbContext))]
-    [Migration("20190522072002_Initial")]
+    [Migration("20190522184401_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -218,8 +218,6 @@ namespace Panda.Data.Migrations
                     b.Property<Guid>("PackageId");
 
                     b.Property<string>("RecipientId");
-
-                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 

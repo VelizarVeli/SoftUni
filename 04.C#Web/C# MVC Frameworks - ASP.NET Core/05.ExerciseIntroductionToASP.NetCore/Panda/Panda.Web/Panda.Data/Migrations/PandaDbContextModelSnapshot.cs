@@ -217,8 +217,6 @@ namespace Panda.Data.Migrations
 
                     b.Property<string>("RecipientId");
 
-                    b.Property<string>("UserId");
-
                     b.HasKey("Id");
 
                     b.HasIndex("PackageId");
