@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Web", "Panda.Web\Panda.Web.csproj", "{3D301A1E-4FBC-4D10-B975-B25E93993006}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.Web", "Panda.Web\Panda.Web.csproj", "{3D301A1E-4FBC-4D10-B975-B25E93993006}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Data", "Panda.Data\Panda.Data.csproj", "{BE991F88-C7C6-4FB7-B988-20E8EDFEE320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.Data", "Panda.Data\Panda.Data.csproj", "{BE991F88-C7C6-4FB7-B988-20E8EDFEE320}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Model", "Panda.Model\Panda.Model.csproj", "{BD3BCD5D-AB96-4C37-A115-53436AFDDE94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.Model", "Panda.Model\Panda.Model.csproj", "{BD3BCD5D-AB96-4C37-A115-53436AFDDE94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Services", "Panda.Services\Panda.Services.csproj", "{117AEB61-B196-4579-AFAA-9EA8E6FCB94F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Common", "Panda.Common\Panda.Common.csproj", "{3BFC9425-23FF-4B63-9C08-9ABA9D2F4D6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{BD3BCD5D-AB96-4C37-A115-53436AFDDE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD3BCD5D-AB96-4C37-A115-53436AFDDE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD3BCD5D-AB96-4C37-A115-53436AFDDE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117AEB61-B196-4579-AFAA-9EA8E6FCB94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117AEB61-B196-4579-AFAA-9EA8E6FCB94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117AEB61-B196-4579-AFAA-9EA8E6FCB94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117AEB61-B196-4579-AFAA-9EA8E6FCB94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BFC9425-23FF-4B63-9C08-9ABA9D2F4D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BFC9425-23FF-4B63-9C08-9ABA9D2F4D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BFC9425-23FF-4B63-9C08-9ABA9D2F4D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BFC9425-23FF-4B63-9C08-9ABA9D2F4D6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

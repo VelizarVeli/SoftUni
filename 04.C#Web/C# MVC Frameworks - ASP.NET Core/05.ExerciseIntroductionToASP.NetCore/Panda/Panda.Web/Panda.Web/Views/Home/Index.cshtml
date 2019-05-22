@@ -1,5 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using Panda.Model
+@model Panda.Common.ViewModels.Packages.PackagesViewModel
 @inject SignInManager<PandaUser> SignInManager
 @inject UserManager<PandaUser> UserManager
 @inject RoleManager<IdentityRole> RoleManager
@@ -21,32 +22,38 @@
         <div class="col-sm-3 mx-5">
             <h3 class="text-center">Pending</h3>
             <div class="border-panda">
-                <div class="card-body row">
-                    <h5 class="card-title col-md-9">Special title treatment</h5>
-                    <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
-                </div>
-                <div class="card-body row">
-                    <h5 class="card-title col-md-9">Special title treatment</h5>
-                    <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
-                </div>
+                @foreach (var package in Model.PendingPackages)
+                {
+                    <div class="card-body row py-2">
+                        <h5 class="card-title col-md-9">@package.Name</h5>
+                        <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
+                    </div>
+                }
             </div>
         </div>
         <div class="col-sm-3 mx-5 justify-content-center">
             <h3 class="text-center">Shipped</h3>
             <div class="border-panda">
-                <div class="card-body row">
-                    <h5 class="card-title col-md-9">Special title treatment</h5>
-                    <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
-                </div>
+                @foreach (var package in Model.ShippedPackages)
+                {
+                    <div class="card-body row py-2">
+                        <h5 class="card-title col-md-9">@package.Name</h5>
+                        <a href="#" class="btn btn-primary col-md-3 bg-dark">Details</a>
+                    </div>
+                }
             </div>
         </div>
         <div class="col-sm-3 ml-5">
             <h3 class="text-center">Delivered</h3>
             <div class="border-panda">
-                <div class="card-body row">
-                    <h5 class="card-title col-md-9">Special treatment</h5>
-                    <a href="#" class="btn btn-primary col-md-3 bg-dark">Acquire</a>
-                </div>
+                @foreach (var package in Model.DeliveredPackages)
+                {
+
+                    <div class="card-body row py-2">
+                        <h5 class="card-title col-md-9">Special treatment</h5>
+                        <a href="#" class="btn btn-primary col-md-3 bg-dark">Acquire</a>
+                    </div>
+                }
             </div>
         </div>
     </div>

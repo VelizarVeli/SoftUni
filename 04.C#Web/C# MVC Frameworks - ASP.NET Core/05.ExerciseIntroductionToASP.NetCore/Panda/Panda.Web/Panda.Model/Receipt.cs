@@ -8,7 +8,7 @@ namespace Panda.Model
 
         public DateTime IssuedOn { get; set; }
 
-        public Guid UserId { get; set; }
+        public string UserId { get; set; }
         public virtual PandaUser Recipient { get; set; }
 
         public Guid PackageId { get; set; }

@@ -144,8 +144,6 @@ namespace Panda.Data.Migrations
 
                     b.Property<int>("Status");
 
-                    b.Property<Guid>("UserId");
-
                     b.Property<double>("Weight");
 
                     b.HasKey("Id");
@@ -219,7 +217,7 @@ namespace Panda.Data.Migrations
 
                     b.Property<string>("RecipientId");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 

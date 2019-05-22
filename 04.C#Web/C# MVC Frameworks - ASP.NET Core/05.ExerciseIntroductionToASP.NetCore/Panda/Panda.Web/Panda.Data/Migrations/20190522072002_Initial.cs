@@ -163,7 +163,6 @@ namespace Panda.Data.Migrations
                     ShippingAddress = table.Column<string>(nullable: true),
                     Status = table.Column<int>(nullable: false),
                     EstimatedDeliveryDate = table.Column<DateTime>(nullable: false),
-                    UserId = table.Column<Guid>(nullable: false),
                     RecipientId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -184,7 +183,7 @@ namespace Panda.Data.Migrations
                     Id = table.Column<Guid>(nullable: false),
                     Fee = table.Column<decimal>(nullable: false),
                     IssuedOn = table.Column<DateTime>(nullable: false),
-                    UserId = table.Column<Guid>(nullable: false),
+                    UserId = table.Column<string>(nullable: true),
                     RecipientId = table.Column<string>(nullable: true),
                     PackageId = table.Column<Guid>(nullable: false)
                 },
