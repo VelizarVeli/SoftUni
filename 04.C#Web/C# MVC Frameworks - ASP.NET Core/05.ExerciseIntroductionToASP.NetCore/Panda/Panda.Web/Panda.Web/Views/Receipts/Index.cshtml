@@ -27,7 +27,7 @@
                 <td class="col-lg-2 d-flex justify-content-center"><h5>@column.IssuedOn.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)</h5></td>
                 <td class="col-lg-2 d-flex justify-content-center"><h5>@column.Name</h5></td>
                 <td class="col-lg-1 d-flex justify-content-center">
-                    <a href="/ship" class="btn bg-panda text-white">Details</a>
+                    <a asp-controller="Receipts" asp-action="ReceiptDetails" asp-route-id="@column.Id"class="btn bg-panda text-white">Details</a>
                 </td>
             }
         </tr>

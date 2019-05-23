@@ -49,8 +49,8 @@
                 @foreach (var package in Model.DeliveredPackages)
                 {
                     <div class="card-body row py-2">
-                        <h5 class="card-title col-md-9">Special treatment</h5>
-                        <a asp-controller="Packages" asp-action="Details" asp-route-id="@package.Id" class="btn btn-primary col-md-3 bg-dark">Acquire</a>
+                        <h5 class="card-title col-md-9">@package.Name</h5>
+                        <a asp-controller="Receipts" asp-action="Acquire" asp-route-id="@package.Id" class="btn btn-primary col-md-3 bg-dark">Acquire</a>
                     </div>
                 }
             </div>

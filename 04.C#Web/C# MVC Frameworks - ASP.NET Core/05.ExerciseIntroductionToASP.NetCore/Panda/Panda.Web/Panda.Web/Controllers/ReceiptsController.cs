@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Panda.Model;
@@ -22,6 +23,20 @@ namespace Panda.Web.Controllers
             var receipts = await _receiptService.AllCurrentUserReceipts(_currentUser.GetUserId(User));
 
             return View("Index", receipts);
+        }
+
+        public async Task<IActionResult> ReceiptDetails(Guid id, string userId)
+        {
+            var receiptDetails = await _receiptService.Details(id, _currentUser.GetUserId(User));
+
+            return View(receiptDetails);
+        }
+
+        public async Task<IActionResult> Acquire(Guid id, string userId)
+        {
+           var receiptDetails =  await _receiptService.CreateReceipt(id, _currentUser.GetUserId(User));
+
+            return View("ReceiptDetails", receiptDetails);
         }
     }
 }
