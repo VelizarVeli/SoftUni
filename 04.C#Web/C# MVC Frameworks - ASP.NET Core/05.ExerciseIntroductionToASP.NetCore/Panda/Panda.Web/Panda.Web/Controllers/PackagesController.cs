@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Panda.Common.ViewModels.Packages;
 using Panda.Model;
 using Panda.Services.Contracts;
 
@@ -23,6 +24,21 @@ namespace Panda.Web.Controllers
         {
             var packageDetails = await _packageService.Details(id, _currentUser.GetUserId(User));
             return View(packageDetails);
+        }
+
+        public IActionResult CreatePackage()
+        {
+            var viewModel = _packageService.GetUserNamesPackage();
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreatePackage(CreatePackageViewModel model)
+        {
+
+
+            return View();
         }
     }
 }

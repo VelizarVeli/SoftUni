@@ -68,5 +68,17 @@ namespace Panda.Services
             };
             return viewModel;
         }
+
+        public CreatePackageViewModel GetUserNamesPackage()
+        {
+            var allUserNames = UserManager.Users;
+            var viewModel = new CreatePackageViewModel();
+            foreach (var usery in allUserNames)
+            {
+                viewModel.Recipients.Add(usery.UserName);
+            }
+
+            return viewModel;
+        }
     }
 }
