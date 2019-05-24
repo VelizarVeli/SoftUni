@@ -80,5 +80,21 @@ namespace Panda.Services
 
             return viewModel;
         }
+
+        public async Task CreatePackage(CreatePackageViewModel model)
+        {
+            var recipient = Db.Users.FirstOrDefault(u => u.UserName == model.Recipient);
+
+            var package = new Package
+            {
+                Description = model.Description,
+                Weight = model.Weight,
+                ShippingAddress = model.Address,
+                Status = Status.Pending,
+                RecipientId = recipient.Id
+            };
+            Db.Packages.Add(package);
+            await Db.SaveChangesAsync();
+        }
     }
 }

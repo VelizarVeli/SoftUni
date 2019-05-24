@@ -37,8 +37,8 @@ namespace Panda.Web.Controllers
         public async Task<IActionResult> CreatePackage(CreatePackageViewModel model)
         {
 
-
-            return View();
+            await _packageService.CreatePackage(model);
+            return RedirectToAction("Index", "Home");
         }
     }
 }
