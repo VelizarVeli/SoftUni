@@ -124,6 +124,48 @@ namespace Panda.Services
             await Db.SaveChangesAsync();
         }
 
+        public AllShippedViewModel AllShipped()
+        {
+            var viewModel = new AllShippedViewModel();
+            viewModel.AllShipped = Db.Packages
+                .Where(s => s.Status == Status.Shipped)
+                .Select(x => new ShippedViewModel()
+                {
+                    Description = x.Description,
+                    EstimatedDeliveryDate = x.EstimatedDeliveryDate,
+                    Recipient = x.Recipient.UserName,
+                    Weight = x.Weight,
+                    PackageId = x.Id
+                });
+
+            return viewModel;
+        }
+
+        public AllDeliveredViewModel AllDelivered()
+        {
+            var viewModel = new AllDeliveredViewModel();
+            viewModel.AllDelivered = Db.Packages
+                .Where(s => s.Status == Status.Delivered)
+                .Select(x => new DeliveredViewModel()
+                {
+                    Description = x.Description,
+                    Address = x.ShippingAddress,
+                    Recipient = x.Recipient.UserName,
+                    Weight = x.Weight,
+                    PackageId = x.Id
+                });
+
+            return viewModel;
+        }
+
+        public async Task Deliver(Guid id)
+        {
+            var deliveredPackage = await Db.Packages.FirstOrDefaultAsync(p => p.Id == id);
+            deliveredPackage.Status = Status.Delivered;
+            Db.Packages.Update(deliveredPackage);
+            await Db.SaveChangesAsync();
+        }
+
         private int RandomDate()
         {
             var random = new Random();

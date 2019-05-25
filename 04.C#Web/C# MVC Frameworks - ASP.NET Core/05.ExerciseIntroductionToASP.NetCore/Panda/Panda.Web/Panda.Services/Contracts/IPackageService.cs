@@ -12,5 +12,8 @@ namespace Panda.Services.Contracts
         Task CreatePackage(CreatePackageViewModel model);
         PendingShipmentsViewModel AllPending();
         Task Ship(Guid id);
+        AllShippedViewModel AllShipped();
+        Task Deliver(Guid id);
+        AllDeliveredViewModel AllDelivered();
     }
 }

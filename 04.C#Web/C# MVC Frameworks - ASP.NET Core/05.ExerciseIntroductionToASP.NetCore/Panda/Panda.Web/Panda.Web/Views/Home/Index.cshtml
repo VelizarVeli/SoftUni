@@ -6,6 +6,7 @@
 @inject RoleManager<IdentityRole> RoleManager
 @{
     ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @if (SignInManager.IsSignedIn(User))
 {

@@ -20,7 +20,7 @@ namespace Panda.Web.Controllers
             _currentUser = currentUser;
         }
 
-        [Authorize]
+        [AllowAnonymous]
         public async Task<IActionResult> Index(string id)
         {
             var packages = await _packageService.AllPackages(_currentUser.GetUserId(User));
