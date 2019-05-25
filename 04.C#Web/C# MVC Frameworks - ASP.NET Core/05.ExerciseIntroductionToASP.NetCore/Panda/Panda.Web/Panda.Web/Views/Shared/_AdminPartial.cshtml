@@ -1,6 +1,6 @@
 ﻿@if (User.IsInRole("Admin"))
 {
-    <a class="nav-link nav-link-white active" asp-area="" asp-controller="Home" asp-action="Index">Pending</a>
+    <a class="nav-link nav-link-white active" asp-area="" asp-controller="Packages" asp-action="AllPending">Pending</a>
     <a class="nav-link nav-link-white active" asp-area="" asp-controller="Home" asp-action="Index">Shipped</a>
     <a class="nav-link nav-link-white active" asp-area="" asp-controller="Home" asp-action="Index">Delivered</a>
     <a class="nav-link nav-link-white active" asp-area="" asp-controller="Packages" asp-action="CreatePackage">Package</a>

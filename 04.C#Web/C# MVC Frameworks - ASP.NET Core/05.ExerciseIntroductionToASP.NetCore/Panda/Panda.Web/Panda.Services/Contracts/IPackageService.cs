@@ -10,5 +10,7 @@ namespace Panda.Services.Contracts
         Task<PackageDetailsViewModel> Details(Guid id, string userId);
         CreatePackageViewModel GetUserNamesPackage();
         Task CreatePackage(CreatePackageViewModel model);
+        PendingShipmentsViewModel AllPending();
+        Task Ship(Guid id);
     }
 }

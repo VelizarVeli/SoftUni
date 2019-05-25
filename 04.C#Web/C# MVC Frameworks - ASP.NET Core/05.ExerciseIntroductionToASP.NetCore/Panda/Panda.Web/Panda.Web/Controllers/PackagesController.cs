@@ -36,9 +36,22 @@ namespace Panda.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CreatePackage(CreatePackageViewModel model)
         {
-
             await _packageService.CreatePackage(model);
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult AllPending()
+        {
+            var allPending = _packageService.AllPending();
+
+            return View("AllPending", allPending);
+        }
+
+        public async Task<IActionResult> Ship(Guid id)
+        {
+            await _packageService.Ship(id);
+
+            return RedirectToAction("AllPending");
         }
     }
 }

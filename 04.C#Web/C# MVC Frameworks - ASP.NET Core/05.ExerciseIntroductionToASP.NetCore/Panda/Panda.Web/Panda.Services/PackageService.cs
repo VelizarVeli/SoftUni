@@ -96,5 +96,38 @@ namespace Panda.Services
             Db.Packages.Add(package);
             await Db.SaveChangesAsync();
         }
+
+        public PendingShipmentsViewModel AllPending()
+        {
+            var viewModel = new PendingShipmentsViewModel();
+            viewModel.PendingShipments = Db.Packages
+                .Where(s => s.Status == Status.Pending)
+                .Select(x => new PendingShipmentViewModel
+                {
+                    Description = x.Description,
+                    Address = x.ShippingAddress,
+                    Recipient = x.Recipient.UserName,
+                    Weight = x.Weight,
+                    PackageId = x.Id
+                });
+
+            return viewModel;
+        }
+
+        public async Task Ship(Guid id)
+        {
+            var shippedPackage = await Db.Packages.FirstOrDefaultAsync(p => p.Id == id);
+            shippedPackage.Status = Status.Shipped;
+            DateTime today = DateTime.UtcNow;
+            shippedPackage.EstimatedDeliveryDate = today.AddDays(RandomDate());
+            Db.Packages.Update(shippedPackage);
+            await Db.SaveChangesAsync();
+        }
+
+        private int RandomDate()
+        {
+            var random = new Random();
+            return random.Next(20, 40);
+        }
     }
 }
