@@ -1,0 +1,40 @@
+﻿@model Panda.Common.ViewModels.Packages.PendingShipmentsViewModel
+
+@{
+    ViewData["Title"] = "AllPending";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1 class="text-center">Pending Shipment</h1>
+<hr class="hr-2 bg-panda">
+<div class="d-flex justify-content-between">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr class="row">
+                <th scope="col" class="col-md-1 d-flex justify-content-center"><h3>#</h3></th>
+                <th scope="col" class="col-md-4 d-flex justify-content-center"><h3>Description</h3></th>
+                <th scope="col" class="col-md-1 d-flex justify-content-center"><h3>Weight</h3></th>
+                <th scope="col" class="col-md-3 d-flex justify-content-center"><h3>Shipping Address</h3></th>
+                <th scope="col" class="col-md-2 d-flex justify-content-center"><h3>Recipient</h3></th>
+                <th scope="col" class="col-md-1 d-flex justify-content-center"><h3>Actions</h3></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row">
+                @{ var counter = 1; }
+
+                @foreach (var column in Model.PendingShipments)
+                {
+                    <th scope="row" class="col-md-1 d-flex justify-content-center"><h5>@counter</h5></th>
+                    <th scope="row" class="col-md-4 d-flex justify-content-center"><h5>@column.Description</h5></th>
+                    <td class="col-md-1 d-flex justify-content-center"><h5>@column.Weight.ToString("0.000") KG</h5></td>
+                    <td class="col-md-3 d-flex justify-content-center"><h5>@column.Address</h5></td>
+                    <td class="col-md-2 d-flex justify-content-center"><h5>@column.Recipient</h5></td>
+                    <td class="col-md-1 d-flex justify-content-center">
+                        <a asp-controller="Packages" asp-action="Ship" asp-route-id="@column.PackageId" class="btn bg-panda text-white">Ship</a>
+                    </td>
+                    counter++;
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>
