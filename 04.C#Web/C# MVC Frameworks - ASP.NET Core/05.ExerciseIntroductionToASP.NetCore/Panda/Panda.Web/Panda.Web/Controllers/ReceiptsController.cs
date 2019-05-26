@@ -25,14 +25,14 @@ namespace Panda.Web.Controllers
             return View("Index", receipts);
         }
 
-        public async Task<IActionResult> ReceiptDetails(Guid id, string userId)
+        public async Task<IActionResult> ReceiptDetails(Guid id)
         {
             var receiptDetails = await _receiptService.Details(id, _currentUser.GetUserId(User));
 
             return View(receiptDetails);
         }
 
-        public async Task<IActionResult> Acquire(Guid id, string userId)
+        public async Task<IActionResult> Acquire(Guid id)
         {
            var receiptDetails =  await _receiptService.CreateReceipt(id, _currentUser.GetUserId(User));
 

@@ -29,7 +29,7 @@ namespace Panda.Services
                     .Where(u => u.RecipientId == id)
                     .Select(r => new ReceiptViewModel
                     {
-                        Id = r.PackageId,
+                        Id = r.Id,
                         Fee = r.Fee,
                         IssuedOn = r.IssuedOn,
                         Name = user.UserName
@@ -41,16 +41,17 @@ namespace Panda.Services
         public async Task<ReceiptDetailsViewModel> Details(Guid id, string userId)
         {
             var currentReceipt = await Db.Receipts.FirstOrDefaultAsync(i => i.Id == id);
+            var package = await Db.Packages.FirstOrDefaultAsync(a => a.Id == currentReceipt.PackageId);
             var currentUsername = await UserManager.FindByIdAsync(userId);
             var viewModel = new ReceiptDetailsViewModel
             {
                 ReceiptNumber = currentReceipt.Id,
                 IssuedOn = currentReceipt.IssuedOn,
-                DeliveryAddress = currentReceipt.Package.ShippingAddress,
-                Weight = currentReceipt.Package.Weight,
-                PackageDescription = currentReceipt.Package.Description,
+                DeliveryAddress = package.ShippingAddress,
+                Weight = package.Weight,
+                PackageDescription = package.Description,
                 Recipient = currentUsername.UserName,
-                Total = currentReceipt.Package.Weight * 2.67
+                Total = package.Weight * 2.67
             };
             return viewModel;
         }

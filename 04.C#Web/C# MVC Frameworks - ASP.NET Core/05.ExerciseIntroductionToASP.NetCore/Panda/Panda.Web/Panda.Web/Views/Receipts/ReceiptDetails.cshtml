@@ -15,7 +15,7 @@
     <hr class="hr-2 bg-panda">
     <div class="d-flex justify-content-between">
         <h4>Issued On:</h4>
-        <h4>@Model.IssuedOn</h4>
+        <h4>@Model.IssuedOn.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)</h4>
     </div>
     <div class="d-flex justify-content-between">
         <h4>Delivery Address:</h4>

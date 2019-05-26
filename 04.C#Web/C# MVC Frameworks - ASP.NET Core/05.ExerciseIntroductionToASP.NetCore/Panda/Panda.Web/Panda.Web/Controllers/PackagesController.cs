@@ -22,7 +22,7 @@ namespace Panda.Web.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> Details(Guid id, string userId)
+        public async Task<IActionResult> Details(Guid id)
         {
             var packageDetails = await _packageService.Details(id, _currentUser.GetUserId(User));
             return View(packageDetails);
