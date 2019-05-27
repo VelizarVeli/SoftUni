@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity.UI.V3.Pages.Account.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Panda.Data;
 using Panda.Model;
 using Panda.Services;
@@ -29,12 +25,10 @@ namespace Panda.Web
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
@@ -55,7 +49,7 @@ namespace Panda.Web
 
             services.AddScoped<UserManager<PandaUser>>();
 
-            voidRegisterGlobalServices(services);
+            RegisterGlobalServices(services);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -88,7 +82,7 @@ namespace Panda.Web
             });
         }
 
-        private void voidRegisterGlobalServices(IServiceCollection services)
+        private void RegisterGlobalServices(IServiceCollection services)
         {
             services.AddScoped<IPackageService, PackageService>();
             services.AddScoped<IReceiptService, ReceiptService>();
