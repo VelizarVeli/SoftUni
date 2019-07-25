@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Bill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <h2>Coffee Bill</h2>
+    <table id="bill">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="product-list"></tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <section id="add-product">
+        <h3>Add new product</h3>
+        <label>
+            <span>
+                Product:
+            </span>
+            <input type="text">
+        </label>
+        <label>
+            <span>
+                Price:
+            </span>
+            <input type="number">
+        </label>
+        <button onclick="addProduct()">Add</button>
+    </section>
+
+    <script>
+        function addProduct() {
+            let product = document.querySelector('#add-product > label:nth-child(2) > input[type="text"]').value;
+            let price = document.querySelector('#add-product > label:nth-child(3) > input[type="number"]').value;
+            let total = document.querySelector('#bill > tfoot > tr > td:nth-child(2)').innerText;
+            total = Number(total)
+
+            if (price > 0 && product !== '' && price !== '') {
+                let table = document.getElementById("product-list");
+
+                let row = table.insertRow(0);
+
+                let cell1 = row.insertCell(0);
+                let cell2 = row.insertCell(1);
+
+                cell1.innerHTML = product;
+                cell2.innerHTML = price;
+                total += Number(price);
+                document.querySelector('#add-product > label:nth-child(2) > input[type="text"]').value = '';
+                document.querySelector('#add-product > label:nth-child(3) > input[type="number"]').value = '';
+                document.querySelector('#bill > tfoot > tr > td:nth-child(2)').innerHTML = total
+            }
+
+
+            // function sum() {
+            //     let rows = document.querySelectorAll("table tr td:last-child");
+            //     let sum = 0;
+            //     for (let i = 0; i < rows.length - 1; i++) {
+            //         sum += Number(rows[i].textContent);
+            //     }
+
+            //     return sum;
+            // }
+        }
+    </script>
+
+</body>
+
+</html>
